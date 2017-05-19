@@ -1,37 +1,29 @@
-## Welcome to GitHub Pages
+## WannaCry: Instantly Visibility
 
-You can use the [editor on GitHub](https://github.com/logzilla/logzilla.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+ If you are in the free speaking world and have access to news outlets, you've no doubt heard about the WannaCry ransomware attack targeting systems all over the world.  The estimates are that over a quarter of a million computers have been compromised spanning more than 150 countries.  If you have anything to do with the operations and engineering of your company's infrastructure, you probably started wondering if WannaCry had made it’s way into your piece of the universe. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+ An easy way to get visibility into the WannaCry malware in your environment is to install LogZilla and use the pre-built rules from our [LogZilla Extras GitHub](http://bit.ly/2qumD4C) repository.
+ 
+ Next, point your network and server telemetry to your LogZilla server and, wWithin seconds, you'll be able to select `IoC-WannaCry` or `IoC-IP_Blacklist` from the Program dropdown to see if your company has been infected. 
 
-### Markdown
+##### WannaCry Dashboard
+Here is a screenshot of one of our dashboards filtered on these programs:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+![WannaCry](http://i.imgur.com/Rtx52os.png)
 
-```markdown
-Syntax highlighted code block
+##### WannaCry Alerts
+Now that you have the data in LogZilla, alerts and automatic remediation are just as easy.  Here is an example trigger that will send a Slack message with information about the newly found malware infected host:
 
-# Header 1
-## Header 2
-### Header 3
+![Trigger](http://i.imgur.com/Qe6HXUy.png)
 
-- Bulleted
-- List
+##### Slack.com Alert
 
-1. Numbered
-2. List
+Here is what the Slack message looks like when we receive it from LogZilla:
 
-**Bold** and _Italic_ and `Code` text
+![Imgur](http://i.imgur.com/9EAXQ9s.png)
 
-[Link](url) and ![Image](src)
-```
+**It is that easy** to identify and be alerted when malware like this manifests in your organization. 
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Having a LogZilla NetOps management platform will provide you with incredible visibility and insight, in real-time, to what's happening in your environment, right now. If you would like to learn more about how LogZilla can make your team more proactive and how you can look like a Network Hero, reach out to me at mwheat@logzilla.net and we'll tell you how to install LogZilla in just a few minutes!
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/logzilla/logzilla.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Mark
