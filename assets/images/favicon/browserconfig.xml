@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+  <msapplication>
+    <tile>
+      <square70x70logo src="/logzilla-70.png"/>
+      <square150x150logo src="/logzilla-150.png"/>
+      <square310x310logo src="/logzilla-310.png"/>
+      <TileColor>#FFFFFF</TileColor>
+    </tile>
+  </msapplication>
+</browserconfig>
