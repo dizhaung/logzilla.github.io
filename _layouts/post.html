@@ -1,10 +1,43 @@
 ---
-layout: page
+layout: default
 ---
-<section id="blog">
-  <div class="container">
-    <div class="col-md-6 col-md-offset-3">
-      {{ content }}
-    </div>
-  </div>
-</section>
+<!-- ******BLOG****** -->         
+<div class="blog-entry-wrapper"> 
+    <div class="blog-headline-bg">
+    </div><!--//blog-headline-bg-->
+    <div class="blog-entry">                 
+        <article class="post">
+            <header class="blog-entry-heading" style='background: url("{{ page.img }}") center no-repeat'>
+                <div class="container text-center">                        
+                    <h2 class="title">{{ page.title }}</h2>
+                    <div class="meta">
+                        <ul class="meta-list list-inline">                                       
+                            <li class="post-author"><a href="http://twitter.com/{{ page.author }}" target=_new>{{ page.author-name }}</a>,</li>
+                            <li class="post-time">{{ page.date | date: "%d %B %Y" }}</li>
+                        </ul><!--//meta-list-->    	
+                    </div><!--meta-->
+                </div><!--//container-->
+                <nav class="post-nav post-nav-top">
+                    <span class="nav-previous"><a href="#" rel="prev"><i class="fa fa-long-arrow-left"></i>Previous post</a></span>
+                    <span class="nav-next"><a href="#" rel="next">Next post<i class="fa fa-long-arrow-right"></i></a></span>
+                </nav><!--//post-nav-->
+            </header><!--//blog-entry-heading-->
+
+            <div class="container">
+                <div class="row">
+                    <div class="blog-entry-content col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
+                        {{ content }}
+                    </div><!--//blog-entry-content-->
+
+                    <nav class="post-nav col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
+                        <span class="nav-previous"><a href="#" rel="prev"><i class="fa fa-long-arrow-left"></i>Previous</a></span>
+                        <span class="nav-next"><a href="#" rel="next">Next<i class="fa fa-long-arrow-right"></i></a></span>
+                    </nav><!--//post-nav-->
+
+
+                </div><!--//row-->
+            </div><!--//container-->                                               
+        </article><!--//post-->                                      
+    </div><!--//blog-entry-->
+</div><!--//blog-entry-wrapper-->  
+</div><!--//wrapper-->

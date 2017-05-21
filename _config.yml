@@ -1,2 +1,65 @@
-collections:
-  portfolio:
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# SEO Settings
+# https://github.com/jekyll/jekyll-seo-tag
+title: LogZilla NetOps Platform
+description: 'LogZilla is the leader in delivering real-time insight with an intelligent network operations platform.'
+url: www.logzilla.net
+google_analytics: 'UA-63386966-1'
+twitter:
+    username: logzilla
+facebook:
+     publisher: logzilla
+logo: assets/images/logos/logzilla/logzilla-logo-small.png
+social:
+  name: LogZilla Corporation
+  links:
+    - https://twitter.com/logzilla
+    - https://www.facebook.com/logzilla
+    - https://www.linkedin.com/company/logzilla
+    - https://github.com/logzilla
+# TODO: Site Verifications
+#webmaster_verifications:
+  #google: 1234
+  #bing: 1234
+  #alexa: 1234
+  #yandex: 1234
+
+# Sitewide company defaults:
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/default-card.png
+    layout: "default"
+data_dir:     _data
+include:              [".htaccess"]
+exclude:              ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/", "_internalDocs"]
+keep_files:           [".git"]
+encoding:             "utf-8"
+markdown_ext:         "markdown,mkdown,mkdn,mkd,md"
+
+# Conversion
+markdown:    kramdown
+highlighter: rouge
+lsi:         false
+excerpt_separator: "\n\n"
+incremental: false
+gems:
+      - jekyll-paginate
+      - jekyll-sitemap
+      - jekyll-seo-tag
+
+paginate: 10
+
+kramdown:
+  auto_ids:       true
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  input:          GFM
+  hard_wrap:      false
+  footnote_nr:    1

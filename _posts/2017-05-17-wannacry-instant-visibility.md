@@ -1,4 +1,18 @@
-## WannaCry: Instantly Visibility
+---
+published: true
+layout: post
+
+title: WannaCry?
+subtitle: How to detect the WannaCry Malware in seconds
+author: markwheat1
+author-name: "Mark Wheat"
+tags: [Malware, Dashboards, Triggers]
+summary: LogZilla's Malware Detection capability is so easy that it will make you wannacry...
+
+img-position: left
+img: /assets/images/blog/hacker-silhouette.jpg
+
+---
 
  If you are in the free speaking world and have access to news outlets, you've no doubt heard about the WannaCry ransomware attack targeting systems all over the world.  The estimates are that over a quarter of a million computers have been compromised spanning more than 150 countries.  If you have anything to do with the operations and engineering of your company's infrastructure, you probably started wondering if WannaCry had made it’s way into your piece of the universe. 
 

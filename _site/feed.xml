@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="www.logzilla.net/feed.xml" rel="self" type="application/atom+xml" /><link href="www.logzilla.net/" rel="alternate" type="text/html" /><updated>2017-05-21T00:27:27-04:00</updated><id>www.logzilla.net/</id><title type="html">LogZilla NetOps Platform</title><subtitle>LogZilla is the leader in delivering real-time insight with an intelligent network operations platform.</subtitle><entry><title type="html">WannaCry?</title><link href="www.logzilla.net/2017/05/17/wannacry-instant-visibility.html" rel="alternate" type="text/html" title="WannaCry?" /><published>2017-05-17T00:00:00-04:00</published><updated>2017-05-17T00:00:00-04:00</updated><id>www.logzilla.net/2017/05/17/wannacry-instant-visibility</id><content type="html" xml:base="www.logzilla.net/2017/05/17/wannacry-instant-visibility.html">&lt;p&gt;If you are in the free speaking world and have access to news outlets, you’ve no doubt heard about the WannaCry ransomware attack targeting systems all over the world.  The estimates are that over a quarter of a million computers have been compromised spanning more than 150 countries.  If you have anything to do with the operations and engineering of your company’s infrastructure, you probably started wondering if WannaCry had made it’s way into your piece of the universe.&lt;/p&gt;
+
+&lt;p&gt;An easy way to get visibility into the WannaCry malware in your environment is to install LogZilla and use the pre-built rules from our &lt;a href=&quot;http://bit.ly/2qumD4C&quot;&gt;LogZilla Extras GitHub&lt;/a&gt; repository.&lt;/p&gt;
+
+&lt;p&gt;Next, point your network and server telemetry to your LogZilla server and, within seconds, you’ll be able to select &lt;code class=&quot;highlighter-rouge&quot;&gt;IoC-WannaCry&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;IoC-IP_Blacklist&lt;/code&gt; from the Program dropdown to see if your company has been infected.&lt;/p&gt;
+
+&lt;h5 id=&quot;wannacry-dashboard&quot;&gt;WannaCry Dashboard&lt;/h5&gt;
+&lt;p&gt;Here is a screenshot of one of our dashboards filtered on these programs:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/Rtx52os.png&quot; alt=&quot;WannaCry&quot; /&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;wannacry-alerts&quot;&gt;WannaCry Alerts&lt;/h5&gt;
+&lt;p&gt;Now that you have the data in LogZilla, alerts and automatic remediation are just as easy.  Here is an example trigger that will send a Slack message with information about the newly found malware infected host:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/Qe6HXUy.png&quot; alt=&quot;Trigger&quot; /&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;slackcom-alert&quot;&gt;Slack.com Alert&lt;/h5&gt;
+
+&lt;p&gt;Here is what the Slack message looks like when we receive it from LogZilla:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/9EAXQ9s.png&quot; alt=&quot;Imgur&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;It is that easy&lt;/strong&gt; to identify and be alerted when malware like this manifests in your organization.&lt;/p&gt;
+
+&lt;p&gt;Having a LogZilla NetOps management platform will provide you with incredible visibility and insight, in real-time, to what’s happening in your environment, right now. If you would like to learn more about how LogZilla can make your team more proactive and how you can look like a Network Hero, reach out to me at mwheat@logzilla.net and we’ll tell you how to install LogZilla in just a few minutes!&lt;/p&gt;
+
+&lt;p&gt;Mark&lt;/p&gt;</content><author><name>markwheat1</name></author><category term="Malware" /><category term="Dashboards" /><category term="Triggers" /><summary type="html">If you are in the free speaking world and have access to news outlets, you’ve no doubt heard about the WannaCry ransomware attack targeting systems all over the world. The estimates are that over a quarter of a million computers have been compromised spanning more than 150 countries. If you have anything to do with the operations and engineering of your company’s infrastructure, you probably started wondering if WannaCry had made it’s way into your piece of the universe.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="www.logzilla.net/assets/images/default-card.png" /></entry><entry><title type="html">Download to Dashboards</title><link href="www.logzilla.net/2017/05/16/downloads-to-dashboards-in-minutes.html" rel="alternate" type="text/html" title="Download to Dashboards" /><published>2017-05-16T00:00:00-04:00</published><updated>2017-05-16T00:00:00-04:00</updated><id>www.logzilla.net/2017/05/16/downloads-to-dashboards-in-minutes</id><content type="html" xml:base="www.logzilla.net/2017/05/16/downloads-to-dashboards-in-minutes.html">&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/ASANkj6.png&quot; alt=&quot;Cisco Network Dashboard&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Within minutes after installing and pointing your network and server events to the LogZilla server, you will have visibility into what is really going on in your environment. &lt;/p&gt;
+
+&lt;p&gt; Have you ever considered what your job would be like if you could look at one interface to see the data from entires infrastructure…in real-time? &lt;/p&gt;
+
+&lt;p&gt; What about querying across all that data…in seconds? &lt;/p&gt;
+
+&lt;p&gt; How about immediate remediation when an event indicates there is a problem? All of this is available today and the new dashboards make it easier than ever to empower teams, automate, and move from reactive to proactive.  &lt;/p&gt;
+
+&lt;p&gt;You can use these out of the box dashboards, customize them, or even build your own in minutes.  All of the dashboards are powerful, and if you work in any type of engineering or operations capacity, you will not find a easier to use platform to solve your NetOps problems and provide the broad, real-time visibility of LogZilla.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;These New Dashboards Include&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Cisco Networking&lt;/li&gt;
+  &lt;li&gt;Cisco Most Actionable &lt;/li&gt;
+  &lt;li&gt;Cisco Security &lt;/li&gt;
+  &lt;li&gt;Microsoft &lt;/li&gt;
+  &lt;li&gt;General&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;The Cisco Dashboards Provide:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Top 10 Cisco Devices with Failures&lt;/li&gt;
+  &lt;li&gt;Cisco Events Per Second&lt;/li&gt;
+  &lt;li&gt;Failed Events&lt;/li&gt;
+  &lt;li&gt;Errored Hosts&lt;/li&gt;
+  &lt;li&gt;Cisco Events Per Day&lt;/li&gt;
+  &lt;li&gt;Top Cisco Mnemonics&lt;/li&gt;
+  &lt;li&gt;Duplex Mismatch&lt;/li&gt;
+  &lt;li&gt;Device Power Events&lt;/li&gt;
+  &lt;li&gt;Subnet Mismatch&lt;/li&gt;
+  &lt;li&gt;Last 5 Cisco Mnemonics &lt;/li&gt;
+  &lt;li&gt;Spanning Tree BPDU&lt;/li&gt;
+  &lt;li&gt;ASIC Module Error&lt;/li&gt;
+  &lt;li&gt;OSPF Neighbor Change&lt;/li&gt;
+  &lt;li&gt;Non IPSec-encapsulated Crypto&lt;/li&gt;
+  &lt;li&gt;Crypto IKE Message Failure&lt;/li&gt;
+  &lt;li&gt;ASIC Port Error&lt;/li&gt;
+  &lt;li&gt;IPSec Error - Packet Missing from SADB&lt;/li&gt;
+  &lt;li&gt;Crypto Packet Security Association Missing&lt;/li&gt;
+  &lt;li&gt;Crypto Packet failed MAC verification&lt;/li&gt;
+  &lt;li&gt;OSPF process received an invalid packet&lt;/li&gt;
+  &lt;li&gt;Error disabled port has been reenabled&lt;/li&gt;
+  &lt;li&gt;OSPF received LSA with wrong mask&lt;/li&gt;
+  &lt;li&gt;HSRP VIP does not match the standby VIP&lt;/li&gt;
+  &lt;li&gt;Unauthorized connection attempt on a secure port.&lt;/li&gt;
+  &lt;li&gt;OSPF Hello Unidentified Sender&lt;/li&gt;
+  &lt;li&gt;Interface disabled due to misconfiguration&lt;/li&gt;
+  &lt;li&gt;Spanning Tree BPDU received from another bridge &lt;/li&gt;
+  &lt;li&gt;Last 10 High Severity Cisco Firewall Messages&lt;/li&gt;
+  &lt;li&gt;Live Stream: OpenSSL Handshake Failures&lt;/li&gt;
+  &lt;li&gt;Audit Failures&lt;/li&gt;
+  &lt;li&gt;Live Stream: High Severity Events&lt;/li&gt;
+  &lt;li&gt;Cisco Firewall event rate per second and day&lt;/li&gt;
+  &lt;li&gt;77 Patterns for Most Actionable Firewall Events (This widget contains 77 of Cisco’s Most Actionable Firewall Events)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;  &lt;img src=&quot;http://i.imgur.com/iLmEzs5.png&quot; alt=&quot;Cisco Security Dashboard&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The Microsoft Dashboard Provides:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Top Windows hosts&lt;/li&gt;
+  &lt;li&gt;Most recent Windows sources&lt;/li&gt;
+  &lt;li&gt;Rate per day and second for Windows events&lt;/li&gt;
+  &lt;li&gt;New Process started&lt;/li&gt;
+  &lt;li&gt;User logon &lt;/li&gt;
+  &lt;li&gt;File share accessed&lt;/li&gt;
+  &lt;li&gt;New Service installed&lt;/li&gt;
+  &lt;li&gt;Network connections established&lt;/li&gt;
+  &lt;li&gt;File Audit&lt;/li&gt;
+  &lt;li&gt;Registry Audit&lt;/li&gt;
+  &lt;li&gt;Power Shell command line execution&lt;/li&gt;
+  &lt;li&gt;Windows Firewall change detection&lt;/li&gt;
+  &lt;li&gt;Scheduled task added&lt;/li&gt;
+  &lt;li&gt;Host file shares opened&lt;/li&gt;
+  &lt;li&gt;New network connection rate per hour&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;  &lt;img src=&quot;http://i.imgur.com/WoJjQtv.png&quot; alt=&quot;Microsoft Dashboard&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The General Dashboard Provides:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Rate per day and second&lt;/li&gt;
+  &lt;li&gt;Unknown and actionable events&lt;/li&gt;
+  &lt;li&gt;Latest unread notifications&lt;/li&gt;
+  &lt;li&gt;Top hosts&lt;/li&gt;
+  &lt;li&gt;Recent error messages&lt;/li&gt;
+  &lt;li&gt;Failed messages&lt;/li&gt;
+  &lt;li&gt;Non actionable event rate&lt;/li&gt;
+  &lt;li&gt;Most resent event sources&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/rZ6BA2E.png&quot; alt=&quot;LogZilla-General&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;All new installs of LogZilla already have these dashboards pre-installed.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;how-can-i-get-this-awesomeness&quot;&gt;How can I get this awesomeness?&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn.meme.am/instances/150x150/45820.jpg&quot; alt=&quot;I Can Haz LogZilla?&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Get started&lt;/strong&gt; &lt;a href=&quot;http://bit.ly/1RGNwdv&quot;&gt;right here&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;If you already have LogZilla installed and want the new dashboards (and who wouldn’t?), just update to the latest version and download the dashboards and instructions from &lt;a href=&quot;http://bit.ly/2qxFwS8&quot;&gt;our Github page&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Having a LogZilla NetOps management platform will provide you with incredible visibility and insight, in real-time, to what is happening in your environment.&lt;/p&gt;
+
+&lt;p&gt;If you would like to learn more about how LogZilla can make your team more proactive and how you can be the Network Hero, &lt;a href=&quot;mailto:mwheat@logzilla.net&quot;&gt;reach out to me&lt;/a&gt; and we will show you the way.  &lt;/p&gt;
+
+&lt;h1 id=&quot;about-logzilla&quot;&gt;About LogZilla&lt;/h1&gt;
+
+&lt;p&gt;LogZilla is the leader in delivering real-time network insights with an intelligent network operations platform.  Our unique technology offers data enrichment, automation and simplicity for network teams to identify network challenges easily and solve them within minutes saving you time, money, and headaches while enabling the network to run like a well-oiled machine.&lt;/p&gt;</content><author><name>markwheat1</name></author><category term="Download" /><category term="Dashboards" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="www.logzilla.net/assets/images/default-card.png" /></entry><entry><title type="html">Syslog Essentials</title><link href="www.logzilla.net/2017/05/01/syslog-essentials.html" rel="alternate" type="text/html" title="Syslog Essentials" /><published>2017-05-01T00:00:00-04:00</published><updated>2017-05-01T00:00:00-04:00</updated><id>www.logzilla.net/2017/05/01/syslog-essentials</id><content type="html" xml:base="www.logzilla.net/2017/05/01/syslog-essentials.html">&lt;p&gt;&lt;img src=&quot;/assets/images/blog/post_images/syslog-essentials/lz-searchbar.png&quot; alt=&quot;LogZilla Query Bar&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Most of us cannot remember a time before there was syslog.  I was introduced to Sun Solaris in 1998 while I was working for a internet software company.  If I had a nickel for every time I used &lt;code class=&quot;highlighter-rouge&quot;&gt;tail -f&lt;/code&gt; on log files, I would be, well, writing this from a beach instead of my desk… &lt;/p&gt;
+
+&lt;p&gt;Syslog is the standard logging facility for pretty much everything today and the information being pumped through it is generally what is used to identify and resolve most mission critical problems. The information in this post is primarily geared to network and systems management, but is applicable to any device that generates a syslog message. The image above is the LogZilla search bar. After you finish reading this post, you will realize how amazing it is for log analysis!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Why Syslog and not just SNMP?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Valid question, as there are a lot of network management tools that use Simple Network Management Protocol (SNMP). SNMP has a polling component that queries devices to get Object Identifier (OID) information and feed it back into a centralized tool, usually for performance-based metrics.  SNMP can also send TRAPS which are defined alert thresholds within the OID values.  All good stuff, but did you know that Cisco’s IOS has only 90 defined SNMP TRAPs but more than 35,000 possible syslog messages? &lt;/p&gt;
+
+&lt;p&gt;When there is a problem, the first place most &lt;em&gt;good&lt;/em&gt; engineers and admins go to is the logs.  This is because there is more, and better, information there and usually something that will tell you what has happened, who did what, or why you’re having a problem.  Some examples of data that you can get from syslog on networking devices includes things like:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Port Duplex Mismatch&lt;/li&gt;
+  &lt;li&gt;BGP, OSPF, MPLS or any other routing protocol status&lt;/li&gt;
+  &lt;li&gt;Authentication&lt;/li&gt;
+  &lt;li&gt;Connectivity and link data&lt;/li&gt;
+  &lt;li&gt;and thousands more&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;One of the primary reasons that logging is not the front line management tool today is due to the sheer number of messages being processed.  Until recently, there was just too much log data to effectively use and the processing requirements necessary to search across terabytes of log data was not very accommodating. That is no longer the case (if you use LogZilla!) and this treasure trove of data is now available in real-time, to help you become more proactive and solve issues more quickly.&lt;/p&gt;
+
+&lt;p&gt;#The Syslog Protocol&lt;/p&gt;
+
+&lt;p&gt;Syslog was originally developed in the 80’s by Eric Allman as part of the Sendmail project and is now standardized within the syslog working group of the IETF
+Syslog messages (RFC 3164) can be sent via UDP (514) and/or TCP. The data is typically sent in clear text (but there are ways to encrypt)
+Syslog has a sender and a receiver.  The syslog sender sends a small (less than 1KB) text message to the syslog receiver. The receiver is commonly called “syslogd”, “syslog daemon” or “syslog server”
+The format of the syslog message should contain five distinct fields with the following information:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Facility&lt;/li&gt;
+  &lt;li&gt;Severity&lt;/li&gt;
+  &lt;li&gt;Hostname&lt;/li&gt;
+  &lt;li&gt;Timestamp&lt;/li&gt;
+  &lt;li&gt;Message&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Syslog Message Facility&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Syslog messages are broadly categorized on the basis of the sources that generated them such as OS, process or application and are represented as integers ranging from 0-23, Cisco devices use the local facility ranges 16-23 (local0 – local7)&lt;/li&gt;
+  &lt;li&gt;Most Cisco networking gear uses facility local 7 and Cisco firewalls usually use local4&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Syslog Message Severity&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The log source (such as a router) which generates the syslog message also specifies the severity of the message using single-digit integers 0–7.  Most networking devices will use log levels 0-6 with level 7 used for console troubleshooting. The codes are generally defined as:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/post_images/syslog-essentials/syslog-severities.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Syslog Message Hostname&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The hostname field consists of the host name (as configured on the host itself) or the IP address&lt;/li&gt;
+  &lt;li&gt;In devices such as routers or firewalls, which use multiple interfaces, syslog uses the IP address of the interface from which the message is transmitted (unless otherwise configured using the &lt;code class=&quot;highlighter-rouge&quot;&gt;logging source&lt;/code&gt; command)&lt;/li&gt;
+  &lt;li&gt;Some people get confused by &lt;code class=&quot;highlighter-rouge&quot;&gt;host name&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;hostname&lt;/code&gt;. &lt;code class=&quot;highlighter-rouge&quot;&gt;Hostname&lt;/code&gt; is typically associated with a DNS lookup. If the syslog message contains a &lt;code class=&quot;highlighter-rouge&quot;&gt;host name&lt;/code&gt;, it may be (and often is) different than the actual DNS hostname of the device&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Syslog Message Timestamp&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The local time, in &lt;code class=&quot;highlighter-rouge&quot;&gt;MMM DD HH:MM:SS&lt;/code&gt; format, of the device when the message was generated&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Note: &lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt; characters preceding a Cisco syslog message are indicators of a problem with NTP. The &lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; means that time is not authoritative: the software clock is not in sync or has never been set and &lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt; means that time is authoritative, but NTP is not synchronized: the software clock was in sync, but has since lost contact with all configured NTP servers&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Syslog Message Text&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;This is the text of the syslog message, along with some additional information about the process that generated it&lt;/li&gt;
+  &lt;li&gt;Messages generated by Cisco IOS devices begin with a percent sign (%) and use the following format: &lt;code class=&quot;highlighter-rouge&quot;&gt;FACILITY-SEVERITY-MNEMONIC: Message-text&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The mnemonic is a device-specific code that uniquely identifies the message such as &lt;em&gt;up&lt;/em&gt;, &lt;em&gt;down&lt;/em&gt;, &lt;em&gt;changed&lt;/em&gt;, &lt;em&gt;config&lt;/em&gt;, etc. The &lt;code class=&quot;highlighter-rouge&quot;&gt;Facility&lt;/code&gt; in Cisco Mnemonics are not the same as the IETF definition of &lt;code class=&quot;highlighter-rouge&quot;&gt;facility&lt;/code&gt; (such as local7). Cisco Facility Mnemonics are a free-form method of identifying the source message type such as &lt;code class=&quot;highlighter-rouge&quot;&gt;SYS&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;IP&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;LDP&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;L2&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;MEM&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;FILESYS&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;DOT11&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;LINEPROTO&lt;/code&gt;, etc. (the list is very large)&lt;/p&gt;
+
+&lt;p&gt;This should be enough information to help you understand those somewhat cryptic log messages now. Hopefully, you can see how important it is to have search options like the first image displayed in this post, to quickly and easily get the most out of your log data. Having a LogZilla NetOps management platform will provide you with incredible visibility and insight, in real-time, to what is happening in your environment, right now. If you would like to learn more about how LogZilla can make your team more proactive and how you can look like a Network Hero, reach out to me and we will be happy to get you started!&lt;/p&gt;</content><author><name>markwheat1</name></author><category term="NetOps" /><category term="Syslog" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="www.logzilla.net/assets/images/default-card.png" /></entry></feed>
