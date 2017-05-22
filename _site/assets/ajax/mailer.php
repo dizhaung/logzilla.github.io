@@ -28,7 +28,7 @@ if($_POST) {
 }
 if (isset($email)) {
     $slackData = array (
-        'channel' => '#salesteam',
+        'channel' => '#website',
         'attachments' =>
         array (
             0 =>
@@ -102,8 +102,8 @@ if (isset($email)) {
     }
 }
 
-function slack($name, $subject, $email, $message, $company, $phone, $slackData, $room = "salesteam") {
-    $room = ($room) ? $room : "salesteam";
+function slack($name, $subject, $email, $message, $company, $phone, $slackData, $room = "website") {
+    $room = ($room) ? $room : "website";
     $data = "payload=" . json_encode($slackData);
 
     // You can get your webhook endpoint from your Slack settings

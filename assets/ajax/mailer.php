@@ -28,7 +28,7 @@ if($_POST) {
 }
 if (isset($email)) {
     $slackData = array (
-        'channel' => '#salesteam',
+        'channel' => '#website',
         'attachments' =>
         array (
             0 =>
