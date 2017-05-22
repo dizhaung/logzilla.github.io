@@ -10,11 +10,11 @@ tags: [NetOps, Syslog]
 summary: Most of us cannot remember a time before there was syslog.  I was introduced to Sun Solaris in 1998 while I was working...
 
 img-position: left
-img: /assets/images/blog/hieroglyphics.jpg
+img: /assets/images/blog/post_images/syslog-essentials/hieroglyphics.jpg
 
 ---
 
-![LogZilla Query Bar](/assets/images/blog/post_images/syslog-essentials/lz-searchbar.png)
+![LogZilla Query Bar](/assets/images/blog/post_images/syslog-essentials/lz-searchbar.png){: .img-responsive .img-fullscreen }
 
  Most of us cannot remember a time before there was syslog.  I was introduced to Sun Solaris in 1998 while I was working for a internet software company.  If I had a nickel for every time I used `tail -f` on log files, I would be, well, writing this from a beach instead of my desk… 
 
@@ -56,7 +56,7 @@ The format of the syslog message should contain five distinct fields with the fo
 
 *   The log source (such as a router) which generates the syslog message also specifies the severity of the message using single-digit integers 0–7.  Most networking devices will use log levels 0-6 with level 7 used for console troubleshooting. The codes are generally defined as:
 
-![](/assets/images/blog/post_images/syslog-essentials/syslog-severities.png)
+![Syslog Severities](/assets/images/blog/post_images/syslog-essentials/syslog-severities.png){: .img-responsive .img-fullscreen }
 
 **Syslog Message Hostname**
 

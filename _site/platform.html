@@ -87,6 +87,9 @@ head.load({ jsincludes: "/assets/js/jsincludes.js" },
         <!-- Blog CSS -->
         <link rel="stylesheet" href="/css/blog.css" type="text/css">
 
+        <!-- Lightbox CSS -->
+        <link rel="stylesheet" href="/assets/css/ekko-lightbox.min.css" type="text/css">
+
     </head>
 
 
@@ -173,57 +176,18 @@ head.ready("jquery", function() {
                 <div class=" text-center col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs text-center" role="tablist">
-                        <li class="active"><a href="#feature-1" role="tab" data-toggle="tab"><i class="fa fa-cloud-upload"></i><br /><span class="hidden-sm hidden-xs">Mitigate Downtime</span></a></li>
-                        <li><a href="#feature-2" role="tab" data-toggle="tab"><i class="fa fa-tachometer"></i><br /><span class="hidden-sm hidden-xs">Automate</span></a></li>
-                        <li><a href="#feature-3" role="tab" data-toggle="tab"><i class="fa fa-photo"></i><br /><span class="hidden-sm hidden-xs">Instant Visibility</span></a></li>
-                        <li class="last"><a href="#feature-4" role="tab" data-toggle="tab"><i class="fa fa-users"></i><br /><span class="hidden-sm hidden-xs">Add Intelligence</span></a></li>
+                        <li class="active"><a href="#feature-1" role="tab" data-toggle="tab"><i class="fa fa-photo"></i><br /><span class="hidden-sm hidden-xs">Instant Visibility</span></a></li>
+                        <li> <a href="#feature-2" role="tab" data-toggle="tab"><i class="fa fa-users"></i><br /><span class="hidden-sm hidden-xs">Add Intelligence</span></a></li>
+                        <li><a href="#feature-3" role="tab" data-toggle="tab"><i class="fa fa-tachometer"></i><br /><span class="hidden-sm hidden-xs">Automate</span></a></li>
+                        <li class="last"><a href="#feature-4" role="tab" data-toggle="tab"><i class="fa fa-cloud-upload"></i><br /><span class="hidden-sm hidden-xs">Mitigate Downtime</span></a></li>
                     </ul><!--//nav-tabs-->
                     
                     <!-- Tab panes -->
                     <div class="tab-content">
                         <div class="tab-pane fade in active" id="feature-1">
-                            <h3 class="title sr-only">Mitigate Downtime</h3>                                    
-							<figure class="figure col-md-pull-1 col-sm-offset-0 col-xs-offset-0 col-xs-12 col-md-4">
-                                <img class="img-responsive" src="assets/images/figures/sad-datacenter-guy-edgeblur-sm.png" alt="Don't be this guy!" />
-                                <figcaption class="figure-caption">Outages Cost Companies An Average of $7,999 <span class="highlight">Per Minute</span>.</figcaption>
-                            </figure>
-                            <div class="desc text-left">
-                                <p>LogZilla's trigger engine allows users to automatically repair known errors in the network. Some examples include automatic Duplicate IP resolution, Spanning Tree, Network Congestion, Malware, Security Breaches, and Unauthorized Changes.</p>
-                                <p>By automating these events, our customers save thousands of hours per year in lost engineering time and downtime.</p>
-                                <p>What once took days to solve, can now be done in second with easy, clear, compelling dashboards at enterprise-scale.</p>
-                                <p>LogZilla's pre-emptive engine allows our customers to mitigate downtime, which saves your company time, money, headaches, and enables network operations to run like a well-oiled machine</p>
-                                <ul class="list-unstyled">
-                                    <li><i class="fa fa-angle-right"></i>Collect information from disparate sources about the affected device</li>
-                                    <li><i class="fa fa-angle-right"></i>Automatically resolve outages</li>
-                                    <li><i class="fa fa-angle-right"></i>Notify via email, text, Slack, Cisco Spark, and Webhooks.</li>
-                                    <li><i class="fa fa-angle-right"></i>Reduce or Eliminate Downtime</li>
-                                    <li><i class="fa fa-angle-right"></i>What used to take hours now takes seconds</li>
-                                </ul>
-                                
-                                <p>LogZilla was built by NetOps, For NetOps. Our ability to solve problems before they become incidents saves you time, headaches and in some cases, public apologies.</p>
-                            </div><!--//desc-->
-                        </div><!--//tab-pane-->
-                        <div class="tab-pane" id="feature-2">
-                            <h3 class="title sr-only">Automate</h3>                                    
-							<figure class="figure col-md-pull-1 col-sm-offset-0 col-xs-offset-0 col-xs-12 col-md-4">
-                                <img class="img-responsive" src="assets/images/background/automation-keyboard.jpg" alt="Don't be this guy!" />
-                                <figcaption class="figure-caption">Repair And Report On Network Problems With Ease</figcaption>
-                            </figure>
-                            <div class="desc text-left">
-                                <p>LogZilla's Event Automation mechanism provides pre-emptive healing techniques for repetitive tasks. Lorem Ipsum</p>
-                                <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id nulla at libero ultricies tempus. Duis porta justo quam, ut ultrices felis posuere sit amet. Sed imperdiet bibendum est, sit amet sagittis ante sagittis eu. <a href="#">Integer fringilla</a> a purus sit amet laoreet. Ut consequat volutpat sapien sed lobortis. Nullam laoreet vitae justo nec dignissim. 
-                                </p>
-                                <blockquote>
-                                    <p>Viverra magna pellentesque in magnis gravida sit augue felis vehicula vestibulum semper penatibus justo ornare semper Gravida felis platea arcu mus non. Montes at posuere. Natoque.</p>
-                                </blockquote>
-                                
-                            </div><!--//desc-->
-                        </div><!--//tab-pane-->
-                        <div class="tab-pane" id="feature-3">
                             <h3 class="title sr-only">Instant Visibility</h3>
 							<figure class="figure col-md-pull-1 col-sm-offset-0 col-xs-offset-0 col-xs-12 col-md-4">
-                                <img class="img-responsive" src="/assets/images/blog/post_images/downloads-to-dashboards/general_dashboard.png" alt="Dashboard Example" />
+                                <img class="img-responsive img-fullscreen" src="/assets/images/blog/post_images/downloads-to-dashboards/general_dashboard.png" alt="Dashboard Example" />
                                 <figcaption class="figure-caption">Use our pre-built Dashboards or Create your own in minutes</p>
                             </figure>
                             <div class="desc text-left">
@@ -265,10 +229,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id nulla at libero
                                 </div><!--//table-responsive-->
                             </div><!--//desc-->                                    
                         </div><!--//tab-pane-->
-                        <div class="tab-pane" id="feature-4">
+                        <div class="tab-pane" id="feature-2">
                             <h3 class="title sr-only">Add Intelligence</h3>                                    
 							<figure class="figure col-md-pull-1 col-sm-offset-0 col-xs-offset-0 col-xs-12 col-md-6">
-                                <img class="img-responsive" src="/assets/images/screenshots/slack-wannacry-ioc.png" alt="Slack Alert from LogZilla">
+                                <img class="img-responsive img-fullscreen" src="/assets/images/blog/post_images/wannacry/wannacry-slack.png" alt="Slack Alert from LogZilla">
                                 <figcaption class="figure-caption">Slack alert from a blacklisted IP accessed inside the network.</figcaption>
                             </figure>
                             <div class="desc text-left">
@@ -281,6 +245,45 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id nulla at libero
                                     <li><i class="fa fa-angle-right"></i>Connect to inventory databases to get device, server, or user data.</li>
                                     <li><i class="fa fa-angle-right"></i>Automatically open trouble tickets with your support systems</p>
                                 </ul>
+                            </div><!--//desc-->
+                        </div><!--//tab-pane-->
+                        <div class="tab-pane" id="feature-4">
+                            <h3 class="title sr-only">Mitigate Downtime</h3>                                    
+							<figure class="figure col-md-pull-1 col-sm-offset-0 col-xs-offset-0 col-xs-12 col-md-4">
+                                <img class="img-responsive" src="assets/images/figures/sad-datacenter-guy-edgeblur-sm.png" alt="Don't be this guy!" />
+                                <figcaption class="figure-caption">Outages Cost Companies An Average of $7,999 <span class="highlight">Per Minute</span>.</figcaption>
+                            </figure>
+                            <div class="desc text-left">
+                                <p>LogZilla's trigger engine allows users to automatically repair known errors in the network. Some examples include automatic Duplicate IP resolution, Spanning Tree, Network Congestion, Malware, Security Breaches, and Unauthorized Changes.</p>
+                                <p>By automating these events, our customers save thousands of hours per year in lost engineering time and downtime.</p>
+                                <p>What once took days to solve, can now be done in second with easy, clear, compelling dashboards at enterprise-scale.</p>
+                                <p>LogZilla's pre-emptive engine allows our customers to mitigate downtime, which saves your company time, money, headaches, and enables network operations to run like a well-oiled machine</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fa fa-angle-right"></i>Collect information from disparate sources about the affected device</li>
+                                    <li><i class="fa fa-angle-right"></i>Automatically resolve outages</li>
+                                    <li><i class="fa fa-angle-right"></i>Notify via email, text, Slack, Cisco Spark, and Webhooks.</li>
+                                    <li><i class="fa fa-angle-right"></i>Reduce or Eliminate Downtime</li>
+                                    <li><i class="fa fa-angle-right"></i>What used to take hours now takes seconds</li>
+                                </ul>
+                                
+                                <p>LogZilla was built by NetOps, For NetOps. Our ability to solve problems before they become incidents saves you time, headaches and in some cases, public apologies.</p>
+                            </div><!--//desc-->
+                        </div><!--//tab-pane-->
+                        <div class="tab-pane" id="feature-3">
+                            <h3 class="title sr-only">Automate</h3>                                    
+							<figure class="figure col-md-pull-1 col-sm-offset-0 col-xs-offset-0 col-xs-12 col-md-4">
+                                <img class="img-responsive" src="assets/images/background/automation-keyboard.jpg" alt="Don't be this guy!" />
+                                <figcaption class="figure-caption">Repair And Report On Network Problems With Ease</figcaption>
+                            </figure>
+                            <div class="desc text-left">
+                                <p>LogZilla's Event Automation mechanism provides pre-emptive healing techniques for repetitive tasks. Lorem Ipsum</p>
+                                <p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id nulla at libero ultricies tempus. Duis porta justo quam, ut ultrices felis posuere sit amet. Sed imperdiet bibendum est, sit amet sagittis ante sagittis eu. <a href="#">Integer fringilla</a> a purus sit amet laoreet. Ut consequat volutpat sapien sed lobortis. Nullam laoreet vitae justo nec dignissim. 
+                                </p>
+                                <blockquote>
+                                    <p>Viverra magna pellentesque in magnis gravida sit augue felis vehicula vestibulum semper penatibus justo ornare semper Gravida felis platea arcu mus non. Montes at posuere. Natoque.</p>
+                                </blockquote>
+                                
                             </div><!--//desc-->
                         </div><!--//tab-pane-->
                     </div><!--//tab-content-->

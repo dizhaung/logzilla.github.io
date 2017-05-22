@@ -87,6 +87,9 @@ head.load({ jsincludes: "/assets/js/jsincludes.js" },
         <!-- Blog CSS -->
         <link rel="stylesheet" href="/css/blog.css" type="text/css">
 
+        <!-- Lightbox CSS -->
+        <link rel="stylesheet" href="/assets/css/ekko-lightbox.min.css" type="text/css">
+
     </head>
 
 
@@ -150,7 +153,7 @@ head.ready("jquery", function() {
     </div><!--//blog-headline-bg-->
     <div class="blog-entry">                 
         <article class="post">
-            <header class="blog-entry-heading" style='background: url("/assets/images/blog/hieroglyphics.jpg") center no-repeat'>
+            <header class="blog-entry-heading" style='background: url("/assets/images/blog/post_images/syslog-essentials/hieroglyphics.jpg") center no-repeat'>
                 <div class="container text-center">                        
                     <h2 class="title">Syslog Essentials</h2>
                     <div class="meta">
@@ -161,15 +164,19 @@ head.ready("jquery", function() {
                     </div><!--meta-->
                 </div><!--//container-->
                 <nav class="post-nav post-nav-top">
-                    <span class="nav-previous"><a href="#" rel="prev"><i class="fa fa-long-arrow-left"></i>Previous post</a></span>
-                    <span class="nav-next"><a href="#" rel="next">Next post<i class="fa fa-long-arrow-right"></i></a></span>
+                    
+                    <a class="prev"></a>
+                    
+                    
+                    <span class="nav-next"><a href="/2017/05/16/downloads-to-dashboards-in-minutes.html" rel="next">Download to Dashboards (01 May 2017)<i class="fa fa-long-arrow-right"></i></a></span>
+                    
                 </nav><!--//post-nav-->
             </header><!--//blog-entry-heading-->
 
             <div class="container">
                 <div class="row">
                     <div class="blog-entry-content col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
-                        <p><img src="/assets/images/blog/post_images/syslog-essentials/lz-searchbar.png" alt="LogZilla Query Bar" /></p>
+                        <p><img src="/assets/images/blog/post_images/syslog-essentials/lz-searchbar.png" alt="LogZilla Query Bar" class="img-responsive img-fullscreen" /></p>
 
 <p>Most of us cannot remember a time before there was syslog.  I was introduced to Sun Solaris in 1998 while I was working for a internet software company.  If I had a nickel for every time I used <code class="highlighter-rouge">tail -f</code> on log files, I would be, well, writing this from a beach instead of my desk… </p>
 
@@ -219,7 +226,7 @@ The format of the syslog message should contain five distinct fields with the fo
   <li>The log source (such as a router) which generates the syslog message also specifies the severity of the message using single-digit integers 0–7.  Most networking devices will use log levels 0-6 with level 7 used for console troubleshooting. The codes are generally defined as:</li>
 </ul>
 
-<p><img src="/assets/images/blog/post_images/syslog-essentials/syslog-severities.png" alt="" /></p>
+<p><img src="/assets/images/blog/post_images/syslog-essentials/syslog-severities.png" alt="Syslog Severities" class="img-responsive img-fullscreen" /></p>
 
 <p><strong>Syslog Message Hostname</strong></p>
 
@@ -254,9 +261,13 @@ The format of the syslog message should contain five distinct fields with the fo
                     </div><!--//blog-entry-content-->
 
                     <nav class="post-nav col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
-                        <span class="nav-previous"><a href="#" rel="prev"><i class="fa fa-long-arrow-left"></i>Previous</a></span>
-                        <span class="nav-next"><a href="#" rel="next">Next<i class="fa fa-long-arrow-right"></i></a></span>
-                    </nav><!--//post-nav-->
+                    
+                    <a class="prev"></a>
+                    
+                    
+                    <span class="nav-next"><a href="/2017/05/16/downloads-to-dashboards-in-minutes.html" rel="next">Download to Dashboards (01 May 2017)<i class="fa fa-long-arrow-right"></i></a></span>
+                    
+                </nav><!--//post-nav-->
 
 
                 </div><!--//row-->

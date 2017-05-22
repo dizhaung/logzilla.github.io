@@ -10,11 +10,10 @@ tags: [Download, Dashboards]
 summary: LogZilla’s latest release includes dashboards for Cisco, Security, and Windows...
 
 img-position: right
-img: /assets/images/blog/download-to-dashboard.png
+img: /assets/images/figures/monitor-binary-blue.jpg
 
 ---
 
-![Cisco Network Dashboard](http://i.imgur.com/ASANkj6.png)
 
  Within minutes after installing and pointing your network and server events to the LogZilla server, you will have visibility into what is really going on in your environment. 
 
@@ -33,6 +32,8 @@ You can use these out of the box dashboards, customize them, or even build your 
 *   Cisco Security 
 *   Microsoft 
 *   General
+
+![Cisco Network Dashboard](/assets/images/blog/post_images/downloads-to-dashboards/cisco_network_dashboard.png){: .img-responsive .img-fullscreen }
 
 **The Cisco Dashboards Provide:**
 
@@ -70,7 +71,7 @@ You can use these out of the box dashboards, customize them, or even build your 
 *   Cisco Firewall event rate per second and day
 *   77 Patterns for Most Actionable Firewall Events (This widget contains 77 of Cisco's Most Actionable Firewall Events)
 
-  ![Cisco Security Dashboard](http://i.imgur.com/iLmEzs5.png)
+  ![Cisco Security Dashboard](/assets/images/blog/post_images/downloads-to-dashboards/cisco_security_dashboard.png){: .img-responsive .img-fullscreen  }
 
 **The Microsoft Dashboard Provides:**
 
@@ -90,7 +91,7 @@ You can use these out of the box dashboards, customize them, or even build your 
 *   Host file shares opened
 *   New network connection rate per hour
 
-  ![Microsoft Dashboard](http://i.imgur.com/WoJjQtv.png)
+  ![Microsoft Dashboard](/assets/images/blog/post_images/downloads-to-dashboards/microsoft_dashboard.png){: .img-responsive .img-fullscreen  }
 
 **The General Dashboard Provides:**
 
@@ -103,14 +104,14 @@ You can use these out of the box dashboards, customize them, or even build your 
 *   Non actionable event rate
 *   Most resent event sources
 
-![LogZilla-General](http://i.imgur.com/rZ6BA2E.png)
+![LogZilla-General](/assets/images/blog/post_images/downloads-to-dashboards/general_dashboard.png){: .img-responsive .img-fullscreen  }
 
 **All new installs of LogZilla already have these dashboards pre-installed.**
 
 
 # How can I get this awesomeness?
 
-![I Can Haz LogZilla?](https://cdn.meme.am/instances/150x150/45820.jpg)
+![I Can Haz LogZilla?](/assets/images/blog/post_images/downloads-to-dashboards/icanhaz.jpg){: .thumbnail }
 
 
 **Get started** [right here](http://bit.ly/1RGNwdv)!

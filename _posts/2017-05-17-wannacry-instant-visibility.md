@@ -10,7 +10,7 @@ tags: [Malware, Dashboards, Triggers]
 summary: LogZilla's Malware Detection capability is so easy that it will make you wannacry...
 
 img-position: left
-img: /assets/images/blog/hacker-silhouette.jpg
+img: /assets/images/figures/ransomware.jpg
 
 ---
 
@@ -23,18 +23,24 @@ img: /assets/images/blog/hacker-silhouette.jpg
 ##### WannaCry Dashboard
 Here is a screenshot of one of our dashboards filtered on these programs:
 
-![WannaCry](http://i.imgur.com/Rtx52os.png)
+**WannaCry Dashboard**
+![WannaCry](/assets/images/blog/post_images/wannacry/wannacry-dashboard.png){: .img-responsive .img-fullscreen }
+
+**Editing widgets for this data is equally as easy**
+![WannaCry](/assets/images/blog/post_images/wannacry/wannacry-widget-edit.png){: .img-responsive .img-fullscreen }
 
 ##### WannaCry Alerts
 Now that you have the data in LogZilla, alerts and automatic remediation are just as easy.  Here is an example trigger that will send a Slack message with information about the newly found malware infected host:
 
-![Trigger](http://i.imgur.com/Qe6HXUy.png)
+**WannaCry Trigger**
+![Trigger](/assets/images/blog/post_images/wannacry/wannacry-trigger-config.png){: .img-responsive .img-fullscreen }
 
 ##### Slack.com Alert
 
 Here is what the Slack message looks like when we receive it from LogZilla:
 
-![Imgur](http://i.imgur.com/9EAXQ9s.png)
+**WannaCry Slack Message**
+![WannaCry Slack Alert](/assets/images/blog/post_images/wannacry/wannacry-slack.png){: .img-responsive .img-fullscreen }
 
 **It is that easy** to identify and be alerted when malware like this manifests in your organization. 
 

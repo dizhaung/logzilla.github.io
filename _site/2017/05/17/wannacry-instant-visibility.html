@@ -87,6 +87,9 @@ head.load({ jsincludes: "/assets/js/jsincludes.js" },
         <!-- Blog CSS -->
         <link rel="stylesheet" href="/css/blog.css" type="text/css">
 
+        <!-- Lightbox CSS -->
+        <link rel="stylesheet" href="/assets/css/ekko-lightbox.min.css" type="text/css">
+
     </head>
 
 
@@ -150,7 +153,7 @@ head.ready("jquery", function() {
     </div><!--//blog-headline-bg-->
     <div class="blog-entry">                 
         <article class="post">
-            <header class="blog-entry-heading" style='background: url("/assets/images/blog/hacker-silhouette.jpg") center no-repeat'>
+            <header class="blog-entry-heading" style='background: url("/assets/images/figures/ransomware.jpg") center no-repeat'>
                 <div class="container text-center">                        
                     <h2 class="title">WannaCry?</h2>
                     <div class="meta">
@@ -161,8 +164,10 @@ head.ready("jquery", function() {
                     </div><!--meta-->
                 </div><!--//container-->
                 <nav class="post-nav post-nav-top">
-                    <span class="nav-previous"><a href="#" rel="prev"><i class="fa fa-long-arrow-left"></i>Previous post</a></span>
-                    <span class="nav-next"><a href="#" rel="next">Next post<i class="fa fa-long-arrow-right"></i></a></span>
+                    
+                    <span class="nav-previous"><a href="/2017/05/16/downloads-to-dashboards-in-minutes.html" rel="prev"><i class="fa fa-long-arrow-left"></i>Download to Dashboards (17 May 2017)</a></span>
+                    
+                    
                 </nav><!--//post-nav-->
             </header><!--//blog-entry-heading-->
 
@@ -178,18 +183,24 @@ head.ready("jquery", function() {
 <h5 id="wannacry-dashboard">WannaCry Dashboard</h5>
 <p>Here is a screenshot of one of our dashboards filtered on these programs:</p>
 
-<p><img src="http://i.imgur.com/Rtx52os.png" alt="WannaCry" /></p>
+<p><strong>WannaCry Dashboard</strong>
+<img src="/assets/images/blog/post_images/wannacry/wannacry-dashboard.png" alt="WannaCry" class="img-responsive img-fullscreen" /></p>
+
+<p><strong>Editing widgets for this data is equally as easy</strong>
+<img src="/assets/images/blog/post_images/wannacry/wannacry-widget-edit.png" alt="WannaCry" class="img-responsive img-fullscreen" /></p>
 
 <h5 id="wannacry-alerts">WannaCry Alerts</h5>
 <p>Now that you have the data in LogZilla, alerts and automatic remediation are just as easy.  Here is an example trigger that will send a Slack message with information about the newly found malware infected host:</p>
 
-<p><img src="http://i.imgur.com/Qe6HXUy.png" alt="Trigger" /></p>
+<p><strong>WannaCry Trigger</strong>
+<img src="/assets/images/blog/post_images/wannacry/wannacry-trigger-config.png" alt="Trigger" class="img-responsive img-fullscreen" /></p>
 
 <h5 id="slackcom-alert">Slack.com Alert</h5>
 
 <p>Here is what the Slack message looks like when we receive it from LogZilla:</p>
 
-<p><img src="http://i.imgur.com/9EAXQ9s.png" alt="Imgur" /></p>
+<p><strong>WannaCry Slack Message</strong>
+<img src="/assets/images/blog/post_images/wannacry/wannacry-slack.png" alt="WannaCry Slack Alert" class="img-responsive img-fullscreen" /></p>
 
 <p><strong>It is that easy</strong> to identify and be alerted when malware like this manifests in your organization.</p>
 
@@ -200,9 +211,11 @@ head.ready("jquery", function() {
                     </div><!--//blog-entry-content-->
 
                     <nav class="post-nav col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
-                        <span class="nav-previous"><a href="#" rel="prev"><i class="fa fa-long-arrow-left"></i>Previous</a></span>
-                        <span class="nav-next"><a href="#" rel="next">Next<i class="fa fa-long-arrow-right"></i></a></span>
-                    </nav><!--//post-nav-->
+                    
+                    <span class="nav-previous"><a href="/2017/05/16/downloads-to-dashboards-in-minutes.html" rel="prev"><i class="fa fa-long-arrow-left"></i>Download to Dashboards (17 May 2017)</a></span>
+                    
+                    
+                </nav><!--//post-nav-->
 
 
                 </div><!--//row-->

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="www.logzilla.net/feed.xml" rel="self" type="application/atom+xml" /><link href="www.logzilla.net/" rel="alternate" type="text/html" /><updated>2017-05-22T10:32:27-04:00</updated><id>www.logzilla.net/</id><title type="html">LogZilla NetOps Platform</title><subtitle>LogZilla is the leader in delivering real-time insight with an intelligent network operations platform.</subtitle><entry><title type="html">WannaCry?</title><link href="www.logzilla.net/2017/05/17/wannacry-instant-visibility.html" rel="alternate" type="text/html" title="WannaCry?" /><published>2017-05-17T00:00:00-04:00</published><updated>2017-05-17T00:00:00-04:00</updated><id>www.logzilla.net/2017/05/17/wannacry-instant-visibility</id><content type="html" xml:base="www.logzilla.net/2017/05/17/wannacry-instant-visibility.html">&lt;p&gt;If you are in the free speaking world and have access to news outlets, you’ve no doubt heard about the WannaCry ransomware attack targeting systems all over the world.  The estimates are that over a quarter of a million computers have been compromised spanning more than 150 countries.  If you have anything to do with the operations and engineering of your company’s infrastructure, you probably started wondering if WannaCry had made it’s way into your piece of the universe.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="www.logzilla.net/feed.xml" rel="self" type="application/atom+xml" /><link href="www.logzilla.net/" rel="alternate" type="text/html" /><updated>2017-05-22T17:22:17-04:00</updated><id>www.logzilla.net/</id><title type="html">LogZilla NetOps Platform</title><subtitle>LogZilla is the leader in delivering real-time insight with an intelligent network operations platform.</subtitle><entry><title type="html">WannaCry?</title><link href="www.logzilla.net/2017/05/17/wannacry-instant-visibility.html" rel="alternate" type="text/html" title="WannaCry?" /><published>2017-05-17T00:00:00-04:00</published><updated>2017-05-17T00:00:00-04:00</updated><id>www.logzilla.net/2017/05/17/wannacry-instant-visibility</id><content type="html" xml:base="www.logzilla.net/2017/05/17/wannacry-instant-visibility.html">&lt;p&gt;If you are in the free speaking world and have access to news outlets, you’ve no doubt heard about the WannaCry ransomware attack targeting systems all over the world.  The estimates are that over a quarter of a million computers have been compromised spanning more than 150 countries.  If you have anything to do with the operations and engineering of your company’s infrastructure, you probably started wondering if WannaCry had made it’s way into your piece of the universe.&lt;/p&gt;
 
 &lt;p&gt;An easy way to get visibility into the WannaCry malware in your environment is to install LogZilla and use the pre-built rules from our &lt;a href=&quot;http://bit.ly/2qumD4C&quot;&gt;LogZilla Extras GitHub&lt;/a&gt; repository.&lt;/p&gt;
 
@@ -7,26 +7,30 @@
 &lt;h5 id=&quot;wannacry-dashboard&quot;&gt;WannaCry Dashboard&lt;/h5&gt;
 &lt;p&gt;Here is a screenshot of one of our dashboards filtered on these programs:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/Rtx52os.png&quot; alt=&quot;WannaCry&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;WannaCry Dashboard&lt;/strong&gt;
+&lt;img src=&quot;/assets/images/blog/post_images/wannacry/wannacry-dashboard.png&quot; alt=&quot;WannaCry&quot; class=&quot;img-responsive img-fullscreen&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Editing widgets for this data is equally as easy&lt;/strong&gt;
+&lt;img src=&quot;/assets/images/blog/post_images/wannacry/wannacry-widget-edit.png&quot; alt=&quot;WannaCry&quot; class=&quot;img-responsive img-fullscreen&quot; /&gt;&lt;/p&gt;
 
 &lt;h5 id=&quot;wannacry-alerts&quot;&gt;WannaCry Alerts&lt;/h5&gt;
 &lt;p&gt;Now that you have the data in LogZilla, alerts and automatic remediation are just as easy.  Here is an example trigger that will send a Slack message with information about the newly found malware infected host:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/Qe6HXUy.png&quot; alt=&quot;Trigger&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;WannaCry Trigger&lt;/strong&gt;
+&lt;img src=&quot;/assets/images/blog/post_images/wannacry/wannacry-trigger-config.png&quot; alt=&quot;Trigger&quot; class=&quot;img-responsive img-fullscreen&quot; /&gt;&lt;/p&gt;
 
 &lt;h5 id=&quot;slackcom-alert&quot;&gt;Slack.com Alert&lt;/h5&gt;
 
 &lt;p&gt;Here is what the Slack message looks like when we receive it from LogZilla:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/9EAXQ9s.png&quot; alt=&quot;Imgur&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;WannaCry Slack Message&lt;/strong&gt;
+&lt;img src=&quot;/assets/images/blog/post_images/wannacry/wannacry-slack.png&quot; alt=&quot;WannaCry Slack Alert&quot; class=&quot;img-responsive img-fullscreen&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;It is that easy&lt;/strong&gt; to identify and be alerted when malware like this manifests in your organization.&lt;/p&gt;
 
 &lt;p&gt;Having a LogZilla NetOps management platform will provide you with incredible visibility and insight, in real-time, to what’s happening in your environment, right now. If you would like to learn more about how LogZilla can make your team more proactive and how you can look like a Network Hero, reach out to me at mwheat@logzilla.net and we’ll tell you how to install LogZilla in just a few minutes!&lt;/p&gt;
 
-&lt;p&gt;Mark&lt;/p&gt;</content><author><name>markwheat1</name></author><category term="Malware" /><category term="Dashboards" /><category term="Triggers" /><summary type="html">If you are in the free speaking world and have access to news outlets, you’ve no doubt heard about the WannaCry ransomware attack targeting systems all over the world. The estimates are that over a quarter of a million computers have been compromised spanning more than 150 countries. If you have anything to do with the operations and engineering of your company’s infrastructure, you probably started wondering if WannaCry had made it’s way into your piece of the universe.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="www.logzilla.net/assets/images/default-card.png" /></entry><entry><title type="html">Download to Dashboards</title><link href="www.logzilla.net/2017/05/16/downloads-to-dashboards-in-minutes.html" rel="alternate" type="text/html" title="Download to Dashboards" /><published>2017-05-16T00:00:00-04:00</published><updated>2017-05-16T00:00:00-04:00</updated><id>www.logzilla.net/2017/05/16/downloads-to-dashboards-in-minutes</id><content type="html" xml:base="www.logzilla.net/2017/05/16/downloads-to-dashboards-in-minutes.html">&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/ASANkj6.png&quot; alt=&quot;Cisco Network Dashboard&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Within minutes after installing and pointing your network and server events to the LogZilla server, you will have visibility into what is really going on in your environment. &lt;/p&gt;
+&lt;p&gt;Mark&lt;/p&gt;</content><author><name>markwheat1</name></author><category term="Malware" /><category term="Dashboards" /><category term="Triggers" /><summary type="html">If you are in the free speaking world and have access to news outlets, you’ve no doubt heard about the WannaCry ransomware attack targeting systems all over the world. The estimates are that over a quarter of a million computers have been compromised spanning more than 150 countries. If you have anything to do with the operations and engineering of your company’s infrastructure, you probably started wondering if WannaCry had made it’s way into your piece of the universe.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="www.logzilla.net/assets/images/default-card.png" /></entry><entry><title type="html">Download to Dashboards</title><link href="www.logzilla.net/2017/05/16/downloads-to-dashboards-in-minutes.html" rel="alternate" type="text/html" title="Download to Dashboards" /><published>2017-05-16T00:00:00-04:00</published><updated>2017-05-16T00:00:00-04:00</updated><id>www.logzilla.net/2017/05/16/downloads-to-dashboards-in-minutes</id><content type="html" xml:base="www.logzilla.net/2017/05/16/downloads-to-dashboards-in-minutes.html">&lt;p&gt;Within minutes after installing and pointing your network and server events to the LogZilla server, you will have visibility into what is really going on in your environment. &lt;/p&gt;
 
 &lt;p&gt; Have you ever considered what your job would be like if you could look at one interface to see the data from entires infrastructure…in real-time? &lt;/p&gt;
 
@@ -45,6 +49,8 @@
   &lt;li&gt;Microsoft &lt;/li&gt;
   &lt;li&gt;General&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/post_images/downloads-to-dashboards/cisco_network_dashboard.png&quot; alt=&quot;Cisco Network Dashboard&quot; class=&quot;img-responsive img-fullscreen&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;The Cisco Dashboards Provide:&lt;/strong&gt;&lt;/p&gt;
 
@@ -84,7 +90,7 @@
   &lt;li&gt;77 Patterns for Most Actionable Firewall Events (This widget contains 77 of Cisco’s Most Actionable Firewall Events)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;  &lt;img src=&quot;http://i.imgur.com/iLmEzs5.png&quot; alt=&quot;Cisco Security Dashboard&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;  &lt;img src=&quot;/assets/images/blog/post_images/downloads-to-dashboards/cisco_security_dashboard.png&quot; alt=&quot;Cisco Security Dashboard&quot; class=&quot;img-responsive img-fullscreen&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;The Microsoft Dashboard Provides:&lt;/strong&gt;&lt;/p&gt;
 
@@ -106,7 +112,7 @@
   &lt;li&gt;New network connection rate per hour&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;  &lt;img src=&quot;http://i.imgur.com/WoJjQtv.png&quot; alt=&quot;Microsoft Dashboard&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;  &lt;img src=&quot;/assets/images/blog/post_images/downloads-to-dashboards/microsoft_dashboard.png&quot; alt=&quot;Microsoft Dashboard&quot; class=&quot;img-responsive img-fullscreen&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;The General Dashboard Provides:&lt;/strong&gt;&lt;/p&gt;
 
@@ -121,13 +127,13 @@
   &lt;li&gt;Most resent event sources&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/rZ6BA2E.png&quot; alt=&quot;LogZilla-General&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/post_images/downloads-to-dashboards/general_dashboard.png&quot; alt=&quot;LogZilla-General&quot; class=&quot;img-responsive img-fullscreen&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;All new installs of LogZilla already have these dashboards pre-installed.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;how-can-i-get-this-awesomeness&quot;&gt;How can I get this awesomeness?&lt;/h1&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn.meme.am/instances/150x150/45820.jpg&quot; alt=&quot;I Can Haz LogZilla?&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/post_images/downloads-to-dashboards/icanhaz.jpg&quot; alt=&quot;I Can Haz LogZilla?&quot; class=&quot;thumbnail&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Get started&lt;/strong&gt; &lt;a href=&quot;http://bit.ly/1RGNwdv&quot;&gt;right here&lt;/a&gt;!&lt;/p&gt;
 
@@ -139,7 +145,7 @@
 
 &lt;h1 id=&quot;about-logzilla&quot;&gt;About LogZilla&lt;/h1&gt;
 
-&lt;p&gt;LogZilla is the leader in delivering real-time network insights with an intelligent network operations platform.  Our unique technology offers data enrichment, automation and simplicity for network teams to identify network challenges easily and solve them within minutes saving you time, money, and headaches while enabling the network to run like a well-oiled machine.&lt;/p&gt;</content><author><name>markwheat1</name></author><category term="Download" /><category term="Dashboards" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="www.logzilla.net/assets/images/default-card.png" /></entry><entry><title type="html">Syslog Essentials</title><link href="www.logzilla.net/2017/05/01/syslog-essentials.html" rel="alternate" type="text/html" title="Syslog Essentials" /><published>2017-05-01T00:00:00-04:00</published><updated>2017-05-01T00:00:00-04:00</updated><id>www.logzilla.net/2017/05/01/syslog-essentials</id><content type="html" xml:base="www.logzilla.net/2017/05/01/syslog-essentials.html">&lt;p&gt;&lt;img src=&quot;/assets/images/blog/post_images/syslog-essentials/lz-searchbar.png&quot; alt=&quot;LogZilla Query Bar&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;LogZilla is the leader in delivering real-time network insights with an intelligent network operations platform.  Our unique technology offers data enrichment, automation and simplicity for network teams to identify network challenges easily and solve them within minutes saving you time, money, and headaches while enabling the network to run like a well-oiled machine.&lt;/p&gt;</content><author><name>markwheat1</name></author><category term="Download" /><category term="Dashboards" /><summary type="html">Within minutes after installing and pointing your network and server events to the LogZilla server, you will have visibility into what is really going on in your environment. </summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="www.logzilla.net/assets/images/default-card.png" /></entry><entry><title type="html">Syslog Essentials</title><link href="www.logzilla.net/2017/05/01/syslog-essentials.html" rel="alternate" type="text/html" title="Syslog Essentials" /><published>2017-05-01T00:00:00-04:00</published><updated>2017-05-01T00:00:00-04:00</updated><id>www.logzilla.net/2017/05/01/syslog-essentials</id><content type="html" xml:base="www.logzilla.net/2017/05/01/syslog-essentials.html">&lt;p&gt;&lt;img src=&quot;/assets/images/blog/post_images/syslog-essentials/lz-searchbar.png&quot; alt=&quot;LogZilla Query Bar&quot; class=&quot;img-responsive img-fullscreen&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Most of us cannot remember a time before there was syslog.  I was introduced to Sun Solaris in 1998 while I was working for a internet software company.  If I had a nickel for every time I used &lt;code class=&quot;highlighter-rouge&quot;&gt;tail -f&lt;/code&gt; on log files, I would be, well, writing this from a beach instead of my desk… &lt;/p&gt;
 
@@ -189,7 +195,7 @@ The format of the syslog message should contain five distinct fields with the fo
   &lt;li&gt;The log source (such as a router) which generates the syslog message also specifies the severity of the message using single-digit integers 0–7.  Most networking devices will use log levels 0-6 with level 7 used for console troubleshooting. The codes are generally defined as:&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/post_images/syslog-essentials/syslog-severities.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/post_images/syslog-essentials/syslog-severities.png&quot; alt=&quot;Syslog Severities&quot; class=&quot;img-responsive img-fullscreen&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Syslog Message Hostname&lt;/strong&gt;&lt;/p&gt;
 

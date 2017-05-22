@@ -11,6 +11,8 @@ head.load(
         { fitvids: "/assets/plugins/FitVids/jquery.fitvids.js" }, 
         { flexslider: "/assets/plugins/flexslider/jquery.flexslider-min.js" }, 
         { main: "/assets/js/main.js" },
+        { lightbox: "/assets/js/ekko-lightbox.min.js" },
+        { imgFullScreen: "/assets/js/image-fullscreen.js" },
         function() {
             //console.log("JS Loaded");
 });
