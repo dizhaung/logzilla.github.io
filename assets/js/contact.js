@@ -20,7 +20,7 @@ $(document).ready(function() {
         if(validate()) {
             $.ajax({
                 type: "POST",
-                url: "http://dev.logzilla.net/mailer.php",
+                url: "https://post.logzilla.net/mailer.php",
                 data: form.serialize(),
                 dataType: "json"
             }).done(function(data) {
