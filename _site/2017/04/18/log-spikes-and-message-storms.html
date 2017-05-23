@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>LogZilla NetOps Platform - Network Event Remediation in real-time</title>
+        <title>LogZilla NetOps Platform - Log Spikes and Message Storms</title>
 
         <!-- Start: Head, Meta, CSS -->
         <link rel="shortcut icon" href="/assets/images/favicon/logzilla.ico?v=2.0">
@@ -161,9 +161,9 @@ head.ready("jquery", function() {
     </div><!--//blog-headline-bg-->
     <div class="blog-entry">                 
         <article class="post">
-            <header class="blog-entry-heading" style='background: url("/assets/images/background/robot-handshake.png")'>
+            <header class="blog-entry-heading" style='background: url("/assets/images/blog/post_images/message-storm/storm-banner.jpg")'>
                 <div class="container text-center">                        
-                    <h2 class="title">Network Event Remediation in real-time</h2>
+                    <h2 class="title">Log Spikes and Message Storms</h2>
                     <div class="meta">
                         <ul class="meta-list list-inline">                                       
                             <li class="post-author"><a href="http://twitter.com/markwheat1" target=_new>Mark Wheat</a>,</li>
@@ -173,10 +173,10 @@ head.ready("jquery", function() {
                 </div><!--//container-->
                 <nav class="post-nav post-nav-top">
                     
-                    <span class="nav-previous"><a href="/2017/04/18/log-spikes-and-message-storms.html" rel="prev"><i class="fa fa-long-arrow-left"></i>Log Spikes and Message Storms (18 April 2017)</a></span>
+                    <a class="prev"></a>
                     
                     
-                    <span class="nav-next"><a href="/2017/04/27/real-time-streaming-of-you-network-logs.html" rel="next">Real-time Network Telemetry Streaming (18 April 2017)<i class="fa fa-long-arrow-right"></i></a></span>
+                    <span class="nav-next"><a href="/2017/04/18/network-event-remediation-in-real-time.html" rel="next">Network Event Remediation in real-time (18 April 2017)<i class="fa fa-long-arrow-right"></i></a></span>
                     
                 </nav><!--//post-nav-->
             </header><!--//blog-entry-heading-->
@@ -184,34 +184,37 @@ head.ready("jquery", function() {
             <div class="container">
                 <div class="row">
                     <div class="blog-entry-content col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
-                        <p>Sometimes there are things that are just too cool not to share. We were working with a (future) customer earlier in the week and they were telling us that they have a large and complex environment that was always changing. They spend a lot of engineering time on network issues with problem identification and resolution and provided us with a use case where the engineer had to look for the problems, identify the source, login to a switch to make a configuration change then document what had happened.</p>
+                        <p>Earlier this week one of our customers had a log storm due to a problem with a production server. They were able to quickly identify there was anomalistic behavior by looking at the event rate widget and easily identified what the source of the problem was through the top hosts widget. I took a screen shot of their LogZilla dashboard:</p>
 
-<p>One of their most senior engineers can work through the process in about 30 minutes; it takes the junior guys anywhere between 3 hours and 1 day. The example event they gave us happens about 5 times a month, or 60 times a year. That is up to <strong>60 days of problem identification and remediation for a skilled network engineer</strong>. Here is a review of what they were doing:</p>
+<p><strong>Dashboard showing spikes</strong></p>
 
-<ul>
-  <li>Config change or new device added to the network causes problems</li>
-  <li>Problem identification</li>
-  <li>Research to find the offending switch</li>
-  <li>Login to switch and make configuration change</li>
-  <li>Document incident</li>
-</ul>
+<p><img src="/assets/images/blog/post_images/message-storm/dashboard-event-storm.png" alt="Event Storm Spikes" class="img-responsive img-fullscreen" /></p>
 
-<p>LogZilla to the rescue! In a few minutes, we were able to craft a trigger for them that would automatically identify the Cisco event that indicates a problem, login to the offending switch, run a command to parse the output and POST it in a Slack channel. The entire process from identification to post in the Slack channel <strong>took less than 1 second</strong>.</p>
+<p>You can adjust the rate widgets to get more myopic or macro based on the time series you prefer but when you see something spike above the norm, it is an indication that there are issues in your environment. Looking at the top host logging during that time will also help pinpoint the source of the issue, this was the actual problem graphic:</p>
 
-<p>I <a href="https://youtu.be/eibkn8DN6Tg">recorded the demo</a> so you can see how cool it is. This is not the end solution but it shows the an example of each step of the process required to automate the remediation of one of their problems. LogZilla will save them up to 60 engineering days per year, and doing this in real-time removes the downtime that accumulates while the problem is in the environment. The intangable benefits could be even larger than the engineering savings.</p>
+<p><img src="/assets/images/blog/post_images/message-storm/top-hosts-message-storm.png" alt="Top Hosts Widget" class="img-responsive img-fullscreen" /></p>
 
-<p>This is a great example of moving from reactive to proactive, solving a problem and automating the tribal knowledge of your best people. LogZilla has a proven methodology for reducing the events to only those that are actionable, then automating their remediation.</p>
+<p>The interesting thing with this particular scenario was that the logging rate bumped from about <strong>2,000</strong> messages per second to <strong>well over 25,000 messages per second</strong> and sustained that rate for almost a day.</p>
 
-<p>We would love to help you become more proactive. To find out more, feel free to <a href="http://twitter.com/markwheat1">contact me</a></p>
+<p>Most other logging tools start to fail over with anything more than 7,000 events per second per server, where LogZilla’s patented engine can accommodate well over <strong>80,000</strong> events per second on one server. If the customer has another solution, it would have required (4) four servers to handle the spike. In this case, the customer received a licensing warning, called us, and we provided a temporary increase to figure out what was going on.</p>
+
+<p>Our single server handled the load without even breaking a sweat, never dropped a message, and had no performance degradation while the event storm was happening.</p>
+
+<p>What if you were using a less scalable tool and you had the same scenario, but now, in addition to figuring out what is wrong in your production environment, also have to repair your logging server? With other solutions, when you need them the most, they just can’t keep up!</p>
+
+<p>LogZilla also provides automations that could have automatically alerted the team responsible and even resolved the issue with no physical intervention. We are taking the lowest level indicator of health and performance and making it a front line management tool.</p>
+
+<p>If you’re interested in learning more about LogZilla, feel free to <a href="http://twitter.com/markwheat1">contact me</a></p>
+
 
                     </div><!--//blog-entry-content-->
 
                     <nav class="post-nav col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
                     
-                    <span class="nav-previous"><a href="/2017/04/18/log-spikes-and-message-storms.html" rel="prev"><i class="fa fa-long-arrow-left"></i>Log Spikes and Message Storms (18 April 2017)</a></span>
+                    <a class="prev"></a>
                     
                     
-                    <span class="nav-next"><a href="/2017/04/27/real-time-streaming-of-you-network-logs.html" rel="next">Real-time Network Telemetry Streaming (18 April 2017)<i class="fa fa-long-arrow-right"></i></a></span>
+                    <span class="nav-next"><a href="/2017/04/18/network-event-remediation-in-real-time.html" rel="next">Network Event Remediation in real-time (18 April 2017)<i class="fa fa-long-arrow-right"></i></a></span>
                     
                 </nav><!--//post-nav-->
 
@@ -306,14 +309,14 @@ head.ready("jquery", function() {
 
     </body>
     <!-- Begin Jekyll SEO tag v2.2.3 -->
-<title>Network Event Remediation in real-time | LogZilla NetOps Platform</title>
-<meta property="og:title" content="Network Event Remediation in real-time" />
+<title>Log Spikes and Message Storms | LogZilla NetOps Platform</title>
+<meta property="og:title" content="Log Spikes and Message Storms" />
 <meta name="author" content="markwheat1" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Sometimes there are things that are just too cool not to share. We were working with a (future) customer earlier in the week and they were telling us that they have a large and complex environment that was always changing. They spend a lot of engineering time on network issues with problem identification and resolution and provided us with a use case where the engineer had to look for the problems, identify the source, login to a switch to make a configuration change then document what had happened." />
-<meta property="og:description" content="Sometimes there are things that are just too cool not to share. We were working with a (future) customer earlier in the week and they were telling us that they have a large and complex environment that was always changing. They spend a lot of engineering time on network issues with problem identification and resolution and provided us with a use case where the engineer had to look for the problems, identify the source, login to a switch to make a configuration change then document what had happened." />
-<link rel="canonical" href="http://localhost:4000/2017/04/18/network-event-remediation-in-real-time.html" />
-<meta property="og:url" content="http://localhost:4000/2017/04/18/network-event-remediation-in-real-time.html" />
+<meta name="description" content="Earlier this week one of our customers had a log storm due to a problem with a production server. They were able to quickly identify there was anomalistic behavior by looking at the event rate widget and easily identified what the source of the problem was through the top hosts widget. I took a screen shot of their LogZilla dashboard:" />
+<meta property="og:description" content="Earlier this week one of our customers had a log storm due to a problem with a production server. They were able to quickly identify there was anomalistic behavior by looking at the event rate widget and easily identified what the source of the problem was through the top hosts widget. I took a screen shot of their LogZilla dashboard:" />
+<link rel="canonical" href="http://localhost:4000/2017/04/18/log-spikes-and-message-storms.html" />
+<meta property="og:url" content="http://localhost:4000/2017/04/18/log-spikes-and-message-storms.html" />
 <meta property="og:site_name" content="LogZilla NetOps Platform" />
 <meta property="og:image" content="http://localhost:4000/assets/images/default-card.png" />
 <meta property="og:type" content="article" />
@@ -323,7 +326,7 @@ head.ready("jquery", function() {
 <meta name="twitter:creator" content="@markwheat1" />
 <meta property="article:publisher" content="logzilla" />
 <script type="application/ld+json">
-{"@context":"http://schema.org","@type":"BlogPosting","headline":"Network Event Remediation in real-time","author":{"@type":"Person","name":"markwheat1"},"image":"http://localhost:4000/assets/images/default-card.png","datePublished":"2017-04-18T00:00:00-04:00","dateModified":"2017-04-18T00:00:00-04:00","description":"Sometimes there are things that are just too cool not to share. We were working with a (future) customer earlier in the week and they were telling us that they have a large and complex environment that was always changing. They spend a lot of engineering time on network issues with problem identification and resolution and provided us with a use case where the engineer had to look for the problems, identify the source, login to a switch to make a configuration change then document what had happened.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logos/logzilla/logzilla-logo-small.png"},"name":"markwheat1"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2017/04/18/network-event-remediation-in-real-time.html"},"url":"http://localhost:4000/2017/04/18/network-event-remediation-in-real-time.html"}</script>
+{"@context":"http://schema.org","@type":"BlogPosting","headline":"Log Spikes and Message Storms","author":{"@type":"Person","name":"markwheat1"},"image":"http://localhost:4000/assets/images/default-card.png","datePublished":"2017-04-18T00:00:00-04:00","dateModified":"2017-04-18T00:00:00-04:00","description":"Earlier this week one of our customers had a log storm due to a problem with a production server. They were able to quickly identify there was anomalistic behavior by looking at the event rate widget and easily identified what the source of the problem was through the top hosts widget. I took a screen shot of their LogZilla dashboard:","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logos/logzilla/logzilla-logo-small.png"},"name":"markwheat1"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2017/04/18/log-spikes-and-message-storms.html"},"url":"http://localhost:4000/2017/04/18/log-spikes-and-message-storms.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 </html>

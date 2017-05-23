@@ -79,3 +79,4 @@ The mnemonic is a device-specific code that uniquely identifies the message such
 
  This should be enough information to help you understand those somewhat cryptic log messages now. Hopefully, you can see how important it is to have search options like the first image displayed in this post, to quickly and easily get the most out of your log data. Having a LogZilla NetOps management platform will provide you with incredible visibility and insight, in real-time, to what is happening in your environment, right now. If you would like to learn more about how LogZilla can make your team more proactive and how you can look like a Network Hero, reach out to me and we will be happy to get you started!
 
+ We would love to help you become more proactive. To find out more, feel free to [contact me](http://twitter.com/{{ page.author }})

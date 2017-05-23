@@ -120,9 +120,4 @@ You can use these out of the box dashboards, customize them, or even build your 
 
  Having a LogZilla NetOps management platform will provide you with incredible visibility and insight, in real-time, to what is happening in your environment. 
 
- If you would like to learn more about how LogZilla can make your team more proactive and how you can be the Network Hero, [reach out to me](mailto:mwheat@logzilla.net) and we will show you the way.  
-
-
-# About LogZilla
-
-LogZilla is the leader in delivering real-time network insights with an intelligent network operations platform.  Our unique technology offers data enrichment, automation and simplicity for network teams to identify network challenges easily and solve them within minutes saving you time, money, and headaches while enabling the network to run like a well-oiled machine.
+ We would love to help you be the hero in your company. To find out more, feel free to [contact me](http://twitter.com/{{ page.author }})

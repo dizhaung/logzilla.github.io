@@ -438,7 +438,7 @@ select {
   top: 0;
   left: 0;
   height: 500px;
-  background: #253340 url('/assets/images/background/bg-header-small-1.jpg') no-repeat 50% top;
+  background: #253340 url('/assets/images/background/network-visibility.jpg') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -454,7 +454,7 @@ select {
   background-image: url('/assets/images/background/bg-header-small-4.jpg');
 }
 .headline-bg.blog-headline-bg{
-  background-image: url('/assets/images/background/network-visibility.jpg');
+  background-image: url('/assets/images/background/bg-header-small-1.jpg');
 }
 .headline-bg.ciscolive-headline-bg {
   background-image: url('/assets/images/ciscolive/cisco-live-us-wos-gradient-2048x932.jpg');
@@ -1553,7 +1553,7 @@ select {
   margin-bottom: 60px;
   position: relative;
   height: 500px;
-  background: #253340 url('/assets/images/blog/post-2.jpg') no-repeat 50% top;
+  background: #253340 url('') center no-repeat 100% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
