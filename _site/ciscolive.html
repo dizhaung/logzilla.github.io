@@ -87,9 +87,6 @@ head.load({ jsincludes: "/assets/js/jsincludes.js" },
         <!-- Blog CSS -->
         <link rel="stylesheet" href="/css/blog.css" type="text/css">
 
-        <!-- Lightbox CSS -->
-        <link rel="stylesheet" href="/assets/css/ekko-lightbox.min.css" type="text/css">
-
         <!-- Hotjar Tracking Code for https://logzilla.github.io -->
         <script>
             (function(h,o,t,j,a,r){
@@ -256,7 +253,18 @@ head.ready("jquery", function() {
 
 
         <!-- Orig: End-->
-
+        <!-- End: Image expand -->
+        <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" data-dismiss="modal" style="width: 90%;">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <img src="" class="imagepreview">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End: Image expand -->
         <!-- ******FOOTER****** --> 
         <footer class="footer">
             <div class="footer-content">

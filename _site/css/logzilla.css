@@ -3214,4 +3214,10 @@ select {
     position: fixed;
   }
 }
+.imagepreview { 
+    position: relative;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
 /* Large devices (large desktops, 1200px and up) */

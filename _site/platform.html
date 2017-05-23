@@ -87,9 +87,6 @@ head.load({ jsincludes: "/assets/js/jsincludes.js" },
         <!-- Blog CSS -->
         <link rel="stylesheet" href="/css/blog.css" type="text/css">
 
-        <!-- Lightbox CSS -->
-        <link rel="stylesheet" href="/assets/css/ekko-lightbox.min.css" type="text/css">
-
         <!-- Hotjar Tracking Code for https://logzilla.github.io -->
         <script>
             (function(h,o,t,j,a,r){
@@ -197,15 +194,15 @@ head.ready("jquery", function() {
                     <div class="tab-content">
                         <div class="tab-pane fade in active" id="feature-1">
                             <h3 class="title sr-only">Instant Visibility</h3>
-							<figure class="figure col-md-pull-1 col-sm-offset-0 col-xs-offset-0 col-xs-12 col-md-4">
+                            <figure class="figure col-md-pull-1 col-sm-offset-0 col-xs-offset-0 col-xs-12 col-md-4">
                                 <img class="img-responsive img-fullscreen" src="/assets/images/blog/post_images/downloads-to-dashboards/general_dashboard.png" alt="Dashboard Example" />
                                 <figcaption class="figure-caption">Use our pre-built Dashboards or Create your own in minutes</p>
                             </figure>
                             <div class="desc text-left">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue leo mauris, a fringilla nisi posuere tincidunt. Aliquam elementum lorem eget sollicitudin suscipit.</p>
+                                <p>The LogZilla NetOps Platform includes pre-built dashboards which can be customized in just a few clicks. LogZilla installs in just a few minutes using a single command, and immediately provides real-time visibility into your network and server environment.</p>
+                                <p>Adding your own dashboards is equally as easy. No more two-week training classes needed to build your own dashboards. With LogZilla, you can build your own custom Dashboards in less than 10 minutes!   <a href="" class="play-trigger" data-toggle="modal" data-target="#modal-video" data-theVideo="https://www.youtube.com/embed/LVEfgvYLPGM">  <i class="fa fa-youtube-play"></i></a>. You may also download any of our <span class="highlight">FREE</span>, ever-growing, list of dashboards from our <a href="https://github.com/logzilla/extras">GitHub page</a>.
                                 
-                                <p>Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. </p>
-                                
+                                <!-- table sample 
                                 <div class="table-responsive">  
                                     <table class="table table-striped">
                                         <thead>
@@ -237,7 +234,8 @@ head.ready("jquery", function() {
                                             </tr>
                                         </tbody>
                                     </table>
-                                </div><!--//table-responsive-->
+                                </div>
+                                -->
                             </div><!--//desc-->                                    
                         </div><!--//tab-pane-->
                         <div class="tab-pane" id="feature-2">
@@ -326,13 +324,52 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id nulla at libero
             
         </div><!--//container-->        
     </section><!--//steps-->
+<!-- Video Modal -->
+<div class="modal modal-video" id="modal-video" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 id="videoModalLabel" class="modal-title sr-only">Video Tour</h4>
+            </div>
+            <div class="modal-body">
+                <div class="video-container">
+                    <!--<iframe id="video" src="//player.vimeo.com/video/216230107?color=ffffff&amp;wmode=transparent" width="720" height="405" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
+                    <iframe width="800" height="605" src="https://www.youtube.com/embed/LVEfgvYLPGM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+                </div><!--//video-container-->
+            </div><!--//modal-body-->
+        </div><!--//modal-content-->
+    </div><!--//modal-dialog-->
+</div><!--//modal-->
+
+<!-- Start: Page Specific JS Loads -->
+<script>
+// Make sure jQuery is loaded before loading the Vimeo JS
+head.ready("jquery", function() {
+    head.load(
+            { youtube: "/assets/js/youtube.js"},
+            function() {
+                //console.log("Vimeo JS Loaded");
+            });
+});
+</script>
 <!-- END: Page Specific JS Loads -->
 </body>
-</html> 
 
 
         <!-- Orig: End-->
-
+        <!-- End: Image expand -->
+        <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" data-dismiss="modal" style="width: 90%;">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <img src="" class="imagepreview">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End: Image expand -->
         <!-- ******FOOTER****** --> 
         <footer class="footer">
             <div class="footer-content">

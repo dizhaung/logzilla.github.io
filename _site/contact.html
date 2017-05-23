@@ -87,9 +87,6 @@ head.load({ jsincludes: "/assets/js/jsincludes.js" },
         <!-- Blog CSS -->
         <link rel="stylesheet" href="/css/blog.css" type="text/css">
 
-        <!-- Lightbox CSS -->
-        <link rel="stylesheet" href="/assets/css/ekko-lightbox.min.css" type="text/css">
-
         <!-- Hotjar Tracking Code for https://logzilla.github.io -->
         <script>
             (function(h,o,t,j,a,r){
@@ -242,7 +239,7 @@ head.ready("jquery", function() {
                         <li><i class="fa fa-envelope-o"></i><a href="#">sales@logzilla.net</a></li>
                         <li><i class="fa fa-twitter"></i><a href="https://twitter.com/logzilla" target="_blank">@logzilla</a></li>
                         <li><i class="fa fa-phone"></i><a href="tel:9364638677">936-4NetOps (463-8677)</a></li>
-                        <li><i class="fa fa-map-marker"></i>LogZilla Corporation<br />2900 N. Quinlan Park Rd<br /> Austin, TX, 78732<br /><br /></li>
+                        <li><i class="fa fa-map-marker"></i>LogZilla Corporation<br />2900 N. Quinlan Park Rd, B240-341<br /> Austin, TX, 78732<br /><br /></li>
                     </ul>
                 </div><!--//row-->
             </div><!--//container-->
@@ -281,7 +278,18 @@ head.ready("jquery", function() {
 
 
         <!-- Orig: End-->
-
+        <!-- End: Image expand -->
+        <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" data-dismiss="modal" style="width: 90%;">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <img src="" class="imagepreview">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End: Image expand -->
         <!-- ******FOOTER****** --> 
         <footer class="footer">
             <div class="footer-content">
