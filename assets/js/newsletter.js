@@ -1,10 +1,11 @@
 $(document).ready(function() {
+    console.log("newsletter signup");
     var form = $('#signup-form');
     name = "signup-user";
     email = $('#nl-email');
     message = "Please add me to your mailing list";
-    company = "";
-    phone = "";
+    company = "NA";
+    phone = "12345";
     subject = "Newsletter Subscriber";
     submit = $("#submit-nl");
     submit.on('click', function(e) {
@@ -33,10 +34,9 @@ $(document).ready(function() {
     function validate() {
         var valid = true;
         var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-
         if(!regex.test(email.val())) {
             email.css('border-color', 'red');
-            $("#email").attr("placeholder", "ERROR: Please provide a valid email address").blur();
+            $("#nl-email").attr("placeholder", "ERROR: Please provide a valid email address").blur();
             valid = false;
         }
         return valid;
