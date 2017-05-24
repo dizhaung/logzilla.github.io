@@ -62,10 +62,10 @@
         <meta name="twitter:image" content="http://dev.logzilla.net/assets/images/logos/logzilla/logo_orange_png_cropped_150x150.png" />
         <!-- Javascript: This is loaded using head.js so that they load asynchronously -->          
         <script>
-head.load({ jsincludes: "/assets/js/jsincludes.js" },
-        function() {
-            // console.log("JS Includes Loaded");
-        });
+            head.load({ jsincludes: "/assets/js/jsincludes.js" },
+                function() {
+                // console.log("JS Includes Loaded");
+            });
         </script>
 
         <!-- Start: Page-Specific Meta -->
@@ -288,7 +288,7 @@ head.ready("jquery", function() {
 </html>
 
         <!-- Orig: End-->
-        <!-- End: Image expand -->
+        <!-- Start: Image expand -->
         <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog" data-dismiss="modal" style="width: 90%;">
                 <div class="modal-content">
@@ -344,11 +344,11 @@ head.ready("jquery", function() {
                                 </ul>
                                 <div class="form-container">
                                     <p class="intro">Stay up to date with the latest news and offers from LogZilla</p>
-                                    <form class="signup-form navbar-form">
+                                    <form class="signup-form navbar-form" id="newsletter" action="https://post.logzilla.net/mailer.php" method="post">
                                         <div class="form-group">
-                                            <input type="email" class="form-control" id="nl-email" name="nl-email" placeholder="Enter your email address" required>
+                                            <input type="email" class="form-control" id="emailNL" name="email" placeholder="Enter your email address" required>
                                         </div>   
-                                        <button type="submit" id="submit-nl" class="btn btn-cta btn-cta-primary">Subscribe Now</button>                                 
+                                        <button type="submit" id="submitNL" class="btn btn-cta btn-cta-primary">Subscribe Now</button>                                 
                                     </form>                               
                                     <p class="tel"><i class="fa fa-phone"></i>&nbsp;&nbsp;936-4NetOps (463-8677)</p>
                                     <p class="email"><i class="fa fa-envelope-o"></i><a href="#">&nbsp;&nbsp;sales@logzilla.net</a></p> 
