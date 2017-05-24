@@ -1,12 +1,12 @@
 $(document).ready(function() {
     console.log("newsletter signup");
     var form = $('#newsletter');
-    name = "signup-user";
+    var name = "signup-user";
     email = $('#emailNL');
-    message = "Please add me to your mailing list";
-    company = "NA";
-    phone = "12345";
-    subject = "Newsletter Subscriber";
+    var message = "Please add me to your mailing list";
+    var company = "NA";
+    var phone = "12345";
+    var subject = "Newsletter Subscriber";
     submit = $("#submitNL");
     submit.on('click', function(e) {
         e.preventDefault();
@@ -19,10 +19,6 @@ $(document).ready(function() {
             }).done(function(data) {
                 if(data.success) {
                     email.val('');
-                    // subject.val('');
-                    // message.val('');
-                    // company.val('');
-                    // phone.val('');
                     console.log("newsletter succeeded");
                 } else {
                     console.log("newsletter failed");
