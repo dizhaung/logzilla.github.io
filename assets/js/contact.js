@@ -1,6 +1,5 @@
 $(document).ready(function() {
-                    $('#download-instructions-container').hide();
-
+    $('#download-instructions-container').hide();
     var form = $('#contact-form'),
     name = $('#name'),
     email = $('#email'),

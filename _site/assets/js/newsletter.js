@@ -1,15 +1,21 @@
 $(document).ready(function() {
-    console.log("newsletter signup");
+    //console.log("newsletter signup");
     var form = $('#newsletter');
-    var name = "signup-user";
-    email = $('#emailNL');
-    var message = "Please add me to your mailing list";
-    var company = "NA";
-    var phone = "12345";
-    var subject = "Newsletter Subscriber";
+    name = $('#nameNL'),
+    email = $('#emailNL'),
+    message = $('#messageNL'),
+    company = $('#companyNL'),
+    phone = $('#phoneNL'),
+    subject = $('#subjectNL');
     submit = $("#submitNL");
+
+    form.on('input', '#nameNL, #emailNL, #messageNL, #companyNL, #phoneNL, #subjectNL', function() {
+        $(this).css('border-color', '');
+        //$('#contact-form-results').html('').slideUp();
+    });
     submit.on('click', function(e) {
         e.preventDefault();
+          // console.log( $( form ).serialize() );
         if(validate()) {
             $.ajax({
                 type: "POST",
@@ -19,9 +25,9 @@ $(document).ready(function() {
             }).done(function(data) {
                 if(data.success) {
                     email.val('');
-                    console.log("newsletter succeeded");
+                    // console.log("newsletter succeeded");
                 } else {
-                    console.log("newsletter failed");
+                    // console.log("newsletter failed");
                 }
             });
         }
