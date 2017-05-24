@@ -2,6 +2,7 @@
 layout: legal
 title: LogZilla NetOps Platform - Terms of Use
 subtitle: Last Updated October 6, 2016
+
 ---
 
 # Privacy Policy
