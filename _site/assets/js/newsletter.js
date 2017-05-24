@@ -1,11 +1,11 @@
 $(document).ready(function() {
-    var form = $('#signup-form'),
+    var form = $('#signup-form');
     name = "signup-user";
-    email = $('#email'),
-    message = "Please add me to your mailing list"
+    email = $('#nl-email');
+    message = "Please add me to your mailing list";
     company = "";
     phone = "";
-    subject = "Newsletter Subscriber"
+    subject = "Newsletter Subscriber";
     submit = $("#submit-nl");
     submit.on('click', function(e) {
         e.preventDefault();
