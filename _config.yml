@@ -36,7 +36,7 @@ defaults:
       image: /assets/images/default-card.png
     layout: "default"
 data_dir:     _data
-include:              [".htaccess"]
+include:              [".htaccess", "_faqs"]
 exclude:              ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/", "_internalDocs"]
 keep_files:           [".git"]
 encoding:             "utf-8"
@@ -63,3 +63,6 @@ kramdown:
   input:          GFM
   hard_wrap:      false
   footnote_nr:    1
+
+collections:
+    - faqs
