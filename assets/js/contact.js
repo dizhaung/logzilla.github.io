@@ -54,11 +54,12 @@ $(document).ready(function() {
             $("#email").attr("placeholder", "ERROR: Please provide a valid email address").blur();
             valid = false;
         }
-        if($.trim(message.val()) === "") {
+        /*if($.trim(message.val()) === "") {
             message.css('border-color', 'red');
             $("#message").attr("placeholder", "ERROR: Please tell us how we can help, for example:\nI want to learn how to save time, money, and headaches by making my network to run like a well-oiled machine").blur();
             valid = false;
         }
+        */
         if($.trim(company.val()) === "") {
             company.css('border-color', 'red');
             $("#company").attr("placeholder", "ERROR: Please provide a Company Name").blur();
