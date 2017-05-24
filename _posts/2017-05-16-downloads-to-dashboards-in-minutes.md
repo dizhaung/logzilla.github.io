@@ -17,7 +17,7 @@ img: /assets/images/figures/monitor-binary-blue.jpg
 
  Within minutes after installing and pointing your network and server events to the LogZilla server, you will have visibility into what is really going on in your environment. 
 
- Have you ever considered what your job would be like if you could look at one interface to see the data from entires infrastructure...in real-time? 
+ Have you ever considered what your job would be like if you could look at one interface to see the data from your entire infrastructure? **In real-time**? 
 
  What about querying across all that data...in seconds? 
 

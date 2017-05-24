@@ -33,7 +33,7 @@ Earlier this week one of our customers had a log storm due to a problem with a p
  
  What if you were using a less scalable tool and you had the same scenario, but now, in addition to figuring out what is wrong in your production environment, also have to repair your logging server? With other solutions, when you need them the most, they just can't keep up!
 
-LogZilla also provides automations that could have automatically alerted the team responsible and even resolved the issue with no physical intervention. We are taking the lowest level indicator of health and performance and making it a front line management tool. 
+LogZilla also provides automation that could have automatically alerted the team responsible and even resolved the issue with no physical intervention. We are taking the lowest level indicator of health and performance and making it a front line management tool. 
 
 If you're interested in learning more about LogZilla, feel free to [contact me](http://twitter.com/{{ page.author }})
 

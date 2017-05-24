@@ -26,7 +26,7 @@ Sometimes there are things that are just too cool not to share. We were working 
 
 LogZilla to the rescue! In a few minutes, we were able to craft a trigger for them that would automatically identify the Cisco event that indicates a problem, login to the offending switch, run a command to parse the output and POST it in a Slack channel. The entire process from identification to post in the Slack channel **took less than 1 second**. 
 
- I [recorded the demo](https://youtu.be/eibkn8DN6Tg) so you can see how cool it is. This is not the end solution but it shows the an example of each step of the process required to automate the remediation of one of their problems. LogZilla will save them up to 60 engineering days per year, and doing this in real-time removes the downtime that accumulates while the problem is in the environment. The intangable benefits could be even larger than the engineering savings. 
+ I [recorded the demo](https://youtu.be/eibkn8DN6Tg) so you can see how cool it is. This is not the end solution but it shows the an example of each step of the process required to automate the remediation of one of their problems. LogZilla will save them up to 60 engineering days per year, and doing this in real-time removes the downtime that accumulates while the problem is in the environment. The intangible benefits could be even larger than the engineering savings. 
 
 This is a great example of moving from reactive to proactive, solving a problem and automating the tribal knowledge of your best people. LogZilla has a proven methodology for reducing the events to only those that are actionable, then automating their remediation. 
 
