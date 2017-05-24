@@ -13,6 +13,7 @@ head.load(
         { main: "/assets/js/main.js" },
         { imgFullScreen: "/assets/js/image-fullscreen.js" },
         { newsletter: "/assets/js/newsletter.js" },
+        { emailTrans: "/assets/js/email-transform.js" },
         function() {
             //console.log("JS Loaded");
 });

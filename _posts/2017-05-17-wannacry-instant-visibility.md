@@ -44,6 +44,6 @@ Here is what the Slack message looks like when we receive it from LogZilla:
 
 **It is that easy** to identify and be alerted when malware like this manifests in your organization. 
 
-Having a LogZilla NetOps management platform will provide you with incredible visibility and insight, in real-time, to what's happening in your environment, right now. If you would like to learn more about how LogZilla can make your team more proactive and how you can look like a Network Hero, reach out to me at mwheat@logzilla.net and we'll tell you how to install LogZilla in just a few minutes!
+Having a LogZilla NetOps management platform will provide you with incredible visibility and insight, in real-time, to what's happening in your environment, right now. If you would like to learn more about how LogZilla can make your team more proactive and how you can look like a Network Hero, [contact me](http://twitter.com/{{ page.author }}) and we'll tell you how to install LogZilla in just a few minutes!
 
 Mark
