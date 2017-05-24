@@ -12,6 +12,7 @@ head.load(
         { flexslider: "/assets/plugins/flexslider/jquery.flexslider-min.js" }, 
         { main: "/assets/js/main.js" },
         { imgFullScreen: "/assets/js/image-fullscreen.js" },
+        { newsletter: "/assets/js/newsletter.js" },
         function() {
             //console.log("JS Loaded");
 });

@@ -243,9 +243,9 @@ head.ready("jquery", function() {
                             <div class="footer-col-inner">
                                 <h3 class="title">About us</h3>
                                 <ul class="list-unstyled">
-                                    <li><a href="about.html"><i class="fa fa-caret-right"></i>Who we are</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i>BlogZilla</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i>Contact us</a></li>
+                                    <li><a href="/about.html"><i class="fa fa-caret-right"></i>Who we are</a></li>
+                                    <li><a href="/blog.html"><i class="fa fa-caret-right"></i>BlogZilla</a></li>
+                                    <li><a href="/contact.html"><i class="fa fa-caret-right"></i>Contact us</a></li>
                                 </ul>
                             </div><!--//footer-col-inner-->
                         </div><!--//foooter-col-->    
@@ -253,8 +253,8 @@ head.ready("jquery", function() {
                             <div class="footer-col-inner">
                                 <h3 class="title">Product</h3>
                                 <ul class="list-unstyled">
-                                    <li><a href="#"><i class="fa fa-caret-right"></i>How it works</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i>API</a></li>
+                                    <li><a href="/platform.html"><i class="fa fa-caret-right"></i>How it works</a></li>
+                                    <li><a href="https://github.com/logzilla/extras" target="_new"><i class="fa fa-caret-right"></i>Free Addons</a></li>
                                     <!--<li><a href="#"><i class="fa fa-caret-right"></i>Pricing</a></li>-->
                                 </ul>
                             </div><!--//footer-col-inner-->
@@ -264,7 +264,7 @@ head.ready("jquery", function() {
                                 <h3 class="title">Support</h3>
                                 <ul class="list-unstyled">
                                     <li><a href="#"><i class="fa fa-caret-right"></i>Documentation</a></li>
-                                    <li><a href="#"><i class="fa fa-caret-right"></i>Terms of services</a></li>
+                                    <li><a href="/tos.html"><i class="fa fa-caret-right"></i>Terms of use</a></li>
                                     <li><a href="#"><i class="fa fa-caret-right"></i>Privacy</a></li>
                                 </ul>
                             </div><!--//footer-col-inner-->            
@@ -280,9 +280,9 @@ head.ready("jquery", function() {
                                     <p class="intro">Stay up to date with the latest news and offers from LogZilla</p>
                                     <form class="signup-form navbar-form">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Enter your email address">
+                                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address" required>
                                         </div>   
-                                        <button type="submit" class="btn btn-cta btn-cta-primary">Subscribe Now</button>                                 
+                                        <button type="submit" id="submit-nl" class="btn btn-cta btn-cta-primary">Subscribe Now</button>                                 
                                     </form>                               
                                     <p class="tel"><i class="fa fa-phone"></i>&nbsp;&nbsp;936-4NetOps (463-8677)</p>
                                     <p class="email"><i class="fa fa-envelope-o"></i><a href="#">&nbsp;&nbsp;sales@logzilla.net</a></p> 
