@@ -53,19 +53,11 @@ With LogZilla's ERA, storing the same amount of data takes a mere $550.
 
 What about the power needed to cool all the hardware? What's the cost of HVAC for those servers?
 
-| Competitive | Average | Kilowatt/Hr | Estimated | Comparative
-  -----------   -------   -----------
-  |  Hardware | kWh/Yr) | (¢/kWh) | Annual HVAC | Cost when 
-
-14
-
-25,620
-
-$.983
-
-$ 25,184.46
-
-$1474.50
+| Competitive | Average | Kilowatt/Hr |  Estimated |   Comparative  |
+|  Hardware   | kWh/Yr) | (¢/kWh)     | Annual HVAC|   Cost when    |
+|                                     | Cost       | using LogZilla |
+  ----------- :---------: ------------: -----------: ---------------:
+       14        25,620    $0.983        $25,184         $1475
 
 Note: ¢/kWh Cost based on http://www.eia.gov/electricity/monthly/pdf/epm.pdf
 
@@ -74,27 +66,10 @@ The picture of true deployment cost now becomes clear; not only are you saving c
 Total Estimated Costs of Deployment to Index up to 2TB of data per day
 
  
+| Hardware, Software, PS, Training, Support, Add-ons |    HVAC     |      TOTAL      |
+ ---------------------------------------------------: -------------:----------------:
+Competitor   $700,000 USD                               $25,184.46   $725,184.46 USD
 
-Hardware & Software, PS, Training, Support, Add-ons
-
-HVAC
-
-Total
-
-Competitor 
-
-$700,000 USD
-
-$25,184.46
-
-$725,184.46 USD
-
-LogZilla
-
-$130,000
-
-$1,474.50
-
-$131,474.5 USD
+LogZilla     $130,000                                    $1,474.50    $131,474.5 USD
 
 This representsa a saving of 82 percent over the major competition.  The bottom line is that LogZilla will save you money when comparing TCO, while providing the world’s best performance where all data is available in the server in real-time.
