@@ -1,26 +1,19 @@
 ---
-layout: page
+layout: blog
 title: BlogZilla
+intro: Empowering Smarter Network Operations
 ---
-
-    <div class="headline-bg ciscolive-headline-bg">
-    </div><!--//headline-bg-->
-
-<!--Promo Area Start-->
-<section class="blog section section-on-bg">
-    <div class="container text-center">                
-        <h2 class="title text-center"><span class="highlight">BlogZilla</span></h2>
-        <p class="intro text-center">Empowering Smarter Network Operations</p>
-    </div><!--//container-->
-</section><!--//section-->
 
 <div class="wrapper">
     <div class="container"> 
+
         {% for post in site.posts %}
-        <!-- Image Position: {{ post.img-position }} -->
-        {% if post.img-position == 'right' %} 
-        <div class="blog-card alt"> {% else %} 
-            <div class="blog-card"> {% endif %}
+        {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+        {% if thecycle == 'odd' %}
+        <div class="blog-card alt">
+            {% else %}
+            <div class="blog-card">
+                {% endif %}
                 <div class="photo" style='background: url("{{ post.img }}") center no-repeat'></div>
                 <ul class="details">
                     <li class="author"><a href="http://twitter.com/{{ post.author }}" target=_new>{{ post.author-name }}</a></li>

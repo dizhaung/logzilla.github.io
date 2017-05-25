@@ -9,7 +9,7 @@ author-name: "Mark Wheat"
 tags: [Malware, Dashboards, Triggers]
 summary: LogZilla's Malware Detection capability is so easy that it will make you wannacry...
 
-img-position: left
+
 img: /assets/images/figures/ransomware.jpg
 
 ---

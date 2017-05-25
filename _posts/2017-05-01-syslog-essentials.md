@@ -9,7 +9,7 @@ author-name: "Mark Wheat"
 tags: [NetOps, Syslog]
 summary: Most of us cannot remember a time before there was syslog.  I was introduced to Sun Solaris in 1998 while I was working...
 
-img-position: left
+
 img: /assets/images/blog/post_images/syslog-essentials/hieroglyphics.jpg
 
 ---

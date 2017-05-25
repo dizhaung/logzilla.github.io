@@ -9,7 +9,7 @@ author-name: "Mark Wheat"
 tags: [NetOps, Scalability]
 summary: Earlier this week one of our customers had a log storm due to a problem with a production server. They were...
 
-img-position: right
+
 img: /assets/images/blog/post_images/message-storm/storm-banner.jpg
 
 ---
