@@ -1,0 +1,104 @@
+---
+published: true
+layout: post
+
+title: Configuring TLS Tunnels
+subtitle: Providing an easy Configurable level of security
+author: tdamon
+author-name: "Tom Damon"
+tags: [NetOps, Scalability, TLS, Tunnels, RemoteConnectivity]
+summary: There's a ton of information in your log files that can be used to compromise or secure your network...
+
+img-position: right
+img: /assets/images/blog/post_images/message-storm/storm-banner.jpg
+
+---
+
+# Configuring TLS Tunnels
+
+### By: Thomas Damon on October 17, 2014
+
+If your server is receiving messages from through a public network, it's vulnerable to snooping attempts by hackers. There's a ton of information in your log files that can be used to compromise your network. Fortunately, there's an easy solution. **TLS, or Transport Layer Security**, uses X.509 certificates to provide a configurable level of security. In this example, I'm using 2048 bit keys, which are the current minimum for medium-high security. The best part is that configuring TLS tunnels is not a time consuming process.
+
+  I'll assume that your server already has openssh installed, since you need that for remote connectivity. First, we need to create the keys on the server. In this example, I'm using port 1999, but you can use any port you'd like. We'll store the keys in /etc/syslog-ng/ssl. When you run the following commands, you'll be prompted for a passphrase, it will only be used to create the keys, and we'll remove it a few steps down. You'll also be asked questions about the server name, location, and contact information. The server name needs to match the entry in your /etc/hostname file.
+
+```
+cd /etc/syslog-ng
+mkdir ssl
+cd ssl
+openssl genrsa -des3 -out logserver.key 2048
+openssl req -new -key logserver.key -out logserver.csr 
+```
+
+Ok, now we have a key, but we need to remove the passphrase so that your remote system can connect automatically.
+
+``cp server.key logserver.key.org
+openssl rsa -in logserver.key.org -out logserver.key
+```
+
+We'll generate a self-signed certificate, which will satisfy the needs of most users. You can contact a key authority and get keys from and official Certificate Authority if your organization requires it.
+
+```
+openssl x509 -req -days 365 -in logserver.csr -signkey logserver.key -out logserver.crt
+```
+
+Next, we'll need to configure syslog-ng to use the keys and listen on the proper port. Create a file named tls.conf in the /etc/syslog-ng/conf.d directory with the following content.
+
+```
+source s_tls {
+        tcp(port(1999)
+        tls( key_file("/etc/syslog-ng/ssl/logserver.key")
+                cert_file("/etc/syslog-ng/ssl/logserver.crt")
+        peer_verify(optional-untrusted))
+        flags(no-multi-line)
+        );
+};
+log {
+    source(s_tls);
+    rewrite(r_snare);
+    rewrite(r_snare2pipe);
+    rewrite(r_cisco_program);
+    destination(d_logzilla);
+    flags(flow-control);
+};
+
+```
+
+We just need to restart syslog-ng, and the server is ready to receive logs through the encrypted tunnel.
+
+```
+service syslog-ng restart
+```
+
+Now, it's time to configure the client systems. Using and ftp or sftp client, connect to your syslog server and copy the logserver.crt to your local system. Connect to the host you wish to configure and create the /ssl directory in /etc/syslog-ng. Copy the crt file to that directory.
+We'll need to find the hash for your key using the following command.
+
+```
+openssl x509 -noout -hash -in logserver.crt
+```
+
+The result (for example 84d92a45) is a series of alphanumeric characters based on the Distinguished Name of the certificate.
+
+Next, we'll create a symbolic link to the certificate that uses the hash returned by the previous command, with an added .0 suffix.
+
+```
+ln -s logserver.crt 84d92a45.0 
+```
+
+```
+To configure syslog-ng on the client system, create a file name tls.conf in the /etc/syslog-ng/conf.d directory. Enter the following content into that file (be sure to change the bolded content to your server name or address).
+
+destination d_tls {
+     tcp("your.logzilla.server" port(1999)
+     tls( ca_dir("/etc/syslog-ng/ssl/")) );
+ };
+
+ log {
+     source(s_src);
+     destination(d_tls);
+ };
+```
+
+Restart syslog-ng on the client, and you're done! Connect to your Logzilla server and watch your new events coming in.
+
+Update:  For troubleshooting purpose, I've created a new documentation page on **starting syslog-ng in debugging mode**.
