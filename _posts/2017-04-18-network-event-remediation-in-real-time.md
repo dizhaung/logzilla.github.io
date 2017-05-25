@@ -10,7 +10,7 @@ tags: [NetOps, Automation]
 summary: ...They spend a lot of engineering time on network issues with problem identification and resolution and provided us with...
 
 
-img: /assets/images/background/robot-handshake.png
+headline-bg: /assets/images/background/robot-handshake.png
 
 ---
 

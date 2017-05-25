@@ -2,7 +2,10 @@
 layout: default
 ---
 
-<div class="headline-bg {{ headline-bg }}"></div><!--//headline-bg-->
+<!-- ******LAYOUT BLOG****** -->         
+{% if page.id == null %}
+<div class="headline-bg" style="background: url('{{ page.headline-bg }}') height: 500px;"></div>
+{% endif %}
 
 <!--Promo Area Start-->
 <section class="blog section section-on-bg">
@@ -13,3 +16,7 @@ layout: default
 </section><!--//section-->
 
 {{ content }}
+
+{% if page.id %}
+</div><!--//blog-entry-wrapper-->  
+{% endif %}
