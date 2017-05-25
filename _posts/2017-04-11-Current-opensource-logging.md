@@ -2,7 +2,7 @@
 published: true
 layout: post
 
-title: Open Source Solutions are Not Free
+title: Opensource Solutions are Not Free
 subtitle: Opensource is not Free.
 author: markwheat1
 author-name: "Mark Wheat"
@@ -10,7 +10,7 @@ tags: [NetOps, Scalability, Opensource, TCO, Not Free]
 summary: There is a lot of discussions around open source logging software recently.  Its not free.
 ---
 
-# Current open source logging considerations
+# Opensource Logging Solutions Are Not Free 
 
 ### By: Mark Wheat on April 11, 2017
 
