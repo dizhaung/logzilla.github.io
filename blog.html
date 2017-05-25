@@ -3,45 +3,44 @@ layout: page
 title: BlogZilla
 ---
 
-<body class="blog-page" style="background-color: rgba(0,0,0,.075);">
-    <div class="headline-bg blog-headline-bg"></div><!--//headline-bg-->
+    <div class="headline-bg ciscolive-headline-bg">
+    </div><!--//headline-bg-->
 
-    <!--Promo Area Start-->
-    <section class="blog-head section section-on-bg">
-        <div class="container text-center">                
-            <h2 class="title text-center" id="contact-form-results"><span class="highlight">BlogZilla</span></h2>
-            <p class="intro text-center" id="contact-form-results-sub">Empowering Smarter Network Operations</p>
-        </div><!--//container-->
-    </section><!--//section-->
+<!--Promo Area Start-->
+<section class="blog section section-on-bg">
+    <div class="container text-center">                
+        <h2 class="title text-center"><span class="highlight">BlogZilla</span></h2>
+        <p class="intro text-center">Empowering Smarter Network Operations</p>
+    </div><!--//container-->
+</section><!--//section-->
 
-    <div class="wrapper">
-        <div class="container"> 
-            {% for post in site.posts %}
-            <!-- Image Position: {{ post.img-position }} -->
-            {% if post.img-position == 'right' %} 
-            <div class="blog-card alt"> {% else %} 
-                <div class="blog-card"> {% endif %}
-                    <div class="photo" style='background: url("{{ post.img }}") center no-repeat'></div>
-                    <ul class="details">
-                        <li class="author"><a href="http://twitter.com/{{ post.author }}" target=_new>{{ post.author-name }}</a></li>
-                        <li class="date">{{ post.date | date: "%d %B %Y" }}</li>
-                        <li class="tags">
-                            <ul>
-                                {% for tag in post.tags %}
-                                <li><a href="#">{{ tag }}</a></li>
-                                {% endfor %}
-                            </ul>
-                        </li>
-                    </ul>
-                    <div class="description">
-                        <h1>{{ post.title }}</h1>
-                        <h2>{{ post.subtitle }}</h2>
-                        <p class="summary">{{ post.summary }}</p>
-                        <a href="{{ post.url }}">Read More</a>
-                    </div>
+<div class="wrapper">
+    <div class="container"> 
+        {% for post in site.posts %}
+        <!-- Image Position: {{ post.img-position }} -->
+        {% if post.img-position == 'right' %} 
+        <div class="blog-card alt"> {% else %} 
+            <div class="blog-card"> {% endif %}
+                <div class="photo" style='background: url("{{ post.img }}") center no-repeat'></div>
+                <ul class="details">
+                    <li class="author"><a href="http://twitter.com/{{ post.author }}" target=_new>{{ post.author-name }}</a></li>
+                    <li class="date">{{ post.date | date: "%d %B %Y" }}</li>
+                    <li class="tags">
+                        <ul>
+                            {% for tag in post.tags %}
+                            <li><a href="#">{{ tag }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                </ul>
+                <div class="description">
+                    <h1>{{ post.title }}</h1>
+                    <h2>{{ post.subtitle }}</h2>
+                    <p class="summary">{{ post.summary }}</p>
+                    <a href="{{ post.url }}">Read More</a>
                 </div>
-                {% endfor %}
-            </div><!--//blog-entry-wrapper-->  
-        </div><!--//container-->                                               
-    </div><!--//wrapper -->
-</body>
+            </div>
+            {% endfor %}
+        </div><!--//blog-entry-wrapper-->  
+    </div><!--//container-->                                               
+</div><!--//wrapper -->
