@@ -13,7 +13,7 @@ twitter:
     username: logzilla
 facebook:
      publisher: logzilla
-logo: assets/images/logos/logzilla/logzilla-logo-small.png
+logo: /assets/images/logos/logzilla/logzilla-logo-small.png
 social:
   name: LogZilla Corporation
   links:
@@ -33,7 +33,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets/images/default-card.png
+      image: /assets/images/logos/logzilla/logzilla-logo-small.png
     layout: "default"
 data_dir:     _data
 include:              [".htaccess", "_faqs"]
