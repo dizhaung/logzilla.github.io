@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>LogZilla NetOps Platform - Network Insight, Simplified</title>
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:image" content="/assets/images/logos/logzilla/logzilla-logo-circle.png">
+<meta property="og:site_name" content="LogZilla">
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://localhost:4000" />
+<meta name="application-name" content="LogZilla"/>
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/assets/images/favicon/logzilla-144.png?v=2.0">
+<meta name="msapplication-config" content="/assets/images/favicon/browserconfig.xml">
+
+    <meta name="description" content="LogZilla is the leader in delivering real-time insight with an intelligent network operations platform.">
+    <meta property="og:description" content="The LogZilla #NetOps Platform provides IT Operations with real-time Network Intelligence and Automation">
+    <meta property="og:title" content="LogZilla: Network Insight, Simplified.">
+
+
+        <!-- Twitter -->
+<!--<meta name="twitter:creator" content="@{"username"=>"logzilla"}">-->
+<meta name="twitter:site" content="@logzilla">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="LogZilla NetOps Platform - Network Insight, Simplified">
+  <meta name="twitter:description" content="">
+  <!--<meta name="twitter:image" content="http://localhost:4000/assets/images/logos/logzilla/logzilla-logo-small.png">-->
+  <meta name="twitter:image" content="/assets/images/logos/logzilla/logo_orange_png_cropped_150x150.png" />
+
+
+<!-- Facebook -->
+
+  <meta property="og:url" content="http://localhost:4000/page2/">
+  <meta property="og:title" content="LogZilla NetOps Platform - Network Insight, Simplified">
+  <meta property="og:description" content="">
+
+<meta property="og:image" content="http://localhost:4000/assets/images/logos/logzilla/logzilla-logo-small.png">
+
+<!-- Meta -->
+<meta name="description" content="LogZilla is the leader in delivering real-time insight with an intelligent network operations platform.">
+
+
+<meta name="author" content="LogZilla Corporation">
+
+
+        <link rel="shortcut icon" href="/assets/images/favicon/logzilla.ico?v=2.0">
+<link rel="icon" sizes="16x16 32x32 64x64" href="/assets/images/favicon/logzilla.ico?v=2.0">
+<link rel="icon" type="image/png" sizes="196x196" href="/assets/images/favicon/logzilla-192.png?v=2.0">
+<link rel="icon" type="image/png" sizes="160x160" href="/assets/images/favicon/logzilla-160.png?v=2.0">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/images/favicon/logzilla-96.png?v=2.0">
+<link rel="icon" type="image/png" sizes="64x64" href="/assets/images/favicon/logzilla-64.png?v=2.0">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/logzilla-32.png?v=2.0">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/logzilla-16.png?v=2.0">
+<link rel="apple-touch-icon" href="/assets/images/favicon/logzilla-57.png?v=2.0">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/images/favicon/logzilla-114.png?v=2.0">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/images/favicon/logzilla-72.png?v=2.0">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/images/favicon/logzilla-144.png?v=2.0">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/images/favicon/logzilla-60.png?v=2.0">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/images/favicon/logzilla-120.png?v=2.0">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/images/favicon/logzilla-76.png?v=2.0">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/images/favicon/logzilla-152.png?v=2.0">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/logzilla-180.png?v=2.0">
+
+
+
+        <!-- Global CSS -->
+<link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css">   
+
+<!-- Plugins CSS -->    
+<link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.css">
+<link rel="stylesheet" href="/assets/plugins/flexslider/flexslider.css">
+
+<!-- Main Site CSS -->
+<link rel="stylesheet" href="/assets/css/styles.css" type="text/css">
+
+<!-- Blog CSS -->
+<link rel="stylesheet" href="/css/blog.css" type="text/css">
+
+
+        <!-- Fonts -->
+<link href='//fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300' rel='stylesheet' type='text/css'> 
+<link href='//fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
+
+        <!-- Start: Load head.js ref: http://headjs.com/site/api/v2.00.html#setup -->
+<script src="/assets/js/head.min.js"></script>
+<!-- END: Load head.js ref: http://headjs.com/site/api/v2.00.html#setup -->
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Javascript: This is loaded using head.js so that they load asynchronously -->          
+<script>
+// this loads asynchronously & in parallel
+// and names the file loaded in case we want to callback with head.ready()
+head.load(
+        { jquery: "/assets/plugins/jquery-1.12.3.min.js"},
+        { bootstrap: "/assets/plugins/bootstrap/js/bootstrap.min.js" },
+        { bshover: "/assets/plugins/bootstrap-hover-dropdown.min.js" }, 
+        { back2top: "/assets/plugins/back-to-top.js" }, 
+        { placeholder: "/assets/plugins/jquery-placeholder/jquery.placeholder.js" }, 
+        { fitvids: "/assets/plugins/FitVids/jquery.fitvids.js" }, 
+        { flexslider: "/assets/plugins/flexslider/jquery.flexslider-min.js" }, 
+        { main: "/assets/js/main.js" },
+        { imgFullScreen: "/assets/js/image-fullscreen.js" },
+        { newsletter: "/assets/js/newsletter.js" },
+        { emailTrans: "/assets/js/email-transform.js" },
+        function() {
+            //console.log("JS Loaded");
+});
+</script>
+<!-- Hotjar Tracking Code for https://logzilla.github.io -->
+<script>
+(function(h,o,t,j,a,r){
+    h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+    h._hjSettings={hjid:510754,hjsv:5};
+    a=o.getElementsByTagName('head')[0];
+    r=o.createElement('script');r.async=1;
+    r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    a.appendChild(r);
+})(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+<script>
+// Highlights the menu item based on the currently loaded page
+head.ready("jquery", function() {
+    var loc = window.location.pathname.split("/")[1];
+    $('.nav-item').find('a').each(function() {
+        if ($(this).attr('href') == loc) {
+            $(this).parent("li").addClass('active');
+        } else {
+            $(this).parent("li").removeClass('active');
+        }
+    });
+    // Start: Special case for the blog page because the top area is white, so set orange color manually
+    // if (loc == "blog.html" || loc == "2017" ) {
+        // $('.nav-item a').css('color', '#ec6952');
+    // }
+    // End: Special case for the blog page
+});
+</script>
+
+        <!-- Begin Jekyll SEO tag v2.2.3 -->
+<title>LogZilla NetOps Platform - Network Insight, Simplified | LogZilla NetOps Platform</title>
+<meta property="og:title" content="LogZilla NetOps Platform - Network Insight, Simplified" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="LogZilla is the leader in delivering real-time insight with an intelligent network operations platform." />
+<meta property="og:description" content="LogZilla is the leader in delivering real-time insight with an intelligent network operations platform." />
+<link rel="canonical" href="http://localhost:4000/page2/" />
+<meta property="og:url" content="http://localhost:4000/page2/" />
+<meta property="og:site_name" content="LogZilla NetOps Platform" />
+<meta property="og:image" content="http://localhost:4000/assets/images/logos/logzilla/logzilla-logo-small.png" />
+<link rel="prev" href="http://localhost:4000/">
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@logzilla" />
+<meta property="article:publisher" content="logzilla" />
+<script type="application/ld+json">
+{"@context":"http://schema.org","@type":"WebPage","headline":"LogZilla NetOps Platform - Network Insight, Simplified","image":"http://localhost:4000/assets/images/logos/logzilla/logzilla-logo-small.png","description":"LogZilla is the leader in delivering real-time insight with an intelligent network operations platform.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logos/logzilla/logzilla-logo-small.png"}},"url":"http://localhost:4000/page2/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    </head>
+
+    <body id="page-top">
+
+        <header id="header" class="header navbar-fixed-top">  
+    <div class="container">       
+        <h1 class="logo">
+            <a href="/index.html"><span class="text">LogZilla</span></a>
+        </h1><!--//logo-->
+        <nav class="main-nav navbar-right" role="navigation">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button><!--//nav-toggle-->
+            </div><!--//navbar-header-->
+            <div id="navbar-collapse" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"><a href="/ciscolive.html">Join us @ CiscoLive!</a></li>
+                    <li class="nav-item"><a href="/index.html">Home</a></li>
+                    <li class="nav-item"><a href="/platform.html">Platform</a></li>
+                    <li class="nav-item"><a href="/download.html">Download</a></li>
+                    <li class="nav-item"><a href="/blog.html">BlogZilla</a></li>
+                    <li class="nav-item"><a href="/about.html">About Us</a></li>
+                    <li class="nav-item"><a href="/contact.html">Contact</a></li>                    
+                </ul><!--//nav-->
+            </div><!--//navabr-collapse-->
+        </nav><!--//main-nav-->                     
+    </div><!--//container-->
+</header><!--//header-->
+
+
+
+        <section class="bg-dark">
+	<div class="text-center">
+		<h1>LogZilla NetOps Platform - Network Insight, Simplified</h1>
+	</div>
+</section>
+
+<body class="home-page">
+<div class="bg-slider-wrapper">
+    <div class="flexslider bg-slider">
+        <ul class="slides">
+            <li class="slide slide-1"></li>
+            <li class="slide slide-2"></li>
+            <li class="slide slide-3"></li>
+        </ul>
+    </div>
+</div><!--//bg-slider-wrapper-->        
+
+<section class="promo section section-on-bg">
+    <div class="container text-center">                
+        <h2 class="title">Network Insight, Simplified</h2>
+        <p class="intro">LogZilla is the leader in delivering real-time network insight <br />with an intelligent network operations platform for enterprise network teams.</p>
+        <p><a class="btn btn-cta btn-cta-primary" href="download.html">Try LogZilla Free</a></p>
+        <!--TODO: Replace with youtube api player: https://developers.google.com/youtube/iframe_api_reference -->
+        <button type="button" class="play-trigger btn-link " data-toggle="modal" data-target="#modal-video" data-theVideo="http://www.youtube.com/embed/drg5wv_mgfA"><i class="fa fa-youtube-play"></i> Watch the video</button>
+    </div><!--//container-->
+</section><!--//promo-->
+
+<div class="sections-wrapper">   
+
+    <!-- ******Why Section****** -->
+    <section id="why" class="section why">
+        <div class="container">
+            <h2 class="title text-center">How Can LogZilla Help You?</h2>
+            <p class="intro text-center">We have developed patented technologies that break through the clutter of network telemetry indicators to deliver real-time, intelligent insight for your enterprise</p>
+            <div class="row item">
+                <div class="content col-xs-12 col-md-4">
+                    <h3 class="title">Save time and effort</h3>
+                    <div class="desc">
+                        <p>Our unique solution is up and running in minutes and will save your company time, money, and headaches to enable your network to run like a well-oiled machine.</p>
+                        <p>With LogZilla, network teams can easily pinpoint problems before they occur and solve them automatically.  What once took days to solve, can now be done in seconds with easy, clear, compelling dashboards and automation</p>
+                    </div>
+                    <div class="quote">
+                        <div class="quote-profile">
+                            <img class="img-responsive img-circle" src="/assets/images/people/profile-s-4.png" alt="" />
+                        </div><!--//profile-->
+                        <div class="quote-content">
+                            <blockquote><p><a href="http://twitter.com/logzilla" target="_blank">@logzilla</a> It's that automation and that functionality...that's what allows me to have intelligence in my network. That's what allows us to be proactive.
+                                </p></blockquote>
+                                <p class="source">Steve, VMWare Corp.</p>
+                        </div><!--//quote-content-->                                     
+                    </div><!--//quote-->                        
+                </div><!--//content-->
+                <figure class="figure col-md-offset-1 col-sm-offset-0 col-xs-offset-0 col-xs-12 col-md-7">
+                    <img class="img-responsive img-fullscreen" src="/assets/images/figures/dashboard-cisco.gif" alt="Real-Time Dashboards" width="640"/>
+                    <figcaption class="figure-caption">LogZilla: Cisco Dashboard</figcaption>
+                </figure>
+            </div><!--//item-->
+
+            <div class="row item">
+                <div class="content col-md-push-8 col-sm-push-0 col-xs-push-0 col-xs-12 col-md-4">
+                    <h3 class="title">Works across all devices</h3>
+                    <div class="desc">
+                        <p>LogZilla's Interface is written entirely in HTML5, requiring no plugins. Gain actionable insight into your network from anywhere, even connect to remote devices directly from the browser.</p>
+                    </div>
+
+                    <div class="quote">
+                        <div class="quote-profile">
+                            <img class="img-responsive img-circle" src="/assets/images/people/profile-s-2.png" alt="" />
+                        </div><!--//profile-->
+                        <div class="quote-content">
+                            <blockquote><p>It's very clear that LZ was designed by someone who had my job for many years. Customization is so easy that it was immediately useful in our network. </p></blockquote>
+                            <p class="source">@HiwayBK, New Jersey</p>
+                        </div><!--//quote-content-->         
+                    </div><!--//quote-->                        
+                </div><!--//content-->
+                <figure class="figure col-md-pull-4 col-sm-pull-0 col-xs-pull-0 col-xs-12 col-md-7">
+                    <img class="img-responsive" src="/assets/images/figures/device-agnostic-animation.gif" alt="" />
+                </figure>
+            </div><!--//item-->
+
+            <div class="row item ">
+                <div class="content col-xs-12 col-md-4">
+                    <h3 class="title">From Download to Dashboards</h3>
+                    <div class="desc">
+                        <p>LogZilla installs in minutes and provides actionable intel the moment you start using it. Our Dashboards can also be easily customized to fit your network's needs.</p>
+                    </div>
+                    <div class="quote">
+                        <div class="quote-profile">
+                            <img class="img-responsive img-circle" src="/assets/images/people/profile-s-3.png" alt="" />
+                        </div><!--//profile-->
+                        <div class="quote-content">
+                            <blockquote><p>I can't even begin to thank you enough for this gem! My job no longer consists of putting out fires!</p></blockquote>
+                            <p class="source"><a href="#">@AlexD</a>, London</p>
+                        </div><!--//quote-content-->          
+                    </div><!--//quote-->                        
+                </div><!--//content-->
+                <figure class="figure col-md-offset-1 col-sm-offset-0 col-xs-offset-0 col-xs-12 col-md-7">
+                    <img class="img-responsive" src="/assets/images/figures/dashboard-carousel.gif" alt="" />
+                    <figcaption class="figure-caption">Easily and quickly create any dashboard to manage events from any incoming data stream</figcaption>
+
+                </figure>
+            </div><!--//item-->
+
+            <div class="row item last-item">
+                <div class="content col-md-push-8 col-sm-push-0 col-xs-push-0 col-xs-12 col-md-4">
+                    <h3 class="title">Your Network Just Got Smarter.</h3>
+                    <div class="desc">
+                        <p>LogZilla's preemptive automation saves weeks of engineering time and countless hours of headaches and downtime.</p>
+
+                    </div>
+
+                    <div class="quote">
+                        <div class="quote-profile">
+                            <img class="img-responsive img-circle" src="/assets/images/people/profile-s-4.png" alt="" />
+                        </div><!--//profile-->
+                        <div class="quote-content">
+                            <blockquote><p>We have thousands of devices in this massive data center. Recently, someone created a loop across the entire infrastructure and it took us a day and a half to figure out where this was, because it was all the way down into the infrastructure. Now, LogZilla sees this and fixes it, in real time.</p></blockquote>
+                            <p class="source">@JackT, San Francisco</p>
+                        </div><!--//quote-content-->
+                    </div><!--//quote-->
+                </div><!--//content-->
+                <figure class="figure col-md-pull-4 col-sm-pull-0 col-xs-pull-0 col-xs-12 col-md-7">
+                    <img class="img-responsive" src="/assets/images/background/man-touching-gear.jpg" alt="" />
+                </figure>
+            </div><!--//item-->
+
+
+            <div class="feature-lead text-center">
+                <h4 class="title">Want to discover the platform?</h4>
+                <p><a class="btn btn-cta btn-cta-secondary" href="platform.html">Take a Tour</a></p>
+            </div>
+        </div><!--//container-->
+    </section><!--//why-->  
+
+    <!-- ******Testimonials Section****** -->
+    <section class="section testimonials">
+        <div class="container">
+            <h2 class="title text-center">What are people saying about LogZilla?</h2>
+            <div id="testimonials-carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#testimonials-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#testimonials-carousel" data-slide-to="1"></li>
+                    <li data-target="#testimonials-carousel" data-slide-to="2"></li>
+                </ol><!--//carousel-indicators-->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <figure class="profile"><img src="/assets/images/people/profile-m-1.png" alt="" /></figure>
+                        <div class="content">
+                            <blockquote>
+                                <i class="fa fa-quote-left"></i>
+                                <p>Our team manages 500 access switches, 10 core routers, dozens of firewalls and a number of other devices in our network infrastructure and services. With LogZilla, we can quickly and easily find anything and create Event Automation allowing us to focus on managing the network instead of administering software that is supposed to do it for us</p>
+                            </blockquote>
+                            <p class="source">Kevin Knight<br /><span class="title">Sr. Engineer</span></p>
+                        </div><!--//content-->                         
+                    </div><!--//item-->                        
+                    <div class="item">
+                        <figure class="profile"><img src="/assets/images/people/profile-m-2.png" alt="" /></figure>
+                        <div class="content">
+                            <blockquote>
+                                <i class="fa fa-quote-left"></i>
+                                <p>The power of LogZilla's Known Events/Actionable Events marking coupled with Automated Remediation has given us a true NetOps Platform, not just another "Log Tool".</p>
+                            </blockquote>
+                            <p class="source">Diana	Luna<br /><span class="title">Air Force</span></p>
+                        </div><!--//content-->                         
+                    </div><!--//item-->  
+                    <div class="item">
+                        <figure class="profile"><img src="/assets/images/people/profile-m-3.png" alt="" /></figure>
+                        <div class="content">
+                            <blockquote>
+                                <i class="fa fa-quote-left"></i>
+                                <p>LogZilla's speed and scalability is better than anything I've seen on the market, by far. We have not found any limits to scaling as our network has grown.</p>
+                            </blockquote>
+                            <p class="source">Tony Lee<br /><span class="title">Service Provider</span></p>
+                        </div><!--//content-->                         
+                    </div><!--//item-->                                         
+                </div><!--//carousel-inner-->
+
+            </div><!--//carousel-->
+        </div><!--//container-->
+    </section><!--//testimonials-->          
+
+    <!-- ******Press Section****** -->
+    <section class="section press">
+        <div class="container text-center">
+            <h2 class="title">Press Coverage</h2>
+            <ul class="press-list list-inline row">
+                <li class="col-xs-4 col-sm-2"><img class="img-responsive" src="/assets/images/press/press-1.png" alt="" /></a></li>
+                <li class="col-xs-4 col-sm-2"><img class="img-responsive" src="/assets/images/press/press-2.png" alt="" /></a></li>
+                <li class="xs-break col-xs-4 col-sm-2"><img class="img-responsive" src="/assets/images/press/press-3.png" alt="" /></a></li>                   
+                <li class="col-xs-4 col-sm-2"><img class="img-responsive" src="/assets/images/press/press-4.png" alt="" /></a></li>
+                <li class="col-xs-4 col-sm-2"><img class="img-responsive" src="/assets/images/press/press-5.png" alt="" /></a></li>
+                <li class="col-xs-4 col-sm-2"><img class="img-responsive" src="/assets/images/press/press-6.png" alt="" /></a></li>                    
+            </ul><!--//press-list-->
+            <ul class="press-list list-inline row last">
+                <li class="col-xs-4 col-sm-2"><img class="img-responsive" src="/assets/images/press/press-7.png" alt="" /></a></li>
+                <li class="col-xs-4 col-sm-2"><img class="img-responsive" src="/assets/images/press/press-8.png" alt="" /></a></li>
+                <li class="xs-break col-xs-4 col-sm-2"><img class="img-responsive" src="/assets/images/press/press-9.png" alt="" /></a></li>                   
+                <li class="col-xs-4 col-sm-2"><img class="img-responsive" src="/assets/images/press/press-10.png" alt="" /></a></li>
+                <li class="col-xs-4 col-sm-2"><img class="img-responsive" src="/assets/images/press/press-11.png" alt="" /></a></li>
+                <li class="col-xs-4 col-sm-2"><img class="img-responsive" src="/assets/images/press/press-12.png" alt="" /></a></li>                    
+            </ul><!--//press-list-->
+
+            <!--
+            <div class="press-lead text-center">
+                <h3 class="title">Have press inquires?</h3>
+                <p class="press-links"><a href="#">Download our product overview</a> or <a href="contact.html">Get in touch</a></p>
+            </div>
+            -->
+
+        </div><!--//container-->
+    </section><!--//press-->
+
+    <!-- ******CTA Section****** -->
+    <section id="cta-section" class="section cta-section text-center home-cta-section">
+        <div class="container">
+            <h2 class="title">Ready to be the hero in your company?</h2>
+            <p class="intro">More than <span class="counting">300</span> companies love LogZilla</p>
+            <p><a class="btn btn-cta btn-cta-primary" href="download.html" target="_blank">Get LogZilla Now</a></p>
+        </div><!--//container-->
+    </section><!--//cta-section-->
+
+</div><!--//section-wrapper-->
+
+<!-- Video Modal -->
+<div class="modal modal-video" id="modal-video" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 id="videoModalLabel" class="modal-title sr-only">Video Tour</h4>
+            </div>
+            <div class="modal-body">
+                <div class="video-container">
+                    <!--<iframe id="video" src="//player.vimeo.com/video/216230107?color=ffffff&amp;wmode=transparent" width="720" height="405" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
+                    <iframe width="720" height="405" src="//www.youtube.com/embed/drg5wv_mgfA?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+                </div><!--//video-container-->
+            </div><!--//modal-body-->
+        </div><!--//modal-content-->
+    </div><!--//modal-dialog-->
+</div><!--//modal-->
+
+<!-- Start: Page Specific JS Loads -->
+<script>
+// Make sure jQuery is loaded before loading the Vimeo JS
+head.ready("jquery", function() {
+    head.load(
+            { youtube: "/assets/js/youtube.js"},
+            function() {
+                //console.log("Vimeo JS Loaded");
+            });
+});
+</script>
+<!-- END: Page Specific JS Loads -->
+</body>
+
+
+
+        <!-- Start: Image expand -->
+        <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" data-dismiss="modal">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <img src="" class="imagepreview img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End: Image expand -->
+
+        <!-- ******FOOTER****** --> 
+<footer class="footer">
+    <div class="footer-content">
+        <div class="container">
+            <div class="row">                    
+                <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
+                    <div class="footer-col-inner">
+                        <h3 class="title">About us</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="/about.html"><i class="fa fa-caret-right"></i>Who we are</a></li>
+                            <li><a href="/blog.html"><i class="fa fa-caret-right"></i>BlogZilla</a></li>
+                            <li><a href="/contact.html"><i class="fa fa-caret-right"></i>Contact us</a></li>
+                        </ul>
+                    </div><!--//footer-col-inner-->
+                </div><!--//foooter-col-->    
+                <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
+                    <div class="footer-col-inner">
+                        <h3 class="title">Product</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="/platform.html"><i class="fa fa-caret-right"></i>How it works</a></li>
+                            <li><a href="https://github.com/logzilla/extras" target="_new"><i class="fa fa-caret-right"></i>Free Addons</a></li>
+                        </ul>
+                    </div><!--//footer-col-inner-->
+                </div><!--//foooter-col-->              
+                <div class="footer-col links col-md-2 col-sm-4 col-xs-12 sm-break">
+                    <div class="footer-col-inner">
+                        <h3 class="title">Support</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="http://demo.logzilla.net/help" target="_new"><i class="fa fa-caret-right"></i>Documentation</a></li>
+                            <li><a href="/tos.html"><i class="fa fa-caret-right"></i>Terms of use</a></li>
+                            <li><a href="/privacy.html"><i class="fa fa-caret-right"></i>Privacy</a></li>
+                        </ul>
+                    </div><!--//footer-col-inner-->            
+                </div><!--//foooter-col-->   
+                <div class="footer-col connect col-xs-12 col-md-6">
+                    <div class="footer-col-inner">
+                        <ul class="social list-inline">
+                            <li><a href="http://twitter.com/logzilla" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/logzilla" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="http://www.facebook.com/logzilla?fref=ts" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        </ul>
+                        <div class="form-container">
+                            <p class="intro">Stay up to date with the latest news and offers from LogZilla</p>
+                            <form class="signup-form navbar-form" id="newsletter">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="emailNL" name="emailNL" placeholder="Enter your email address" required>
+                                </div>   
+                                <input type="hidden" id="subject" name="subjectNL" value="LogZilla Newsletter Request">
+                                <input type="hidden" id="message" name="messageNL" value="LogZilla Newsletter Request">
+                                <input type="hidden" id="name" name="nameNL" value="LogZilla Newsletter Request">
+                                <input type="hidden" id="company" name="companyNL" value="LogZilla Newsletter Request">
+                                <input type="hidden" id="phone" name="phoneNL" value="LogZilla Newsletter Request">
+                                <button type="submit" id="submitNL" class="btn btn-cta btn-cta-primary">Subscribe Now</button>                                 
+                            </form>                               
+                            <p class="tel"><i class="fa fa-phone"></i>&nbsp;&nbsp;936-4NetOps (463-8677)</p>
+                            <p class="email"><i class="fa fa-envelope-o"></i><a href="/contact.html">&nbsp;&nbsp;Contact Us Through Email</a></p> 
+                            <a href="https://twitter.com/logzilla" class="twitter-follow-button" data-show-count="true">Follow @LogZilla</a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>                        
+                        </div><!--//subscription-form-->
+                    </div><!--//footer-col-inner-->
+                </div><!--//foooter-col-->
+                <div class="clearfix"></div> 
+            </div><!--//row-->
+        </div><!--//contact-->
+    </div><!--//footer-content-->
+    <div class="bottom-bar">
+        <div class="container">
+            <small class="copyright">Copyright @ LogZilla Corporation</small>                
+        </div><!--//container-->
+    </div><!--//bottom-bar-->
+</footer><!--//footer-->
+
+    </body>
+</html>

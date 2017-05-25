@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:image" content="/assets/images/logos/logzilla/logzilla-logo-circle.png">
+<meta property="og:site_name" content="LogZilla">
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ site.url }}" />
+<meta name="application-name" content="LogZilla"/>
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/assets/images/favicon/logzilla-144.png?v=2.0">
+<meta name="msapplication-config" content="/assets/images/favicon/browserconfig.xml">
+{% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+    <meta property="og:description" content="{{ page.description }}">
+    <meta property="og:title" content="{{ page.title }}">
+{% else %}
+    <meta name="description" content="LogZilla is the leader in delivering real-time insight with an intelligent network operations platform.">
+    <meta property="og:description" content="The LogZilla #NetOps Platform provides IT Operations with real-time Network Intelligence and Automation">
+    <meta property="og:title" content="LogZilla: Network Insight, Simplified.">
+{% endif %}

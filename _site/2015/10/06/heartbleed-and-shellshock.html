@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Test</title>
+        <title>Heartbleed and Shellshock</title>
         <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,7 +25,7 @@
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Test">
+  <meta name="twitter:title" content="Heartbleed and Shellshock">
   <meta name="twitter:description" content="">
   <!--<meta name="twitter:image" content="http://localhost:4000/assets/images/logos/logzilla/logzilla-logo-small.png">-->
   <meta name="twitter:image" content="/assets/images/logos/logzilla/logo_orange_png_cropped_150x150.png" />
@@ -33,8 +33,8 @@
 
 <!-- Facebook -->
 
-  <meta property="og:url" content="http://localhost:4000/2014/10/16/benefits-of-deduplication.html">
-  <meta property="og:title" content="Test">
+  <meta property="og:url" content="http://localhost:4000/2015/10/06/heartbleed-and-shellshock.html">
+  <meta property="og:title" content="Heartbleed and Shellshock">
   <meta property="og:description" content="">
 
 <meta property="og:image" content="http://localhost:4000/assets/images/logos/logzilla/logzilla-logo-small.png">
@@ -43,7 +43,7 @@
 <meta name="description" content="LogZilla is the leader in delivering real-time insight with an intelligent network operations platform.">
 
 
-<meta name="author" content="markwheat1">
+<meta name="author" content="tdamon">
 
 
         <link rel="shortcut icon" href="/assets/images/favicon/logzilla.ico?v=2.0">
@@ -146,24 +146,24 @@ head.ready("jquery", function() {
 </script>
 
         <!-- Begin Jekyll SEO tag v2.2.3 -->
-<title>Test | LogZilla NetOps Platform</title>
-<meta property="og:title" content="Test" />
-<meta name="author" content="markwheat1" />
+<title>Heartbleed and Shellshock | LogZilla NetOps Platform</title>
+<meta property="og:title" content="Heartbleed and Shellshock" />
+<meta name="author" content="tdamon" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Earlier this week one of our customers had a log storm due to a problem with a production server. They were able to quickly identify there was anomalistic behavior by looking at the event rate widget and easily identified what the source of the problem was through the top hosts widget. I took a screen shot of their LogZilla dashboard:" />
-<meta property="og:description" content="Earlier this week one of our customers had a log storm due to a problem with a production server. They were able to quickly identify there was anomalistic behavior by looking at the event rate widget and easily identified what the source of the problem was through the top hosts widget. I took a screen shot of their LogZilla dashboard:" />
-<link rel="canonical" href="http://localhost:4000/2014/10/16/benefits-of-deduplication.html" />
-<meta property="og:url" content="http://localhost:4000/2014/10/16/benefits-of-deduplication.html" />
+<meta name="description" content="Update: A further bash patch was released on September 29th, after this post was written. I’ve updated the command output for testing a system for the Shellshock vulnerability." />
+<meta property="og:description" content="Update: A further bash patch was released on September 29th, after this post was written. I’ve updated the command output for testing a system for the Shellshock vulnerability." />
+<link rel="canonical" href="http://localhost:4000/2015/10/06/heartbleed-and-shellshock.html" />
+<meta property="og:url" content="http://localhost:4000/2015/10/06/heartbleed-and-shellshock.html" />
 <meta property="og:site_name" content="LogZilla NetOps Platform" />
 <meta property="og:image" content="http://localhost:4000/assets/images/logos/logzilla/logzilla-logo-small.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2014-10-16T00:00:00-04:00" />
+<meta property="article:published_time" content="2015-10-06T00:00:00-04:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@logzilla" />
-<meta name="twitter:creator" content="@markwheat1" />
+<meta name="twitter:creator" content="@tdamon" />
 <meta property="article:publisher" content="logzilla" />
 <script type="application/ld+json">
-{"@context":"http://schema.org","@type":"BlogPosting","headline":"Test","author":{"@type":"Person","name":"markwheat1"},"image":"http://localhost:4000/assets/images/logos/logzilla/logzilla-logo-small.png","datePublished":"2014-10-16T00:00:00-04:00","dateModified":"2014-10-16T00:00:00-04:00","description":"Earlier this week one of our customers had a log storm due to a problem with a production server. They were able to quickly identify there was anomalistic behavior by looking at the event rate widget and easily identified what the source of the problem was through the top hosts widget. I took a screen shot of their LogZilla dashboard:","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logos/logzilla/logzilla-logo-small.png"},"name":"markwheat1"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2014/10/16/benefits-of-deduplication.html"},"url":"http://localhost:4000/2014/10/16/benefits-of-deduplication.html"}</script>
+{"@context":"http://schema.org","@type":"BlogPosting","headline":"Heartbleed and Shellshock","author":{"@type":"Person","name":"tdamon"},"image":"http://localhost:4000/assets/images/logos/logzilla/logzilla-logo-small.png","datePublished":"2015-10-06T00:00:00-04:00","dateModified":"2015-10-06T00:00:00-04:00","description":"Update: A further bash patch was released on September 29th, after this post was written. I’ve updated the command output for testing a system for the Shellshock vulnerability.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logos/logzilla/logzilla-logo-small.png"},"name":"tdamon"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2015/10/06/heartbleed-and-shellshock.html"},"url":"http://localhost:4000/2015/10/06/heartbleed-and-shellshock.html"}</script>
 <!-- End Jekyll SEO tag -->
 
     </head>
@@ -201,31 +201,38 @@ head.ready("jquery", function() {
 
 
 
-        <body class="features-page">    
-    <div class="headline-bg" style='background: url("/assets/images/figures/monitor-binary-blue.jpg")'>
-    </div><!--//headline-bg-->         
-<!-- ******BLOG****** -->         
+        <!-- ******LAYOUT BLOG****** -->         
+
+
+<!--Promo Area Start-->
+<section class="blog section section-on-bg">
+    <div class="container text-center">                
+        <h2 class="title text-center"><span class="highlight">Heartbleed and Shellshock</span></h2>
+        <p class="intro text-center"></p>
+    </div><!--//container-->
+</section><!--//section-->
+
+<!-- ******LAYOUT POSTS****** -->         
 <div class="blog-entry-wrapper"> 
-    <div class="blog-headline-bg">
-    </div><!--//blog-headline-bg-->
+    <div class="headline-bg" style="background-image: url('http://localhost:4000//assets/images/blog/post_images/heartbleed-and-shellshock/bash-bug-virus.jpg');"></div>
     <div class="blog-entry">                 
         <article class="post">
             <header class="blog-entry-heading">
                 <div class="container text-center">                        
-                    <h2 class="title">Test</h2>
+                    <h2 class="title"></h2>
                     <div class="meta">
-                        <ul class="meta-list list-inline">                                       
-                            <li class="post-author"><a href="http://twitter.com/markwheat1" target=_new>Mark Wheat</a>,</li>
-                            <li class="post-time">16 October 2014</li>
+                        <ul class="meta-list list-inline" style="line-height: 5">
+                            <li class="post-author"><a href="http://twitter.com/tdamon" target=_new>Tom Damon</a>,</li>
+                            <li class="post-time">06 October 2015</li>
                         </ul><!--//meta-list-->    	
                     </div><!--meta-->
                 </div><!--//container-->
                 <nav class="post-nav post-nav-top">
                     
-                    <a class="prev"></a>
+                    <span class="nav-previous"><a href="/2014/10/17/configuring-tls-tunnels-in-syslog-ng.html" rel="prev"><i class="fa fa-long-arrow-left"></i>How to send TLS encrypted logs using syslog-ng (06 October 2015)</a></span>
                     
                     
-                    <span class="nav-next"><a href="/2017/04/18/log-spikes-and-message-storms.html" rel="next">Log Spikes and Message Storms (16 October 2014)<i class="fa fa-long-arrow-right"></i></a></span>
+                    <span class="nav-next"><a href="/2015/10/16/feeling-trapped.html" rel="next">Feeling TRAPped? (06 October 2015)<i class="fa fa-long-arrow-right"></i></a></span>
                     
                 </nav><!--//post-nav-->
             </header><!--//blog-entry-heading-->
@@ -233,34 +240,99 @@ head.ready("jquery", function() {
             <div class="container">
                 <div class="row">
                     <div class="blog-entry-content col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
-                        <p>Earlier this week one of our customers had a log storm due to a problem with a production server. They were able to quickly identify there was anomalistic behavior by looking at the event rate widget and easily identified what the source of the problem was through the top hosts widget. I took a screen shot of their LogZilla dashboard:</p>
+                        <p>Update:  A further bash patch was released on September 29th, after this post was written.  I’ve updated the command output for testing a system for the Shellshock vulnerability.</p>
 
-<p>Dashboard showing spikes</p>
+<p>In our documentation for installing or upgrading Logzilla, the first step is always to update the operating system. We constantly see systems that are so far behind in updates that they have known vulnerabilities that have been patched months ago. Let’s take a look at a few items that have been popping up in the news lately to give an idea of how widespread these preventable compromises are becoming.</p>
 
-<p>You can adjust the rate widgets to get more myopic or macro based on the time series you prefer but when you see something spike above the norm, it is an indication that there are issues in your environment. Looking at the top host logging during that time will also help pinpoint the source of the issue, this was the actual problem graphic:</p>
+<h2 id="heartbleed">Heartbleed</h2>
+<p>CVE-2012-1823 <a href="">https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-1823
+</a></p>
 
-<p>The interesting thing with this particular scenario was that the logging rate bumped from about 2,000 messages per second to well over 25,000 messages per second and sustained that rate for almost a day.</p>
+<p>This is a bug “in PHP before 5.3.12 and 5.4.x before 5.4.2, when configured as a CGI script (aka php-cgi), does not properly handle query strings that lack an = (equals sign) character, which allows remote attackers to execute arbitrary code by placing command-line options in the query string, related to lack of skipping a certain php_getopt for the ‘d’ case.”</p>
 
-<p>Most other logging tools start to fail over with anything more than 7,000 events per second per server, where LogZilla’s patented engine can accommodate well over 80,000 events per second on one server. If the customer has another solution, it would have required (4) four servers to handle the spike. In this case, the customer received a licensing warning, called us, and we provided a temporary increase to figure out what was going on.</p>
+<p>This particular vulnerability was reported in May of 2012, yet over the last few months, hundreds of servers have been compromised using it.</p>
 
-<p>Our single server handled the load without even breaking a sweat, never dropped a message, and had no performance degradation while the event storm was happening.</p>
+<h2 id="shellshock">Shellshock</h2>
+<p>CVE-2014-6271 <a href="">http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-6271</a></p>
 
-<p>What if you were using a less scalable tool and you had the same scenario, but now, in addition to figuring out what is wrong in your production environment, also have to repair your logging server? With other solutions, when you need them the most, they just can’t keep up!</p>
+<p>GNU Bash through 4.3 processes trailing strings after function definitions in the values of environment variables, which allows remote attackers to execute arbitrary code via a crafted environment, as demonstrated by vectors involving the ForceCommand feature in OpenSSH sshd, the mod_cgi and mod_cgid modules in the Apache HTTP Server, scripts executed by unspecified DHCP clients, and other situations in which setting the environment occurs across a privilege boundary from Bash execution.</p>
 
-<p>LogZilla also provides automation that could have automatically alerted the team responsible and even resolved the issue with no physical intervention. We are taking the lowest level indicator of health and performance and making it a front line management tool.</p>
+<p>This vulnerability was reported Sept 24, 2014 (yesterday at the time of this article). This demonstrates that serious new vulnerabilities are being discovered on a regular basis. It has the potential to affect hundreds of thousands of servers. You can test your server by running the following command.</p>
 
-<p>If you’re interested in learning more about LogZilla, feel free to contact me</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>env x='() { :;}; echo vulnerable' bash -c "echo this is a test"
+</code></pre>
+</div>
+
+<p>If your server is vulnerable, you’ll see the following output.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>root@host:/home/ubuntu# env x='() { :;}; echo vulnerable' bash -c "echo this is a test" 
+vulnerable 
+this is a test
+</code></pre>
+</div>
+
+<p>On a server with the first patch that was released, you’ll see this -</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>root@host:/home/ubuntu# env x='() { :;}; echo vulnerable' bash -c "echo this is a test" 
+bash: warning: x: ignoring function definition attempt 
+bash: error importing function definition for `x' 
+this is a test
+</code></pre>
+</div>
+
+<p>On a server with the newest patch, you’ll see the following:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>root@host:/home/ubuntu# env x='() { :;}; echo vulnerable' bash -c "echo this is a test"
+this is a test
+</code></pre>
+</div>
+
+<p>To patch both of these, you’ll need to run an update and the bash install.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>apt-get update &amp;&amp; apt-get -y update 
+apt-get install -y bash
+</code></pre>
+</div>
+
+<p>For future updates, I’ve implemented the Ubuntu auto-update package.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>apt-get -y install unattended-upgrades
+</code></pre>
+</div>
+
+<p>To configure unattended-upgrades, edit /etc/apt/apt.conf.d/50unattended-upgrades and adjust the following to fit your needs:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Unattended-Upgrade::Allowed-Origins { 
+    "${distro_id}:${distro_codename}-security"; 
+    // "${distro_id}:${distro_codename}-updates"; 
+    // "${distro_id}:${distro_codename}-proposed"; 
+    // "${distro_id}:${distro_codename}-backports"; 
+};
+</code></pre>
+</div>
+
+<p>For update notifications on your system, you can install apticron.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>apt-get install apticron
+</code></pre>
+</div>
+
+<p>Once the package is installed edit the <code class="highlighter-rouge">/etc/apticron/apticron.conf</code>, and set the email address and other options.</p>
+
+<p>The bottom line is, there is no excuse for letting your servers get compromised when security patches have been released.</p>
+
+<p>Protect your systems by keeping them up to date!</p>
 
                     </div><!--//blog-entry-content-->
 
                     <nav class="post-nav col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
-                    
-                    <a class="prev"></a>
-                    
-                    
-                    <span class="nav-next"><a href="/2017/04/18/log-spikes-and-message-storms.html" rel="next">Log Spikes and Message Storms (16 October 2014)<i class="fa fa-long-arrow-right"></i></a></span>
-                    
-                </nav><!--//post-nav-->
+                        
+                        <span class="nav-previous"><a href="/2014/10/17/configuring-tls-tunnels-in-syslog-ng.html" rel="prev"><i class="fa fa-long-arrow-left"></i>How to send TLS encrypted logs using syslog-ng (06 October 2015)</a></span>
+                        
+                        
+                        <span class="nav-next"><a href="/2015/10/16/feeling-trapped.html" rel="next">Feeling TRAPped? (06 October 2015)<i class="fa fa-long-arrow-right"></i></a></span>
+                        
+                    </nav><!--//post-nav-->
 
 
                 </div><!--//row-->
@@ -268,16 +340,20 @@ head.ready("jquery", function() {
         </article><!--//post-->                                      
     </div><!--//blog-entry-->
 </div><!--//blog-entry-wrapper-->  
-</div><!--//wrapper-->
+
+
+
+</div><!--//blog-entry-wrapper-->  
+
 
 
         <!-- Start: Image expand -->
         <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog" data-dismiss="modal" style="width: 90%;">
+            <div class="modal-dialog modal-lg" data-dismiss="modal">
                 <div class="modal-content">
                     <div class="modal-body">
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                        <img src="" class="imagepreview">
+                        <img src="" class="imagepreview img-responsive">
                     </div>
                 </div>
             </div>
