@@ -2,7 +2,7 @@
 published: true
 layout: post
 
-title: Log Spikes and Message Storms
+title: Open Source Solutions are Not Free
 subtitle: Opensource is not Free.
 author: markwheat1
 author-name: "Mark Wheat"
