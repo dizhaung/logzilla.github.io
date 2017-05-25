@@ -2,12 +2,13 @@
 published: true
 layout: post
 
-title: Heartbleed and Shellshock: The Importance of Updating Your Software
-subtitle: When installing LogZilla, the first step is to always update the operating sytem.
+---
+title: Heartbleed and Shellshock: The Importance of Updaing Your Software
+subtitle: How well does your event manager handle traffic spikes?
 author: tdamon
 author-name: "Tom Damon"
-tags: [NetOps, Scalability, Update, Upgrade, Patch, vulnerabilities]
-summary: We constantly see systems that are so far behind in updates that they have known vulnerabilities...
+tags: [NetOps, Scalability, Updating, Vulnerability]
+summary: When installing or upgrading Logzilla, the first step is always to update the operating system, since we constantly see systems that are so far behind in updates that they have known vulnerabilities...
 ---
 
 # Heartbleed and Shellshock: The Importance of Updating Your Software
