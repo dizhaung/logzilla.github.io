@@ -10,7 +10,7 @@ tags: [NetOps, Syslog]
 summary: In the past two weeks I have had multiple conversations where I asked, "what do you like about LogZilla?" Instead of "it's fast or "it scales and saves us money", they have responded with...
 
 
-img: /assets/images/background/data-stream-blue-planet-dark.png
+headline-bg: /assets/images/background/data-stream-blue-planet-dark.png
 
 ---
 

@@ -2,6 +2,7 @@
 published: true
 layout: post
 
+---
 title: Heartbleed and Shellshock: The Importance of Updaing Your Software
 subtitle: How well does your event manager handle traffic spikes?
 author: tdamon

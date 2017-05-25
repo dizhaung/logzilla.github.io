@@ -10,7 +10,7 @@ tags: [Download, Dashboards]
 summary: LogZilla’s latest release includes dashboards for Cisco, Security, and Windows...
 
 
-img: /assets/images/figures/monitor-binary-blue.jpg
+headline-bg: /assets/images/figures/monitor-binary-blue.jpg
 
 ---
 

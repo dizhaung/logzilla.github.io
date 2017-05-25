@@ -2,11 +2,11 @@
 layout: blog
 title: BlogZilla
 intro: Empowering Smarter Network Operations
+headline-bg: /assets/images/background/bg-header-small-1.jpg
 ---
 
 <div class="wrapper">
     <div class="container"> 
-
         {% for post in site.posts %}
         {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
         {% if thecycle == 'odd' %}
@@ -14,7 +14,7 @@ intro: Empowering Smarter Network Operations
             {% else %}
             <div class="blog-card">
                 {% endif %}
-                <div class="photo" style='background: url("{{ post.img }}") center no-repeat'></div>
+                <div class="photo" style='background: url("{{ post.headline-bg }}") center no-repeat'></div>
                 <ul class="details">
                     <li class="author"><a href="http://twitter.com/{{ post.author }}" target=_new>{{ post.author-name }}</a></li>
                     <li class="date">{{ post.date | date: "%d %B %Y" }}</li>

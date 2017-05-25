@@ -1829,14 +1829,17 @@ select {
 }
 .blog-entry-wrapper .blog-entry .blog-entry-heading {
   margin-bottom: 60px;
-  position: relative;
+  position: absolute;
+  top: 0;
+  width: 100%;
   height: 500px;
-  background: #253340 url('') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   color: #fff;
+  margin-top: 0px;
+  background-image: linear-gradient(0deg, transparent 45%, rgba(0, 0, 0, 0.4) 81%)
 }
 .blog-entry-wrapper .blog-entry .blog-entry-heading:after {
   content: "";
@@ -1846,7 +1849,7 @@ select {
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.1);
   z-index: 10;
 }
 .blog-entry-wrapper .blog-entry .blog-entry-heading .container {

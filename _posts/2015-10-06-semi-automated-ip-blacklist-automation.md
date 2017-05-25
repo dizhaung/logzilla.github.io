@@ -8,9 +8,7 @@ author: cdukes
 author-name: "Clayton Dukes"
 tags: [NetOps, Scalability]
 summary: Just want to be able to add a list of URLs to the router Automatically...
-
-
-img: /assets/images/blog/post_images/message-storm/storm-banner.jpg
+headline-bg: /assets/images/blog/post_images/message-storm/storm-banner.jpg
 
 ---
 
