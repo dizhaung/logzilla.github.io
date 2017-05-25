@@ -409,21 +409,21 @@ select {
   height: 780px;
 }
 .bg-slider-wrapper .flexslider .slide.slide-1 {
-  background: #253340 url('../images/background/bg-header-1.jpg') no-repeat 50% top;
+  background: #253340 url('/assets/images/background/bg-header-1.jpg') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .bg-slider-wrapper .flexslider .slide.slide-2 {
-  background: #253340 url('../images/background/bg-header-2.jpg') no-repeat 50% top;
+  background: #253340 url('/assets/images/background/bg-header-2.jpg') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .bg-slider-wrapper .flexslider .slide.slide-3 {
-  background: #253340 url('../images/background/bg-header-3.jpg') no-repeat 50% top;
+  background: #253340 url('/assets/images/background/bg-header-3.jpg') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -446,23 +446,23 @@ select {
   top: 0;
   left: 0;
   height: 500px;
-  background: #253340 url('../images/background/bg-header-small-1.jpg') no-repeat 50% top;
+  background: #253340 url('/assets/images/background/bg-header-small-1.jpg') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .headline-bg.pricing-headline-bg {
-  background-image: url('../images/background/bg-header-small-2.jpg');
+  background-image: url('/assets/images/background/bg-header-small-2.jpg');
 }
 .headline-bg.contact-headline-bg {
-  background-image: url('../images/background/bg-header-small-3.jpg');
+  background-image: url('/assets/images/background/bg-header-small-3.jpg');
 }
 .headline-bg.about-headline-bg {
-  background-image: url('../images/background/bg-header-small-4.jpg');
+  background-image: url('/assets/images/background/bg-header-small-4.jpg');
 }
 .headline-bg.ciscolive-headline-bg {
-  background-image: url('../images/ciscolive/cisco-live-us-wos-gradient-2048x932.jpg');
+  background-image: url('/assets/images/ciscolive/cisco-live-us-wos-gradient-2048x932.jpg');
 }
 /* ======= CiscoLive ======= */
 .clive {
@@ -812,7 +812,7 @@ select {
 }
 /* ======= cta-section ======= */
 .cta-section {
-  background: #253340 url('../images/background/bg-footer-1.jpg') no-repeat left top;
+  background: #253340 url('/assets/images/background/bg-footer-1.jpg') no-repeat left top;
   background-size: cover;
   min-height: 420px;
   color: #fff;
@@ -820,13 +820,13 @@ select {
   border: none;
 }
 .cta-section.pricing-cta-section {
-  background-image: url('../images/background/bg-footer-2.jpg');
+  background-image: url('/assets/images/background/bg-footer-2.jpg');
 }
 .cta-section.aboutus-cta-section {
-  background-image: url('../images/background/well-oiled-machine.png');
+  background-image: url('/assets/images/background/well-oiled-machine.png');
 }
 .cta-section.contact-cta-section {
-  background-image: url('../images/background/bg-footer-3.jpg');
+  background-image: url('/assets/images/background/bg-footer-3.jpg');
 }
 .cta-section .title {
   font-size: 36px;
@@ -1284,7 +1284,7 @@ select {
 /* ======= Download Apps ======= */
 .download-page .headline-bg {
   height: 1200px;
-  background: #253340 url('../images/background/bg-mobile-headline.jpg') no-repeat 50% top;
+  background: #253340 url('/assets/images/background/bg-mobile-headline.jpg') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1309,7 +1309,7 @@ select {
   width: 324px;
   height: 651px;
   display: block;
-  background: url('../images/mobile/iphone.png') no-repeat left top;
+  background: url('/assets/images/mobile/iphone.png') no-repeat left top;
   position: relative;
 }
 .apps-section .phone-holder .screenshot {
@@ -1578,28 +1578,28 @@ select {
   z-index: 10;
 }
 .blog-slider .slide.slide-1 {
-  background: #253340 url('../images/blog/post-1.jpg') no-repeat 50% top;
+  background: #253340 url('') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .blog-slider .slide.slide-2 {
-  background: #253340 url('../images/blog/post-2.jpg') no-repeat 50% top;
+  background: #253340 url('') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .blog-slider .slide.slide-3 {
-  background: #253340 url('../images/blog/post-3.jpg') no-repeat 50% top;
+  background: #253340 url('') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .blog-slider .slide.slide-4 {
-  background: #253340 url('../images/blog/post-4.jpg') no-repeat 50% top;
+  background: #253340 url('') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1632,7 +1632,7 @@ select {
 .blog-slider .flex-direction-nav a.flex-prev:before {
   content: "";
   text-indent: -9999px;
-  background: url('../images/flexslider/carousel-arrow-prev.png') no-repeat left top;
+  background: url('/assets/images/flexslider/carousel-arrow-prev.png') no-repeat left top;
   display: block;
   width: 30px;
   height: 50px;
@@ -1643,7 +1643,7 @@ select {
 .blog-slider .flex-direction-nav a.flex-next:before {
   content: "";
   text-indent: -9999px;
-  background: url('../images/flexslider/carousel-arrow-next.png') no-repeat right top;
+  background: url('/assets/images/flexslider/carousel-arrow-next.png') no-repeat right top;
   display: block;
   width: 30px;
   height: 50px;
@@ -1811,7 +1811,7 @@ select {
   margin-bottom: 60px;
   position: relative;
   height: 500px;
-  background: #253340 url('../images/blog/post-2.jpg') no-repeat 50% top;
+  background: #253340 url('') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -2277,14 +2277,14 @@ select {
 }
 /* ======= Login Page ======= */
 .has-full-screen-bg .upper-wrapper {
-  background: #253340 url('../images/background/bg-screen-1.jpg') no-repeat 50% top;
+  background: #253340 url('/assets/images/background/bg-screen-1.jpg') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .has-full-screen-bg.signup-page .upper-wrapper {
-  background: #253340 url('../images/background/bg-screen-2.jpg') no-repeat 50% top;
+  background: #253340 url('/assets/images/background/bg-screen-2.jpg') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
