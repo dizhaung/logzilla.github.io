@@ -1,10 +1,10 @@
 ---
-published: true
+published: false
 layout: post
 
 title: Semi-Automated IP Blacklist Automation
 subtitle: Just add a list of URLs ot the Router.....
-author: Cdukes
+author: cdukes
 author-name: "Clayton Dukes"
 tags: [NetOps, Scalability]
 summary: Just want to be able to add a list of URLs to the router Automatically...
