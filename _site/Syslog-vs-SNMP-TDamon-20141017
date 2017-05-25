@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Syslog vs. SNMP</title>
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:image" content="/assets/images/logos/logzilla/logzilla-logo-circle.png">
+<meta property="og:site_name" content="LogZilla">
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://localhost:4000" />
+<meta name="application-name" content="LogZilla"/>
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/assets/images/favicon/logzilla-144.png?v=2.0">
+<meta name="msapplication-config" content="/assets/images/favicon/browserconfig.xml">
+
+    <meta name="description" content="LogZilla is the leader in delivering real-time insight with an intelligent network operations platform.">
+    <meta property="og:description" content="The LogZilla #NetOps Platform provides IT Operations with real-time Network Intelligence and Automation">
+    <meta property="og:title" content="LogZilla: Network Insight, Simplified.">
+
+
+        <!-- Twitter -->
+<!--<meta name="twitter:creator" content="@{"username"=>"logzilla"}">-->
+<meta name="twitter:site" content="@logzilla">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Syslog vs. SNMP">
+  <meta name="twitter:description" content="">
+  <!--<meta name="twitter:image" content="http://localhost:4000/assets/images/logos/logzilla/logzilla-logo-small.png">-->
+  <meta name="twitter:image" content="/assets/images/logos/logzilla/logo_orange_png_cropped_150x150.png" />
+
+
+<!-- Facebook -->
+
+  <meta property="og:url" content="http://localhost:4000/Syslog-vs-SNMP-TDamon-20141017">
+  <meta property="og:title" content="Syslog vs. SNMP">
+  <meta property="og:description" content="">
+
+<meta property="og:image" content="http://localhost:4000/assets/images/logos/logzilla/logzilla-logo-small.png">
+
+<!-- Meta -->
+<meta name="description" content="LogZilla is the leader in delivering real-time insight with an intelligent network operations platform.">
+
+
+<meta name="author" content="tdamon">
+
+
+        <link rel="shortcut icon" href="/assets/images/favicon/logzilla.ico?v=2.0">
+<link rel="icon" sizes="16x16 32x32 64x64" href="/assets/images/favicon/logzilla.ico?v=2.0">
+<link rel="icon" type="image/png" sizes="196x196" href="/assets/images/favicon/logzilla-192.png?v=2.0">
+<link rel="icon" type="image/png" sizes="160x160" href="/assets/images/favicon/logzilla-160.png?v=2.0">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/images/favicon/logzilla-96.png?v=2.0">
+<link rel="icon" type="image/png" sizes="64x64" href="/assets/images/favicon/logzilla-64.png?v=2.0">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/logzilla-32.png?v=2.0">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/logzilla-16.png?v=2.0">
+<link rel="apple-touch-icon" href="/assets/images/favicon/logzilla-57.png?v=2.0">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/images/favicon/logzilla-114.png?v=2.0">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/images/favicon/logzilla-72.png?v=2.0">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/images/favicon/logzilla-144.png?v=2.0">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/images/favicon/logzilla-60.png?v=2.0">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/images/favicon/logzilla-120.png?v=2.0">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/images/favicon/logzilla-76.png?v=2.0">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/images/favicon/logzilla-152.png?v=2.0">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/logzilla-180.png?v=2.0">
+
+
+
+        <!-- Global CSS -->
+<link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css">   
+
+<!-- Plugins CSS -->    
+<link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.css">
+<link rel="stylesheet" href="/assets/plugins/flexslider/flexslider.css">
+
+<!-- Main Site CSS -->
+<link rel="stylesheet" href="/assets/css/styles.css" type="text/css">
+
+<!-- Blog CSS -->
+<link rel="stylesheet" href="/css/blog.css" type="text/css">
+
+
+        <!-- Fonts -->
+<link href='//fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300' rel='stylesheet' type='text/css'> 
+<link href='//fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
+
+        <!-- Start: Load head.js ref: http://headjs.com/site/api/v2.00.html#setup -->
+<script src="/assets/js/head.min.js"></script>
+<!-- END: Load head.js ref: http://headjs.com/site/api/v2.00.html#setup -->
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Javascript: This is loaded using head.js so that they load asynchronously -->          
+<script>
+// this loads asynchronously & in parallel
+// and names the file loaded in case we want to callback with head.ready()
+head.load(
+        { jquery: "/assets/plugins/jquery-1.12.3.min.js"},
+        { bootstrap: "/assets/plugins/bootstrap/js/bootstrap.min.js" },
+        { bshover: "/assets/plugins/bootstrap-hover-dropdown.min.js" }, 
+        { back2top: "/assets/plugins/back-to-top.js" }, 
+        { placeholder: "/assets/plugins/jquery-placeholder/jquery.placeholder.js" }, 
+        { fitvids: "/assets/plugins/FitVids/jquery.fitvids.js" }, 
+        { flexslider: "/assets/plugins/flexslider/jquery.flexslider-min.js" }, 
+        { main: "/assets/js/main.js" },
+        { imgFullScreen: "/assets/js/image-fullscreen.js" },
+        { newsletter: "/assets/js/newsletter.js" },
+        { emailTrans: "/assets/js/email-transform.js" },
+        function() {
+            //console.log("JS Loaded");
+});
+</script>
+<!-- Hotjar Tracking Code for https://logzilla.github.io -->
+<script>
+(function(h,o,t,j,a,r){
+    h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+    h._hjSettings={hjid:510754,hjsv:5};
+    a=o.getElementsByTagName('head')[0];
+    r=o.createElement('script');r.async=1;
+    r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    a.appendChild(r);
+})(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+<script>
+// Highlights the menu item based on the currently loaded page
+head.ready("jquery", function() {
+    var loc = window.location.pathname.split("/")[1];
+    $('.nav-item').find('a').each(function() {
+        if ($(this).attr('href') == loc) {
+            $(this).parent("li").addClass('active');
+        } else {
+            $(this).parent("li").removeClass('active');
+        }
+    });
+    // Start: Special case for the blog page because the top area is white, so set orange color manually
+    // if (loc == "blog.html" || loc == "2017" ) {
+        // $('.nav-item a').css('color', '#ec6952');
+    // }
+    // End: Special case for the blog page
+});
+</script>
+
+        <!-- Begin Jekyll SEO tag v2.2.3 -->
+<title>Syslog vs. SNMP | LogZilla NetOps Platform</title>
+<meta property="og:title" content="Syslog vs. SNMP" />
+<meta name="author" content="tdamon" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="LogZilla is the leader in delivering real-time insight with an intelligent network operations platform." />
+<meta property="og:description" content="LogZilla is the leader in delivering real-time insight with an intelligent network operations platform." />
+<link rel="canonical" href="http://localhost:4000/Syslog-vs-SNMP-TDamon-20141017" />
+<meta property="og:url" content="http://localhost:4000/Syslog-vs-SNMP-TDamon-20141017" />
+<meta property="og:site_name" content="LogZilla NetOps Platform" />
+<meta property="og:image" content="http://localhost:4000/assets/images/logos/logzilla/logzilla-logo-small.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@logzilla" />
+<meta name="twitter:creator" content="@tdamon" />
+<meta property="article:publisher" content="logzilla" />
+<script type="application/ld+json">
+{"@context":"http://schema.org","@type":"WebPage","headline":"Syslog vs. SNMP","author":{"@type":"Person","name":"tdamon"},"image":"http://localhost:4000/assets/images/logos/logzilla/logzilla-logo-small.png","description":"LogZilla is the leader in delivering real-time insight with an intelligent network operations platform.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logos/logzilla/logzilla-logo-small.png"},"name":"tdamon"},"url":"http://localhost:4000/Syslog-vs-SNMP-TDamon-20141017"}</script>
+<!-- End Jekyll SEO tag -->
+
+    </head>
+
+    <body id="page-top">
+
+        <header id="header" class="header navbar-fixed-top">  
+    <div class="container">       
+        <h1 class="logo">
+            <a href="/index.html"><span class="text">LogZilla</span></a>
+        </h1><!--//logo-->
+        <nav class="main-nav navbar-right" role="navigation">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button><!--//nav-toggle-->
+            </div><!--//navbar-header-->
+            <div id="navbar-collapse" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"><a href="/ciscolive.html">Join us @ CiscoLive!</a></li>
+                    <li class="nav-item"><a href="/index.html">Home</a></li>
+                    <li class="nav-item"><a href="/platform.html">Platform</a></li>
+                    <li class="nav-item"><a href="/download.html">Download</a></li>
+                    <li class="nav-item"><a href="/blog.html">BlogZilla</a></li>
+                    <li class="nav-item"><a href="/about.html">About Us</a></li>
+                    <li class="nav-item"><a href="/contact.html">Contact</a></li>                    
+                </ul><!--//nav-->
+            </div><!--//navabr-collapse-->
+        </nav><!--//main-nav-->                     
+    </div><!--//container-->
+</header><!--//header-->
+
+
+
+        <!-- ******LAYOUT BLOG****** -->         
+
+<div class="headline-bg" style="background: url('') height: 500px;"></div>
+
+
+<!--Promo Area Start-->
+<section class="blog section section-on-bg">
+    <div class="container text-center">                
+        <h2 class="title text-center"><span class="highlight">Syslog vs. SNMP</span></h2>
+        <p class="intro text-center"></p>
+    </div><!--//container-->
+</section><!--//section-->
+
+<!-- ******LAYOUT POSTS****** -->         
+<div class="blog-entry-wrapper"> 
+    <div class="headline-bg" style="background-image: url('http://localhost:4000/');"></div>
+    <div class="blog-entry">                 
+        <article class="post">
+            <header class="blog-entry-heading">
+                <div class="container text-center">                        
+                    <h2 class="title"></h2>
+                    <div class="meta">
+                        <ul class="meta-list list-inline" style="line-height: 5">
+                            <li class="post-author"><a href="http://twitter.com/tdamon" target=_new>Tom Damon</a>,</li>
+                            <li class="post-time"></li>
+                        </ul><!--//meta-list-->    	
+                    </div><!--meta-->
+                </div><!--//container-->
+                <nav class="post-nav post-nav-top">
+                    
+                    <a class="prev"></a>
+                    
+                    
+                </nav><!--//post-nav-->
+            </header><!--//blog-entry-heading-->
+
+            <div class="container">
+                <div class="row">
+                    <div class="blog-entry-content col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
+                        # Syslog vs SNMP
+
+### By: Tom Damon on October 17, 2014
+
+   Over the years, I've been a member of a number of technical forums, and one thing that I have consistently seen, is problems that could have been prevented by an Event Management solution.  Most of the time, the obvious resolution to a problem is "check your logs", yet many experienced system administrators lack the awareness of this tool.
+
+   This article will be a three part series.  We'll start with an introduction to, and history of system logging.  Part two will cover using Event Management to optimize your network and improve security, and the third installment will discuss preventative maintenance and how to get started with a logging solution.
+
+   In order to understand event management and its uses, we'll start with the history of syslog and SNMP, and look at why they were developed.
+
+## History of System Logging
+   Syslog started in the 1980's as part of the Sendmail project.  Initially, the author, Eric Allman, used it solely to determine the status of messages, but it didn't take long to become an unofficial standard once other application developers saw its value.  By 1990 it had become the industry standard as outlined in RFC 3164.  It was later updated and revised in **RFC 5424**, which was intended to make the original RFC obsolete.  It was never widely adopted, and most systems still use the original specification.  One of the larger early adopters of this logging format is Cisco Sytems' IOS, used initially on their high-end routers.  Currently, there are even low end routers and switches aimed at home users that utilize the protocol.  
+
+   Syslog messages are text-based messages that should contain (in RFC3164) the following fields; Facility, Severity, Timestamp, Hostname, and Structured Data (the message itself).  From RFC5424, there are many more fields that utilize a more structured approach to providing infromat in the message test, which was intended to make messages easier to parse on the receiving end.
+  
+
+   SNMP (Simple Network Management Protocol) traces its roots back to **RFC 1028** for the Simple Gateway Protocol, released in 1987.  Although it has been revised several times over the years, the basic design is still the same.  It was originally defined by the IETF (Internet Engineering Task Force) to address the growing complexities involved in managing network systems.  The first iteration provided the basic structure and process required to define network management information, retrieve information from devices, control those devices, and allow unsolicited messages to be sent to a network management system.
+
+   SNMP relies on MIB-modules (Management Information Base) which each address one of any number of specific characteristics of a managed device.
+
+   There are some major differences between SNMP and Syslog.
+
+1. SNMP is bi-directional, so when we talk about SNMP Traps, we mean events that are generated by a device (such as a router) and sent to a host (like LogZilla). There is also SNMP Polling which is used in performance management to query the device directly (like a router) and collect statistics such as CPU Utilization, memory, etc. and plot those metrics on a graph. LogZilla only deals with the former (receiving traps) and should not be confused with a Performance management system.
+
+2. The "simple" in Simple Network Management Protocol is a misnomer, as it is anything but. In order to receive an event from an SNMP trap, the receiving end (like LogZilla) must maintain a directory full of translationÂ files known as MIBs (Management Information Base). This is because SNMP traps are sent using an OID (object identifier) instead of simple text that makes sense like syslog does. Instead, every event that comes in must be looked up in the MIB file and then translated to a more human-readable format. This makes SNMP traps quite a pain to deal with for most end users and is one of the biggest reasons most Network Managers prefer to use syslog over SNMP Traps.
+
+3. As noted above, all SNMP Traps must have a MIB file. This causes more work for the original program writers as well because they not only have to write this code into their program (like Cisco IOS, Apache, Linux, Firewalls, etc.), but they also have to write (and keep updated) that MIB file. As a results, most companies end up supporting more syslog than SNMP to alleviate some of the unnecessary strain on their developers. One good example of this is Cisco IOS - In Cisco's IOS v12.x, there are only about 100 possible SNMP traps, but there are over 6000 possible syslog messages. Because the ease of writing a log message versus having to wait for some managing body to approve an SNMP trap/OID/MIB, they decided to utilize syslog instead (which was a good decision!).
+
+ 
+
+                    </div><!--//blog-entry-content-->
+
+                    <nav class="post-nav col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
+                        
+                        <a class="prev"></a>
+                        
+                        
+                    </nav><!--//post-nav-->
+
+
+                </div><!--//row-->
+            </div><!--//container-->                                               
+        </article><!--//post-->                                      
+    </div><!--//blog-entry-->
+</div><!--//blog-entry-wrapper-->  
+
+
+
+
+
+        <!-- Start: Image expand -->
+        <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" data-dismiss="modal">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <img src="" class="imagepreview img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End: Image expand -->
+
+        <!-- ******FOOTER****** --> 
+<footer class="footer">
+    <div class="footer-content">
+        <div class="container">
+            <div class="row">                    
+                <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
+                    <div class="footer-col-inner">
+                        <h3 class="title">About us</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="/about.html"><i class="fa fa-caret-right"></i>Who we are</a></li>
+                            <li><a href="/blog.html"><i class="fa fa-caret-right"></i>BlogZilla</a></li>
+                            <li><a href="/contact.html"><i class="fa fa-caret-right"></i>Contact us</a></li>
+                        </ul>
+                    </div><!--//footer-col-inner-->
+                </div><!--//foooter-col-->    
+                <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
+                    <div class="footer-col-inner">
+                        <h3 class="title">Product</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="/platform.html"><i class="fa fa-caret-right"></i>How it works</a></li>
+                            <li><a href="https://github.com/logzilla/extras" target="_new"><i class="fa fa-caret-right"></i>Free Addons</a></li>
+                        </ul>
+                    </div><!--//footer-col-inner-->
+                </div><!--//foooter-col-->              
+                <div class="footer-col links col-md-2 col-sm-4 col-xs-12 sm-break">
+                    <div class="footer-col-inner">
+                        <h3 class="title">Support</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="http://demo.logzilla.net/help" target="_new"><i class="fa fa-caret-right"></i>Documentation</a></li>
+                            <li><a href="/tos.html"><i class="fa fa-caret-right"></i>Terms of use</a></li>
+                            <li><a href="/privacy.html"><i class="fa fa-caret-right"></i>Privacy</a></li>
+                        </ul>
+                    </div><!--//footer-col-inner-->            
+                </div><!--//foooter-col-->   
+                <div class="footer-col connect col-xs-12 col-md-6">
+                    <div class="footer-col-inner">
+                        <ul class="social list-inline">
+                            <li><a href="http://twitter.com/logzilla" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/logzilla" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="http://www.facebook.com/logzilla?fref=ts" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        </ul>
+                        <div class="form-container">
+                            <p class="intro">Stay up to date with the latest news and offers from LogZilla</p>
+                            <form class="signup-form navbar-form" id="newsletter">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="emailNL" name="emailNL" placeholder="Enter your email address" required>
+                                </div>   
+                                <input type="hidden" id="subject" name="subjectNL" value="LogZilla Newsletter Request">
+                                <input type="hidden" id="message" name="messageNL" value="LogZilla Newsletter Request">
+                                <input type="hidden" id="name" name="nameNL" value="LogZilla Newsletter Request">
+                                <input type="hidden" id="company" name="companyNL" value="LogZilla Newsletter Request">
+                                <input type="hidden" id="phone" name="phoneNL" value="LogZilla Newsletter Request">
+                                <button type="submit" id="submitNL" class="btn btn-cta btn-cta-primary">Subscribe Now</button>                                 
+                            </form>                               
+                            <p class="tel"><i class="fa fa-phone"></i>&nbsp;&nbsp;936-4NetOps (463-8677)</p>
+                            <p class="email"><i class="fa fa-envelope-o"></i><a href="/contact.html">&nbsp;&nbsp;Contact Us Through Email</a></p> 
+                            <a href="https://twitter.com/logzilla" class="twitter-follow-button" data-show-count="true">Follow @LogZilla</a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>                        
+                        </div><!--//subscription-form-->
+                    </div><!--//footer-col-inner-->
+                </div><!--//foooter-col-->
+                <div class="clearfix"></div> 
+            </div><!--//row-->
+        </div><!--//contact-->
+    </div><!--//footer-content-->
+    <div class="bottom-bar">
+        <div class="container">
+            <small class="copyright">Copyright @ LogZilla Corporation</small>                
+        </div><!--//container-->
+    </div><!--//bottom-bar-->
+</footer><!--//footer-->
+
+    </body>
+</html>

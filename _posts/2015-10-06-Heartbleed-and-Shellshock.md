@@ -2,18 +2,14 @@
 published: true
 layout: post
 
----
-title: Heartbleed and Shellshock: The Importance of Updaing Your Software
-subtitle: How well does your event manager handle traffic spikes?
+title: Heartbleed and Shellshock
+subtitle: Click...click...boom!
 author: tdamon
 author-name: "Tom Damon"
-tags: [NetOps, Scalability, Updating, Vulnerability]
-summary: When installing or upgrading Logzilla, the first step is always to update the operating system, since we constantly see systems that are so far behind in updates that they have known vulnerabilities...
+tags: [NetOps,Vulnerability, Security]
+summary: we constantly see systems that are so far behind in updates that they have known vulnerabilities...
+headline-bg: /assets/images/blog/post_images/heartbleed-and-shellshock/bash-bug-virus.jpg
 ---
-
-# Heartbleed and Shellshock: The Importance of Updating Your Software
-
-###By: Thomas Damon on October 06, 2015
 
 Update:  A further bash patch was released on September 29th, after this post was written.  I've updated the command output for testing a system for the Shellshock vulnerability.
 
@@ -34,64 +30,50 @@ GNU Bash through 4.3 processes trailing strings after function definitions in th
 
 This vulnerability was reported Sept 24, 2014 (yesterday at the time of this article). This demonstrates that serious new vulnerabilities are being discovered on a regular basis. It has the potential to affect hundreds of thousands of servers. You can test your server by running the following command.
 
-```
-env x='() { :;}; echo vulnerable' bash -c "echo this is a test"
-```
+	env x='() { :;}; echo vulnerable' bash -c "echo this is a test"
+
 If your server is vulnerable, you'll see the following output.
 
-```
-root@host:/home/ubuntu# env x='() { :;}; echo vulnerable' bash -c "echo this is a test" 
-vulnerable 
-this is a test
-```
+	root@host:/home/ubuntu# env x='() { :;}; echo vulnerable' bash -c "echo this is a test" 
+	vulnerable 
+	this is a test
 
 On a server with the first patch that was released, you'll see this -
 
-```
-root@host:/home/ubuntu# env x='() { :;}; echo vulnerable' bash -c "echo this is a test" 
-bash: warning: x: ignoring function definition attempt 
-bash: error importing function definition for `x' 
-this is a test
-```
+	root@host:/home/ubuntu# env x='() { :;}; echo vulnerable' bash -c "echo this is a test" 
+	bash: warning: x: ignoring function definition attempt 
+	bash: error importing function definition for `x' 
+	this is a test
 
-On a server with the newest patch, you'll see the following -
+On a server with the newest patch, you'll see the following:
 
-```
-root@host:/home/ubuntu# env x='() { :;}; echo vulnerable' bash -c "echo this is a test"
-this is a test
-```
+	root@host:/home/ubuntu# env x='() { :;}; echo vulnerable' bash -c "echo this is a test"
+	this is a test
 
 To patch both of these, you'll need to run an update and the bash install.
 
-```
-apt-get update && apt-get -y update 
-apt-get install -y bash
-```
+	apt-get update && apt-get -y update 
+	apt-get install -y bash
+
 
 For future updates, I've implemented the Ubuntu auto-update package.
 
-```
-apt-get -y install unattended-upgrades
-```
+	apt-get -y install unattended-upgrades
 
 To configure unattended-upgrades, edit /etc/apt/apt.conf.d/50unattended-upgrades and adjust the following to fit your needs:
 
-```
-Unattended-Upgrade::Allowed-Origins { 
-    "${distro_id}:${distro_codename}-security"; 
-    // "${distro_id}:${distro_codename}-updates"; 
-    // "${distro_id}:${distro_codename}-proposed"; 
-    // "${distro_id}:${distro_codename}-backports"; 
-};
-```
+	Unattended-Upgrade::Allowed-Origins { 
+	    "${distro_id}:${distro_codename}-security"; 
+	    // "${distro_id}:${distro_codename}-updates"; 
+	    // "${distro_id}:${distro_codename}-proposed"; 
+	    // "${distro_id}:${distro_codename}-backports"; 
+	};
 
 For update notifications on your system, you can install apticron.
 
-```
-apt-get install apticron
-```
+	apt-get install apticron
 
-Once the package is installed edit the /etc/apticron/apticron.conf, to set the email address and other options.
+Once the package is installed edit the `/etc/apticron/apticron.conf`, and set the email address and other options.
 
 The bottom line is, there is no excuse for letting your servers get compromised when security patches have been released.
 

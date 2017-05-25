@@ -201,20 +201,27 @@ head.ready("jquery", function() {
 
 
 
-        <body class="features-page">    
-    <div class="headline-bg" style='background: url("/assets/images/blog/post_images/message-storm/storm-banner.jpg")'>
-    </div><!--//headline-bg-->         
-<!-- ******BLOG****** -->         
+        <!-- ******LAYOUT BLOG****** -->         
+
+
+<!--Promo Area Start-->
+<section class="blog section section-on-bg">
+    <div class="container text-center">                
+        <h2 class="title text-center"><span class="highlight">Log Spikes and Message Storms</span></h2>
+        <p class="intro text-center"></p>
+    </div><!--//container-->
+</section><!--//section-->
+
+<!-- ******LAYOUT POSTS****** -->         
 <div class="blog-entry-wrapper"> 
-    <div class="blog-headline-bg">
-    </div><!--//blog-headline-bg-->
+    <div class="headline-bg" style="background-image: url('http://localhost:4000//assets/images/blog/post_images/message-storm/storm-banner.jpg');"></div>
     <div class="blog-entry">                 
         <article class="post">
             <header class="blog-entry-heading">
                 <div class="container text-center">                        
-                    <h2 class="title">Log Spikes and Message Storms</h2>
+                    <h2 class="title"></h2>
                     <div class="meta">
-                        <ul class="meta-list list-inline">                                       
+                        <ul class="meta-list list-inline" style="line-height: 5">
                             <li class="post-author"><a href="http://twitter.com/markwheat1" target=_new>Mark Wheat</a>,</li>
                             <li class="post-time">18 April 2017</li>
                         </ul><!--//meta-list-->    	
@@ -222,7 +229,7 @@ head.ready("jquery", function() {
                 </div><!--//container-->
                 <nav class="post-nav post-nav-top">
                     
-                    <span class="nav-previous"><a href="/2014/10/16/benefits-of-deduplication.html" rel="prev"><i class="fa fa-long-arrow-left"></i>Test (18 April 2017)</a></span>
+                    <span class="nav-previous"><a href="/2017/04/11/current-opensource-logging.html" rel="prev"><i class="fa fa-long-arrow-left"></i>Want To Save Money By Using Open Source? (18 April 2017)</a></span>
                     
                     
                     <span class="nav-next"><a href="/2017/04/18/network-event-remediation-in-real-time.html" rel="next">Network Event Remediation in real-time (18 April 2017)<i class="fa fa-long-arrow-right"></i></a></span>
@@ -259,13 +266,13 @@ head.ready("jquery", function() {
                     </div><!--//blog-entry-content-->
 
                     <nav class="post-nav col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1 col-xs-offset-0">
-                    
-                    <span class="nav-previous"><a href="/2014/10/16/benefits-of-deduplication.html" rel="prev"><i class="fa fa-long-arrow-left"></i>Test (18 April 2017)</a></span>
-                    
-                    
-                    <span class="nav-next"><a href="/2017/04/18/network-event-remediation-in-real-time.html" rel="next">Network Event Remediation in real-time (18 April 2017)<i class="fa fa-long-arrow-right"></i></a></span>
-                    
-                </nav><!--//post-nav-->
+                        
+                        <span class="nav-previous"><a href="/2017/04/11/current-opensource-logging.html" rel="prev"><i class="fa fa-long-arrow-left"></i>Want To Save Money By Using Open Source? (18 April 2017)</a></span>
+                        
+                        
+                        <span class="nav-next"><a href="/2017/04/18/network-event-remediation-in-real-time.html" rel="next">Network Event Remediation in real-time (18 April 2017)<i class="fa fa-long-arrow-right"></i></a></span>
+                        
+                    </nav><!--//post-nav-->
 
 
                 </div><!--//row-->
@@ -273,16 +280,20 @@ head.ready("jquery", function() {
         </article><!--//post-->                                      
     </div><!--//blog-entry-->
 </div><!--//blog-entry-wrapper-->  
-</div><!--//wrapper-->
+
+
+
+</div><!--//blog-entry-wrapper-->  
+
 
 
         <!-- Start: Image expand -->
         <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog" data-dismiss="modal" style="width: 90%;">
+            <div class="modal-dialog modal-lg" data-dismiss="modal">
                 <div class="modal-content">
                     <div class="modal-body">
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                        <img src="" class="imagepreview">
+                        <img src="" class="imagepreview img-responsive">
                     </div>
                 </div>
             </div>

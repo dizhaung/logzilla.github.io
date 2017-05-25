@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-05-25T00:40:15-04:00</updated><id>http://localhost:4000/</id><title type="html">LogZilla NetOps Platform</title><subtitle>LogZilla is the leader in delivering real-time insight with an intelligent network operations platform.</subtitle><entry><title type="html">WannaCry?</title><link href="http://localhost:4000/2017/05/17/wannacry-instant-visibility.html" rel="alternate" type="text/html" title="WannaCry?" /><published>2017-05-17T00:00:00-04:00</published><updated>2017-05-17T00:00:00-04:00</updated><id>http://localhost:4000/2017/05/17/wannacry-instant-visibility</id><content type="html" xml:base="http://localhost:4000/2017/05/17/wannacry-instant-visibility.html">&lt;p&gt;If you are in the free speaking world and have access to news outlets, you’ve no doubt heard about the WannaCry ransomware attack targeting systems all over the world.  The estimates are that over a quarter of a million computers have been compromised spanning more than 150 countries.  If you have anything to do with the operations and engineering of your company’s infrastructure, you probably started wondering if WannaCry had made it’s way into your piece of the universe.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-05-25T17:26:19-04:00</updated><id>http://localhost:4000/</id><title type="html">LogZilla NetOps Platform</title><subtitle>LogZilla is the leader in delivering real-time insight with an intelligent network operations platform.</subtitle><entry><title type="html">WannaCry?</title><link href="http://localhost:4000/2017/05/17/wannacry-instant-visibility.html" rel="alternate" type="text/html" title="WannaCry?" /><published>2017-05-17T00:00:00-04:00</published><updated>2017-05-17T00:00:00-04:00</updated><id>http://localhost:4000/2017/05/17/wannacry-instant-visibility</id><content type="html" xml:base="http://localhost:4000/2017/05/17/wannacry-instant-visibility.html">&lt;p&gt;If you are in the free speaking world and have access to news outlets, you’ve no doubt heard about the WannaCry ransomware attack targeting systems all over the world.  The estimates are that over a quarter of a million computers have been compromised spanning more than 150 countries.  If you have anything to do with the operations and engineering of your company’s infrastructure, you probably started wondering if WannaCry had made it’s way into your piece of the universe.&lt;/p&gt;
 
 &lt;p&gt;An easy way to get visibility into the WannaCry malware in your environment is to install LogZilla and use the pre-built rules from our &lt;a href=&quot;http://bit.ly/2qumD4C&quot;&gt;LogZilla Extras GitHub&lt;/a&gt; repository.&lt;/p&gt;
 
@@ -276,20 +276,160 @@ The format of the syslog message should contain five distinct fields with the fo
 
 &lt;p&gt;LogZilla also provides automation that could have automatically alerted the team responsible and even resolved the issue with no physical intervention. We are taking the lowest level indicator of health and performance and making it a front line management tool.&lt;/p&gt;
 
-&lt;p&gt;If you’re interested in learning more about LogZilla, feel free to &lt;a href=&quot;http://twitter.com/markwheat1&quot;&gt;contact me&lt;/a&gt;&lt;/p&gt;</content><author><name>markwheat1</name></author><category term="NetOps" /><category term="Scalability" /><summary type="html">Earlier this week one of our customers had a log storm due to a problem with a production server. They were able to quickly identify there was anomalistic behavior by looking at the event rate widget and easily identified what the source of the problem was through the top hosts widget. I took a screen shot of their LogZilla dashboard:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/logos/logzilla/logzilla-logo-small.png" /></entry><entry><title type="html">Test</title><link href="http://localhost:4000/2014/10/16/benefits-of-deduplication.html" rel="alternate" type="text/html" title="Test" /><published>2014-10-16T00:00:00-04:00</published><updated>2014-10-16T00:00:00-04:00</updated><id>http://localhost:4000/2014/10/16/benefits-of-deduplication</id><content type="html" xml:base="http://localhost:4000/2014/10/16/benefits-of-deduplication.html">&lt;p&gt;Earlier this week one of our customers had a log storm due to a problem with a production server. They were able to quickly identify there was anomalistic behavior by looking at the event rate widget and easily identified what the source of the problem was through the top hosts widget. I took a screen shot of their LogZilla dashboard:&lt;/p&gt;
+&lt;p&gt;If you’re interested in learning more about LogZilla, feel free to &lt;a href=&quot;http://twitter.com/markwheat1&quot;&gt;contact me&lt;/a&gt;&lt;/p&gt;</content><author><name>markwheat1</name></author><category term="NetOps" /><category term="Scalability" /><summary type="html">Earlier this week one of our customers had a log storm due to a problem with a production server. They were able to quickly identify there was anomalistic behavior by looking at the event rate widget and easily identified what the source of the problem was through the top hosts widget. I took a screen shot of their LogZilla dashboard:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/logos/logzilla/logzilla-logo-small.png" /></entry><entry><title type="html">Want To Save Money By Using Open Source?</title><link href="http://localhost:4000/2017/04/11/current-opensource-logging.html" rel="alternate" type="text/html" title="Want To Save Money By Using Open Source?" /><published>2017-04-11T00:00:00-04:00</published><updated>2017-04-11T00:00:00-04:00</updated><id>http://localhost:4000/2017/04/11/current-opensource-logging</id><content type="html" xml:base="http://localhost:4000/2017/04/11/current-opensource-logging.html">&lt;h1 id=&quot;opensource-logging-solutions-are-not-free&quot;&gt;Opensource Logging Solutions Are Not Free&lt;/h1&gt;
 
-&lt;p&gt;Dashboard showing spikes&lt;/p&gt;
+&lt;p&gt;There have been several discussions around here about open source logging software recently. We love open source and LogZilla actually started out as an open source project called PHP-Syslog-NG many years ago. We talk to people every week that are still using this tool and are ready to move to the next level. We have been on both sides of the field with this and there is a place for open source, but people need to realize that it is not like a free pass to an all you can eat buffet. We took a few minutes to look at the total cost of ownership of some or the open source tools and what we found was that licensing is only a minuscule portion of the total solution.&lt;/p&gt;
 
-&lt;p&gt;You can adjust the rate widgets to get more myopic or macro based on the time series you prefer but when you see something spike above the norm, it is an indication that there are issues in your environment. Looking at the top host logging during that time will also help pinpoint the source of the issue, this was the actual problem graphic:&lt;/p&gt;
+&lt;p&gt;If you are a DIY type of person and have the time available, coding and admin skills and want to take on ownership of your own solution, open source can be a good fit. There can be cost savings from licensing and labor as you are doing all of the work, but there is opportunity cost. Based on the research we have done, most of the solutions require external support and lots of add-ons to provide functionality required to solve problems. The kicker about the add-ons is that they are usually offered by companies that want licensing, maintenance and support for their efforts. There will be numerous expenses that could not be planned for in advance. This will have budgetary impact as it is impossible to budget for what you don’t know will exist later. Larger deployments will be more expensive as well. If you will be managing anything with high messaging rates, infrastructure expense for compute instances and storage will be higher and as a bonus, you are now managing a whole rack of servers.&lt;/p&gt;
 
-&lt;p&gt;The interesting thing with this particular scenario was that the logging rate bumped from about 2,000 messages per second to well over 25,000 messages per second and sustained that rate for almost a day.&lt;/p&gt;
+&lt;p&gt;If you are looking at an open-source logging solution make sure to consider the following:&lt;/p&gt;
 
-&lt;p&gt;Most other logging tools start to fail over with anything more than 7,000 events per second per server, where LogZilla’s patented engine can accommodate well over 80,000 events per second on one server. If the customer has another solution, it would have required (4) four servers to handle the spike. In this case, the customer received a licensing warning, called us, and we provided a temporary increase to figure out what was going on.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Software license cost generally are a small component of the overall cost of a solution&lt;/li&gt;
+  &lt;li&gt;There are internal cost associated to architecture, deployment and management of the solution. This will involve determining the scale of the deployment, tools for managing performance and the resources required to effectively show value from the solution.&lt;/li&gt;
+  &lt;li&gt;Tools like LogZilla are made to save customers money. When compared to open source tools, generally:
+    &lt;ul&gt;
+      &lt;li&gt;Average of 10-20 open source servers for each LogZilla server&lt;/li&gt;
+      &lt;li&gt;Approximately 60% more storage cost per day with open source&lt;/li&gt;
+      &lt;li&gt;There is increased complexity with the administration and management of large open-source deployments&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;In cloud environments, spinning up a compute instance is NOT free. In fact you might spend more money on cloud instances than using a managed service. Consider the following for a 5TB per day logging solution:&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;LogZilla cost savings&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Open source is a DIY engagement, or you pay for support and services. You will be allocating your internal resources going forward, just like software development companies. Extensive resources are required, especially with larger deployments and more complex architecture&lt;/li&gt;
+  &lt;li&gt;Will the open source solution be easy for end users to learn? Will there be cost associated with getting users trained and taking them out of their roles to train on usage. LogZilla can be learned in about 30 minutes of use.&lt;/li&gt;
+  &lt;li&gt;Will the open source solution require any special programming language in order to query data? Many open source tools require learning SQL like syntax for even simple queries. LogZilla uses a simple Google like search.&lt;/li&gt;
+  &lt;li&gt;Open source support is either through the community or via a paid engagement. Running a high available solution generally requires support level agreements, which are not cheap. With LogZilla, all support and maintenance are included with the subscription.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Data confidentiality with open source solutions is a gray area. The community is very active with support but there are no security or IP protections when sharing an issue. Anyone posting data for support might be violating corporate data agreements. Research on security and compliance requirements as well as processes on enforcement need to be considered.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;LogZilla has operated a secure support infrastructure for years.&lt;/li&gt;
+  &lt;li&gt;Performance of open source tools is usually a running issue. Many open source tools are built with Java and other memory inefficient tools. Larger processing loads require more dedicated resources, which has a direct relationship with cost. LogZilla was built to be the most scalable log management solution available and resource utilization is a fraction of what other tools require. Hardware, storage, management and administration savings help to reduce the overall total cost of ownership of an enterprise-level technology.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Our single server handled the load without even breaking a sweat, never dropped a message, and had no performance degradation while the event storm was happening.&lt;/p&gt;
+&lt;p&gt;LogZilla has a very high performance engine which allows for cost reductions in compute instances, storage and system administration, it:&lt;/p&gt;
 
-&lt;p&gt;What if you were using a less scalable tool and you had the same scenario, but now, in addition to figuring out what is wrong in your production environment, also have to repair your logging server? With other solutions, when you need them the most, they just can’t keep up!&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Parses unstructured data at rates considered impossible&lt;/li&gt;
+  &lt;li&gt;Is orders of magnitude more efficient then every other competitor&lt;/li&gt;
+  &lt;li&gt;Reduces Capital cost on computing resources by 75%&lt;/li&gt;
+  &lt;li&gt;Reduces Operating cost by up to 40%&lt;/li&gt;
+  &lt;li&gt;Does not use a storage based licensing model&lt;/li&gt;
+  &lt;li&gt;Can be complimentary solution to competitive solutions by offering a “pre-processing” unit, saving the customer 40-90% on current licensing&lt;/li&gt;
+  &lt;li&gt;Open source software licensing might be free, but there are actually cost associated.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;LogZilla also provides automation that could have automatically alerted the team responsible and even resolved the issue with no physical intervention. We are taking the lowest level indicator of health and performance and making it a front line management tool.&lt;/p&gt;
+&lt;p&gt;If you would like to learn more about how LogZilla can make your team more proactive and how you can look like a Network Hero, &lt;a href=&quot;http://twitter.com/markwheat1&quot;&gt;contact me&lt;/a&gt; and we’ll tell you how to install LogZilla in just a few minutes!&lt;/p&gt;</content><author><name>markwheat1</name></author><category term="Opensource" /><category term="TCO" /><category term="Free" /><summary type="html">Opensource Logging Solutions Are Not Free</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/logos/logzilla/logzilla-logo-small.png" /></entry><entry><title type="html">Application Performance Degradation?</title><link href="http://localhost:4000/2017/04/03/application-performance-degradation.html" rel="alternate" type="text/html" title="Application Performance Degradation?" /><published>2017-04-03T00:00:00-04:00</published><updated>2017-04-03T00:00:00-04:00</updated><id>http://localhost:4000/2017/04/03/application-performance-degradation</id><content type="html" xml:base="http://localhost:4000/2017/04/03/application-performance-degradation.html">&lt;p&gt;I sit in on many of the data analysis reviews we do with our customers and even being a sales guy, there is a good chance I can find issues that they never knew existed. Occasionally I will ask one of our architects what an event means, or lookup a Cisco Mnemonic, but with LogZilla, even this “noob” is able to show experienced networking teams things they had no idea about.&lt;/p&gt;
 
-&lt;p&gt;If you’re interested in learning more about LogZilla, feel free to contact me&lt;/p&gt;</content><author><name>markwheat1</name></author><category term="Download" /><category term="Dashboards" /><summary type="html">Earlier this week one of our customers had a log storm due to a problem with a production server. They were able to quickly identify there was anomalistic behavior by looking at the event rate widget and easily identified what the source of the problem was through the top hosts widget. I took a screen shot of their LogZilla dashboard:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/logos/logzilla/logzilla-logo-small.png" /></entry></feed>
+&lt;p&gt;In the past two weeks I was able to drill into duplex mismatches, teardrop attacks and subnet mismatches just to name a few. Some of the things we find are easy fixes but &lt;strong&gt;how can you fix what you don’t know is broken&lt;/strong&gt;? Take the duplex mismatch problem for instance; your customers are complaining about performance and there is a lot of finger pointing with the server, app, security and network teams all pointing at each other. Engineering is able to ping the other devices so it does not appear to be a connectivity problem. Generally the only way you would have been able to pinpoint this would be to log into each device and start reading logs. Most people would rather go to the dentist than do this so the problem stays unnoticed. Traditionally log reading is the last step in the triage process, which is strange as there is more and better data in the logs.&lt;/p&gt;
+
+&lt;p&gt;One of the ways that LogZilla provides visibility into problems like these is to build a simple network dashboard. It literally takes &lt;strong&gt;less than 10 minutes&lt;/strong&gt; and will give you visibility into every log into your network. In addition to showing all the events, it shows the velocity of logs and normalizes the messages so that you don’t have to look at 10k log messages that say the exact same thing.&lt;/p&gt;
+
+&lt;p&gt;Interested in knowing what is really going on in your network? &lt;a href=&quot;http://twitter.com/markwheat1&quot;&gt;contact me&lt;/a&gt; and we’ll tell you how to install LogZilla in just a few minutes!&lt;/p&gt;</content><author><name>markwheat1</name></author><category term="NetOps" /><category term="Scalability" /><category term="Performance" /><summary type="html">I sit in on many of the data analysis reviews we do with our customers and even being a sales guy, there is a good chance I can find issues that they never knew existed. Occasionally I will ask one of our architects what an event means, or lookup a Cisco Mnemonic, but with LogZilla, even this “noob” is able to show experienced networking teams things they had no idea about.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/logos/logzilla/logzilla-logo-small.png" /></entry><entry><title type="html">Feeling TRAPped?</title><link href="http://localhost:4000/2015/10/16/feeling-trapped.html" rel="alternate" type="text/html" title="Feeling TRAPped?" /><published>2015-10-16T00:00:00-04:00</published><updated>2015-10-16T00:00:00-04:00</updated><id>http://localhost:4000/2015/10/16/feeling-trapped</id><content type="html" xml:base="http://localhost:4000/2015/10/16/feeling-trapped.html">&lt;h1 id=&quot;snmp-without-syslog&quot;&gt;SNMP Without Syslog&lt;/h1&gt;
+
+&lt;p&gt;…is like &lt;a href=&quot;https://genius.com/Snoop-dogg-doggy-dogg-world-lyrics&quot;&gt;Harold Melvin without the Blue Notes&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;If you aren’t using syslog, it’s very likely that your event manager is missing 1000’s of events indicating potential problems.&lt;/p&gt;
+
+&lt;p&gt;Which one was the mission critical one that you missed?&lt;/p&gt;
+
+&lt;h1 id=&quot;what-is-snmp&quot;&gt;What Is SNMP?&lt;/h1&gt;
+
+&lt;p&gt;SNMP is anything but “simple”. In fact, the protocol and the parts that define it tend to confuse people quite a bit, especially in comparison to syslog.&lt;/p&gt;
+
+&lt;p&gt;SNMP is a bi-directional protocol, so there are logically TWO separate parts; SNMP &lt;strong&gt;Trap&lt;/strong&gt; and SNMP &lt;strong&gt;Poll&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;SNMP &lt;strong&gt;Trap&lt;/strong&gt; is an event that is sent from a device (or host) to a listening station (or Network Management System/Trap Receiver). These events are sent as ASN.1 Encoded messages using Basic Encoding Rules (BER).&lt;/p&gt;
+
+&lt;p&gt;Unlike syslog events which are sent in plain text, SNMP Traps are sent in binary so a decoder is needed, such as the &lt;code class=&quot;highlighter-rouge&quot;&gt;snmptrapd daemon&lt;/code&gt; provided by net-snmp which runs on &lt;code class=&quot;highlighter-rouge&quot;&gt;*nix&lt;/code&gt; systems.&lt;/p&gt;
+
+&lt;p&gt;For this reason as well as the complexity involved in translating Traps to text, syslog is normally the choice of many vendors for sending events to a receiver. In fact, Cisco Systems’s &lt;em&gt;Internetwork Operating System&lt;/em&gt; (IOS) only contains about 90 possible SNMP Traps, but over &lt;strong&gt;35000&lt;/strong&gt; possible syslog messages…which one would you rely on for a robust event management system that would not miss an important notification?&lt;/p&gt;
+
+&lt;p&gt;SNMP Poll is the opposite direction where the NMS would go to the device/host and ask it a specific question or series of questions such as “What is your current CPU utilization”, which the NMS uses to plot the resulting metric on a chart to analyze over time. The NMS systems that are used for SNMP Polling are generally associated with Performance Management, not Event Management.&lt;/p&gt;
+
+&lt;p&gt;SNMP has many parts including its Management Information Base (MIB) which contains Object ID’s (OIDs) to specify a tree-like structure of numbers that are assigned values. These values appear in the form of &lt;code class=&quot;highlighter-rouge&quot;&gt;n.n.n.n.n.n.n&lt;/code&gt; (sort of like an IP address) and map to various values provided by the MIB (a text-based translation file). An example of this would be the Host Resources MIB, &lt;strong&gt;(RFC 1514)&lt;/strong&gt;, which provides definitions to poll a standard set of system resources such as CPU, Disk, Memory, or even running processes on the host.&lt;/p&gt;
+
+&lt;p&gt;LogZilla allows users to receive SNMP Traps, but you’ll never get 100% of your Network’s problems by using SNMP without Syslog.&lt;/p&gt;</content><author><name>Clayton Dukes</name></author><category term="NetOps" /><category term="SNMP" /><category term="Syslog" /><summary type="html">SNMP Without Syslog</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/logos/logzilla/logzilla-logo-small.png" /></entry><entry><title type="html">Heartbleed and Shellshock</title><link href="http://localhost:4000/2015/10/06/heartbleed-and-shellshock.html" rel="alternate" type="text/html" title="Heartbleed and Shellshock" /><published>2015-10-06T00:00:00-04:00</published><updated>2015-10-06T00:00:00-04:00</updated><id>http://localhost:4000/2015/10/06/heartbleed-and-shellshock</id><content type="html" xml:base="http://localhost:4000/2015/10/06/heartbleed-and-shellshock.html">&lt;p&gt;Update:  A further bash patch was released on September 29th, after this post was written.  I’ve updated the command output for testing a system for the Shellshock vulnerability.&lt;/p&gt;
+
+&lt;p&gt;In our documentation for installing or upgrading Logzilla, the first step is always to update the operating system. We constantly see systems that are so far behind in updates that they have known vulnerabilities that have been patched months ago. Let’s take a look at a few items that have been popping up in the news lately to give an idea of how widespread these preventable compromises are becoming.&lt;/p&gt;
+
+&lt;h2 id=&quot;heartbleed&quot;&gt;Heartbleed&lt;/h2&gt;
+&lt;p&gt;CVE-2012-1823 &lt;a href=&quot;&quot;&gt;https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-1823
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This is a bug “in PHP before 5.3.12 and 5.4.x before 5.4.2, when configured as a CGI script (aka php-cgi), does not properly handle query strings that lack an = (equals sign) character, which allows remote attackers to execute arbitrary code by placing command-line options in the query string, related to lack of skipping a certain php_getopt for the ‘d’ case.”&lt;/p&gt;
+
+&lt;p&gt;This particular vulnerability was reported in May of 2012, yet over the last few months, hundreds of servers have been compromised using it.&lt;/p&gt;
+
+&lt;h2 id=&quot;shellshock&quot;&gt;Shellshock&lt;/h2&gt;
+&lt;p&gt;CVE-2014-6271 &lt;a href=&quot;&quot;&gt;http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-6271&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;GNU Bash through 4.3 processes trailing strings after function definitions in the values of environment variables, which allows remote attackers to execute arbitrary code via a crafted environment, as demonstrated by vectors involving the ForceCommand feature in OpenSSH sshd, the mod_cgi and mod_cgid modules in the Apache HTTP Server, scripts executed by unspecified DHCP clients, and other situations in which setting the environment occurs across a privilege boundary from Bash execution.&lt;/p&gt;
+
+&lt;p&gt;This vulnerability was reported Sept 24, 2014 (yesterday at the time of this article). This demonstrates that serious new vulnerabilities are being discovered on a regular basis. It has the potential to affect hundreds of thousands of servers. You can test your server by running the following command.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;env x='() { :;}; echo vulnerable' bash -c &quot;echo this is a test&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;If your server is vulnerable, you’ll see the following output.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;root@host:/home/ubuntu# env x='() { :;}; echo vulnerable' bash -c &quot;echo this is a test&quot; 
+vulnerable 
+this is a test
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;On a server with the first patch that was released, you’ll see this -&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;root@host:/home/ubuntu# env x='() { :;}; echo vulnerable' bash -c &quot;echo this is a test&quot; 
+bash: warning: x: ignoring function definition attempt 
+bash: error importing function definition for `x' 
+this is a test
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;On a server with the newest patch, you’ll see the following:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;root@host:/home/ubuntu# env x='() { :;}; echo vulnerable' bash -c &quot;echo this is a test&quot;
+this is a test
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;To patch both of these, you’ll need to run an update and the bash install.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt-get update &amp;amp;&amp;amp; apt-get -y update 
+apt-get install -y bash
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;For future updates, I’ve implemented the Ubuntu auto-update package.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt-get -y install unattended-upgrades
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;To configure unattended-upgrades, edit /etc/apt/apt.conf.d/50unattended-upgrades and adjust the following to fit your needs:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Unattended-Upgrade::Allowed-Origins { 
+    &quot;${distro_id}:${distro_codename}-security&quot;; 
+    // &quot;${distro_id}:${distro_codename}-updates&quot;; 
+    // &quot;${distro_id}:${distro_codename}-proposed&quot;; 
+    // &quot;${distro_id}:${distro_codename}-backports&quot;; 
+};
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;For update notifications on your system, you can install apticron.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt-get install apticron
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Once the package is installed edit the &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/apticron/apticron.conf&lt;/code&gt;, and set the email address and other options.&lt;/p&gt;
+
+&lt;p&gt;The bottom line is, there is no excuse for letting your servers get compromised when security patches have been released.&lt;/p&gt;
+
+&lt;p&gt;Protect your systems by keeping them up to date!&lt;/p&gt;</content><author><name>tdamon</name></author><category term="NetOps" /><category term="Vulnerability" /><category term="Security" /><summary type="html">Update: A further bash patch was released on September 29th, after this post was written. I’ve updated the command output for testing a system for the Shellshock vulnerability.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/logos/logzilla/logzilla-logo-small.png" /></entry></feed>

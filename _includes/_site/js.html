@@ -1,0 +1,60 @@
+<!-- Start: Load head.js ref: http://headjs.com/site/api/v2.00.html#setup -->
+<script src="/assets/js/head.min.js"></script>
+<!-- END: Load head.js ref: http://headjs.com/site/api/v2.00.html#setup -->
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Javascript: This is loaded using head.js so that they load asynchronously -->          
+<script>
+// this loads asynchronously & in parallel
+// and names the file loaded in case we want to callback with head.ready()
+head.load(
+        { jquery: "/assets/plugins/jquery-1.12.3.min.js"},
+        { bootstrap: "/assets/plugins/bootstrap/js/bootstrap.min.js" },
+        { bshover: "/assets/plugins/bootstrap-hover-dropdown.min.js" }, 
+        { back2top: "/assets/plugins/back-to-top.js" }, 
+        { placeholder: "/assets/plugins/jquery-placeholder/jquery.placeholder.js" }, 
+        { fitvids: "/assets/plugins/FitVids/jquery.fitvids.js" }, 
+        { flexslider: "/assets/plugins/flexslider/jquery.flexslider-min.js" }, 
+        { main: "/assets/js/main.js" },
+        { imgFullScreen: "/assets/js/image-fullscreen.js" },
+        { newsletter: "/assets/js/newsletter.js" },
+        { emailTrans: "/assets/js/email-transform.js" },
+        function() {
+            //console.log("JS Loaded");
+});
+</script>
+<!-- Hotjar Tracking Code for https://logzilla.github.io -->
+<script>
+(function(h,o,t,j,a,r){
+    h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+    h._hjSettings={hjid:510754,hjsv:5};
+    a=o.getElementsByTagName('head')[0];
+    r=o.createElement('script');r.async=1;
+    r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    a.appendChild(r);
+})(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+<script>
+// Highlights the menu item based on the currently loaded page
+head.ready("jquery", function() {
+    var loc = window.location.pathname.split("/")[1];
+    $('.nav-item').find('a').each(function() {
+        if ($(this).attr('href') == loc) {
+            $(this).parent("li").addClass('active');
+        } else {
+            $(this).parent("li").removeClass('active');
+        }
+    });
+    // Start: Special case for the blog page because the top area is white, so set orange color manually
+    // if (loc == "blog.html" || loc == "2017" ) {
+        // $('.nav-item a').css('color', '#ec6952');
+    // }
+    // End: Special case for the blog page
+});
+</script>
