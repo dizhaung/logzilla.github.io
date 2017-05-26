@@ -14,25 +14,7 @@ $(document).ready(function() {
         //$('#contact-form-results').html('').slideUp();
     });
 
-    // jQuery CORS
-$.ajax({
-    xhrFields: {
-        withCredentials: true
-    },
-    type: "POST",
-    url: "https://post.logzilla.net/mailer.php"
-}).done(function (data) {
-    console.log(data);
-});
-
-// XMLHttpRequest
-var xhr = new XMLHttpRequest();
-xhr.open("POST", "https://post.logzilla.net/mailer.php", true);
-xhr.withCredentials = true;
-xhr.onload = function () {
-    console.log(xhr.responseText);
-};
-xhr.send();
+ 
 
     submit.on('click', function(e) {
         e.preventDefault();
@@ -54,11 +36,13 @@ xhr.send();
                     $('#contact-form-results-sub').html('Get ready to be the most well-liked person in your company!');
                     $('#download-instructions-container').show();
                     // console.log("sent");
+                    console.log(data);
                 } else {
                     $('#contact-form').hide();
                     $('#contact-form-results').html('<span class="highlight"><br /><br /><br />Oh Noes!</span> Something went sideways and the mail didn\'t send.');
                     $('#contact-form-results-sub').html('But fear not, we use LogZilla and already know about it. <br />You can email us directly at sales@logzilla.net for some extra-special treatment :)');
                     // console.log("failed");
+                    console.log(data);
                 }
             });
         }
