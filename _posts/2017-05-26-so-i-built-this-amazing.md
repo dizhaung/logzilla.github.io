@@ -83,7 +83,7 @@ With that very simple concept, you are now able to see the 10, 20, 100, etc. eve
 
 # Don't stop there!
 Ok, so when something is actionable, do I need to do it over and over again? Let's take a simple example of duplicate IP addresses.
-When that happens, it causes engineers to spent precious time tracking down the offending IP and removing it. IN more complex networks, this takes way too much time.
+When that happens, it causes engineers to spend precious time tracking down the offending IP and removing it. IN more complex networks, this takes way too much time.
 Why can't I automate that? 
 
 
