@@ -4,8 +4,7 @@ layout: post
 
 title: Application Performance Degradation?
 subtitle: How to ensure your solution doesn't die along with the network
-author: markwheat1
-author-name: "Mark Wheat"
+author: mwheat
 tags: [NetOps, Scalability, Performance]
 headline-bg: /assets/images/blog/post_images/application-performance-degradation/sorry-no-internet-today.png
 
@@ -17,5 +16,5 @@ In the past two weeks I was able to drill into duplex mismatches, teardrop attac
 
 One of the ways that LogZilla provides visibility into problems like these is to build a simple network dashboard. It literally takes **less than 10 minutes** and will give you visibility into every log into your network. In addition to showing all the events, it shows the velocity of logs and normalizes the messages so that you don’t have to look at 10k log messages that say the exact same thing. 
 
-Interested in knowing what is really going on in your network? [contact me](http://twitter.com/{{ page.author }}) and we'll tell you how to install LogZilla in just a few minutes!
+Interested in knowing what is really going on in your network? [contact me](http://twitter.com/{{ site.data.authors[page.author].twitter }}) and we'll tell you how to install LogZilla in just a few minutes!
 

@@ -4,11 +4,10 @@ layout: post
 
 title: How to send TLS encrypted logs using syslog-ng
 subtitle: Short primer on TLS with syslog
-author: tdamon
-author-name: "Tom Damon"
-tags: [NetOps, Scalability, TLS, Tunnels, RemoteConnectivity]
+author: tomd
+tags: [NetOps, TLS, Security, Syslog, syslog-ng]
 summary: There's a ton of information in your log files that can be used to compromise or secure your network...
-headline-bg: /assets/images/blog/post_images/message-storm/storm-banner.jpg
+headline-bg: /assets/images/blog/post_images/tls-encrypted-logs/https-banner.jpg
 
 ---
 

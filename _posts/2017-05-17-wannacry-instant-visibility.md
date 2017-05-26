@@ -1,11 +1,10 @@
 ---
 published: true
 layout: post
-
 title: WannaCry?
 subtitle: How to detect the WannaCry Malware in seconds
 author: mwheat
-tags: [Malware, Dashboards, Triggers]
+tags: [Malware, AlienVault, Security, OTX, Open Threat Exchange]
 summary: LogZilla's Malware Detection capability is so easy that it will make you wannacry...
 headline-bg: /assets/images/figures/ransomware.jpg
 

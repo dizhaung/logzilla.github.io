@@ -5,7 +5,6 @@ layout: post
 title: Feeling TRAPped?
 subtitle: Only using SNMP Traps for event management?
 author: cdukes
-author-name: "Clayton Dukes"
 tags: [NetOps, SNMP, Syslog]
 summary: If you aren’t using syslog, it’s very likely that your event manager is missing 1000’s of...
 headline-bg: /assets/images/blog/post_images/feeling-trapped/feeling-trapped.jpg

@@ -4,10 +4,9 @@ layout: post
 
 title: Heartbleed and Shellshock
 subtitle: Click...click...boom!
-author: tdamon
-author-name: "Tom Damon"
-tags: [NetOps,Vulnerability, Security]
-summary: we constantly see systems that are so far behind in updates that they have known vulnerabilities...
+author: tomd
+tags: [NetOps, Vulnerability, Security]
+summary: We constantly see systems that are so far behind in updates that they have known vulnerabilities...
 headline-bg: /assets/images/blog/post_images/heartbleed-and-shellshock/bash-bug-virus.jpg
 ---
 

@@ -1,15 +1,11 @@
 ---
 published: true
 layout: post
-
 title: Download to Dashboards
-subtitle: Gain actionable insight into your IT Operations in minutes.
-author: markwheat1
-author-name: "Mark Wheat"
-tags: [Download, Dashboards]
+subtitle: How to actionable insight into your IT Operations in minutes.
+author: mwheat
+tags: [Cisco, Microsoft, Security, Dashboards]
 summary: LogZilla’s latest release includes dashboards for Cisco, Security, and Windows...
-
-
 headline-bg: /assets/images/figures/monitor-binary-blue.jpg
 
 ---
@@ -120,4 +116,4 @@ You can use these out of the box dashboards, customize them, or even build your 
 
  Having a LogZilla NetOps management platform will provide you with incredible visibility and insight, in real-time, to what is happening in your environment. 
 
- We would love to help you be the hero in your company. To find out more, feel free to [contact me](http://twitter.com/{{ page.author }})
+ We would love to help you be the hero in your company. To find out more, feel free to [contact me](http://twitter.com/{{ site.data.authors[page.author].twitter }})

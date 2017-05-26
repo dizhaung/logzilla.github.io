@@ -1,15 +1,11 @@
 ---
 published: true
 layout: post
-
 title: Syslog Essentials
 subtitle: A short primer on the use of syslog in NetOps
-author: markwheat1
-author-name: "Mark Wheat"
+author: mwheat
 tags: [NetOps, Syslog]
 summary: Most of us cannot remember a time before there was syslog.  I was introduced to Sun Solaris in 1998 while I was working...
-
-
 headline-bg: /assets/images/blog/post_images/syslog-essentials/hieroglyphics.jpg
 
 ---
@@ -34,7 +30,7 @@ Syslog is the standard logging facility for pretty much everything today and the
 
  One of the primary reasons that logging is not the front line management tool today is due to the sheer number of messages being processed.  Until recently, there was just too much log data to effectively use and the processing requirements necessary to search across terabytes of log data was not very accommodating. That is no longer the case (if you use LogZilla!) and this treasure trove of data is now available in real-time, to help you become more proactive and solve issues more quickly.
 
-#The Syslog Protocol
+# The Syslog Protocol
 
 Syslog was originally developed in the 80’s by Eric Allman as part of the Sendmail project and is now standardized within the syslog working group of the IETF
 Syslog messages (RFC 3164) can be sent via UDP (514) and/or TCP. The data is typically sent in clear text (but there are ways to encrypt)
@@ -79,4 +75,4 @@ The mnemonic is a device-specific code that uniquely identifies the message such
 
  This should be enough information to help you understand those somewhat cryptic log messages now. Hopefully, you can see how important it is to have search options like the first image displayed in this post, to quickly and easily get the most out of your log data. Having a LogZilla NetOps management platform will provide you with incredible visibility and insight, in real-time, to what is happening in your environment, right now. If you would like to learn more about how LogZilla can make your team more proactive and how you can look like a Network Hero, reach out to me and we will be happy to get you started!
 
- We would love to help you become more proactive. To find out more, feel free to [contact me](http://twitter.com/{{ page.author }})
+ We would love to help you become more proactive. To find out more, feel free to [contact me](http://twitter.com/{{ site.data.authors[page.author].twitter }})

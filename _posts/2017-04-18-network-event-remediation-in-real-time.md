@@ -4,12 +4,9 @@ layout: post
 
 title: Network Event Remediation in real-time
 subtitle: How to save 60 hours of skilled network engineering time
-author: markwheat1
-author-name: "Mark Wheat"
+author: mwheat
 tags: [NetOps, Automation]
-summary: ...They spend a lot of engineering time on network issues with problem identification and resolution and provided us with...
-
-
+summary: He said they spend a lot of engineering time on network issues with problem identification and resolution and provided us with...
 headline-bg: /assets/images/background/robot-handshake.png
 
 ---
@@ -30,4 +27,4 @@ LogZilla to the rescue! In a few minutes, we were able to craft a trigger for th
 
 This is a great example of moving from reactive to proactive, solving a problem and automating the tribal knowledge of your best people. LogZilla has a proven methodology for reducing the events to only those that are actionable, then automating their remediation. 
 
-We would love to help you become more proactive. To find out more, feel free to [contact me](http://twitter.com/{{ page.author }})
+We would love to help you become more proactive. To find out more, feel free to [contact me](http://twitter.com/{{ site.data.authors[page.author].twitter }})

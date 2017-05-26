@@ -4,12 +4,9 @@ layout: post
 
 title: Log Spikes and Message Storms
 subtitle: How well does your event manager handle traffic spikes?
-author: markwheat1
-author-name: "Mark Wheat"
+author: mwheat
 tags: [NetOps, Scalability]
 summary: Earlier this week one of our customers had a log storm due to a problem with a production server. They were...
-
-
 headline-bg: /assets/images/blog/post_images/message-storm/storm-banner.jpg
 
 ---
@@ -35,5 +32,5 @@ Earlier this week one of our customers had a log storm due to a problem with a p
 
 LogZilla also provides automation that could have automatically alerted the team responsible and even resolved the issue with no physical intervention. We are taking the lowest level indicator of health and performance and making it a front line management tool. 
 
-If you're interested in learning more about LogZilla, feel free to [contact me](http://twitter.com/{{ page.author }})
+If you're interested in learning more about LogZilla, feel free to [contact me](http://twitter.com/{{ site.data.authors[page.author].twitter }})
 

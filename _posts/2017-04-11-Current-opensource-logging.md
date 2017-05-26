@@ -4,8 +4,7 @@ layout: post
 
 title: Want To Save Money By Using Open Source?
 subtitle: Bad news...Open source is not Free.
-author: markwheat1
-author-name: "Mark Wheat"
+author: mwheat
 tags: [Opensource, TCO, Free]
 summary: We love open source and LogZilla actually...
 headline-bg: /assets/images/blog/post_images/current-opensource-logging/opensource-top-banner.jpg 
@@ -49,4 +48,4 @@ LogZilla has a very high performance engine which allows for cost reductions in 
 * Can be complimentary solution to competitive solutions by offering a "pre-processing" unit, saving the customer 40-90% on current licensing
 * Open source software licensing might be free, but there are actually cost associated.
 
-If you would like to learn more about how LogZilla can make your team more proactive and how you can look like a Network Hero, [contact me](http://twitter.com/{{ page.author }}) and we'll tell you how to install LogZilla in just a few minutes!
+If you would like to learn more about how LogZilla can make your team more proactive and how you can look like a Network Hero, [contact me](http://twitter.com/{{ site.data.authors[page.author].twitter }}) and we'll tell you how to install LogZilla in just a few minutes!
