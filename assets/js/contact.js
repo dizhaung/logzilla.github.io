@@ -21,7 +21,7 @@ $(document).ready(function() {
                 type: "POST",
                 url: "https://post.logzilla.net/mailer.php",
                 data: form.serialize(),
-                dataType: "json"
+                dataType: "jsonp"
             }).done(function(data) {
                 if(data.success) {
                     email.val('');
