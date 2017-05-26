@@ -50,6 +50,7 @@ incremental: false
 gems:
       - jekyll-paginate
       - jekyll-sitemap
+      - jekyll-redirect-from
 
 paginate: 10
 

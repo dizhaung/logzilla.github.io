@@ -1,3 +1,9 @@
+logzilla:
+  name: "LogZilla Corporation"
+  picture: /assets/images/logos/logzilla/logo_positive_png_cropped_200x200.png
+  twitter: logzilla
+  linkedin: company/logzilla
+
 cdukes:
   name: "Clayton Dukes"
   picture: /assets/images/team/cdukes.png
