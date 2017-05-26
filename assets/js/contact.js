@@ -14,6 +14,26 @@ $(document).ready(function() {
         //$('#contact-form-results').html('').slideUp();
     });
 
+    // jQuery CORS
+$.ajax({
+    xhrFields: {
+        withCredentials: true
+    },
+    type: "POST",
+    url: "https://post.logzilla.net/mailer.php"
+}).done(function (data) {
+    console.log(data);
+});
+
+// XMLHttpRequest
+var xhr = new XMLHttpRequest();
+xhr.open("POST", "https://post.logzilla.net/mailer.php", true);
+xhr.withCredentials = true;
+xhr.onload = function () {
+    console.log(xhr.responseText);
+};
+xhr.send();
+</script>
     submit.on('click', function(e) {
         e.preventDefault();
         if(validate()) {
