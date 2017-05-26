@@ -27,6 +27,7 @@
 <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
 {% endif %}
 <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+<meta content='{{ site.url }}{{ page.url }}' itemprop='url'/>
 {% if page.tags %}
 <meta itemprop="keywords" content="{{ page.tags | join: ',' }}" />
 {% for tag in page.tags %}
@@ -35,10 +36,12 @@
 {% endif %}
 {% if page.author %}
 {% assign author = site.data.authors[page.author] %}
+<meta content='http://linkedin.com/in/{{ author.linkedin }}' itemprop='url'/>
 <meta property="article:author" content="{{ author.name }}" />
 <meta name="twitter:creator" content="@{{ author.twitter }}">
 {% endif %}
 {% if page.headline-bg %}
   <meta name="twitter:image" content="{{ site.url }}{{ page.headline-bg }}">
   <meta property="og:image" content="{{ site.url }}{{ page.headline-bg }}">
+  <meta content='{{ site.url }}{{ page.headline-bg }}' itemprop='image_url'/>
 {% endif %}
