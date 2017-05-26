@@ -33,7 +33,7 @@ xhr.onload = function () {
     console.log(xhr.responseText);
 };
 xhr.send();
-</script>
+
     submit.on('click', function(e) {
         e.preventDefault();
         if(validate()) {
