@@ -110,7 +110,7 @@ You can use these out of the box dashboards, customize them, or even build your 
 ![I Can Haz LogZilla?](/assets/images/blog/post_images/downloads-to-dashboards/icanhaz.jpg){: .thumbnail }
 
 
-**Get started** [right here](http://bit.ly/1RGNwdv)!
+**Get started** [right here](/download.html)
 
  If you already have LogZilla installed and want the new dashboards (and who wouldn’t?), just update to the latest version and download the dashboards and instructions from [our Github page](http://bit.ly/2qxFwS8)
 
