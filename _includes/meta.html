@@ -1,20 +1,44 @@
+<!-- Meta: General -->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:image" content="/assets/images/logos/logzilla/logzilla-logo-circle.png">
-<meta property="og:site_name" content="LogZilla">
-<meta property="og:type" content="website" />
-<meta property="og:url" content="{{ site.url }}" />
 <meta name="application-name" content="LogZilla"/>
 <meta name="msapplication-TileColor" content="#FFFFFF">
 <meta name="msapplication-TileImage" content="/assets/images/favicon/logzilla-144.png?v=2.0">
 <meta name="msapplication-config" content="/assets/images/favicon/browserconfig.xml">
-{% if page.description %}
-    <meta name="description" content="{{ page.description }}">
-    <meta property="og:description" content="{{ page.description }}">
-    <meta property="og:title" content="{{ page.title }}">
+
+<!-- Meta: Dynamic -->
+<meta name="description" content="{% if page.subtitle %}{{ page.subtitle | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta name="twitter:site" content="@logzilla">
+{% if page.title %}
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:type" content="article">
+<meta property="og:description" content="{{ page.subtitle | strip_html }}"/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:description" content="{{ page.subtitle | strip_html }}">
 {% else %}
-    <meta name="description" content="LogZilla is the leader in delivering real-time insight with an intelligent network operations platform.">
-    <meta property="og:description" content="The LogZilla #NetOps Platform provides IT Operations with real-time Network Intelligence and Automation">
-    <meta property="og:title" content="LogZilla: Network Insight, Simplified.">
+<meta property="og:title" content="{{ site.title }}">
+<meta property="og:type" content="website">
+<meta property="og:description" content="{{ site.description }}">
+{% endif %}
+{% if page.date %}
+<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+{% endif %}
+<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+{% if page.tags %}
+<meta itemprop="keywords" content="{{ page.tags | join: ',' }}" />
+{% for tag in page.tags %}
+<meta property="article:tag" content="{{ tag }}">
+{% endfor %}
+{% endif %}
+{% if page.author %}
+{% assign author = site.data.authors[page.author] %}
+<meta property="article:author" content="{{ author.name }}" />
+<meta name="twitter:creator" content="@{{ author.twitter }}">
+{% endif %}
+{% if page.headline-bg %}
+  <meta name="twitter:image" content="{{ site.url }}{{ page.headline-bg }}">
+  <meta property="og:image" content="{{ site.url }}{{ page.headline-bg }}">
 {% endif %}

@@ -4,23 +4,22 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # SEO Settings
-# https://github.com/jekyll/jekyll-seo-tag
 title: LogZilla NetOps Platform
 description: 'LogZilla is the leader in delivering real-time insight with an intelligent network operations platform.'
 url: www.logzilla.net
 google_analytics: 'UA-63386966-1'
-twitter:
-    username: logzilla
-facebook:
-     publisher: logzilla
-logo: /assets/images/logos/logzilla/logzilla-logo-small.png
-social:
-  name: LogZilla Corporation
-  links:
-    - https://twitter.com/logzilla
-    - https://www.facebook.com/logzilla
-    - https://www.linkedin.com/company/logzilla
-    - https://github.com/logzilla
+#twitter:
+#username: logzilla
+#facebook:
+#publisher: logzilla
+#logo: /assets/images/logos/logzilla/logzilla-logo-small.png
+#social:
+#name: LogZilla Corporation
+#links:
+#- https://twitter.com/logzilla
+#- https://www.facebook.com/logzilla
+#- https://www.linkedin.com/company/logzilla
+#- https://github.com/logzilla
 # TODO: Site Verifications
 #webmaster_verifications:
   #google: 1234
@@ -51,7 +50,6 @@ incremental: false
 gems:
       - jekyll-paginate
       - jekyll-sitemap
-      - jekyll-seo-tag
 
 paginate: 10
 

@@ -1,8 +1,15 @@
 ---
 layout: blog
 ---
+{% assign author = site.data.authors[page.author] %}
+{% if page.date_modified %}
+{% assign modified = page.date_modified %}
+{% else %}
+{% assign modified = page.date %}
+{% endif %}
 
 <!-- ******LAYOUT POSTS****** -->         
+<!-- {{ page.headline-bg }} -->
 <div class="blog-entry-wrapper"> 
     <div class="headline-bg" style="background-image: url('{{ page.headline-bg }}');"></div>
     <div class="blog-entry">                 
@@ -12,7 +19,7 @@ layout: blog
                     <h2 class="title">{{ post.title }}</h2>
                     <div class="meta">
                         <ul class="meta-list list-inline" style="line-height: 5">
-                            <li class="post-author"><a href="http://twitter.com/{{ page.author }}" target=_new>{{ page.author-name }}</a>,</li>
+                            <li class="post-author"><a href="http://twitter.com/{{ author.twitter }}" target=_new>{{ author.name }}</a>,</li>
                             <li class="post-time">{{ page.date | date: "%d %B %Y" }}</li>
                         </ul><!--//meta-list-->    	
                     </div><!--meta-->
