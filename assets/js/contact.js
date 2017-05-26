@@ -18,6 +18,7 @@ $(document).ready(function() {
 
     submit.on('click', function(e) {
         e.preventDefault();
+        $( "#contact-form" ).toggle( "explode" );
         if(validate()) {
             $.ajax({
                 type: "POST",
@@ -31,14 +32,12 @@ $(document).ready(function() {
                     message.val('');
                     company.val('');
                     phone.val('');
-                    $('#contact-form').hide();
                     $('#contact-form-results').html('<br /><br /><br />Hooray For <span class="highlight">' + name.val() + '!</span><br /> You Did it!');
                     $('#contact-form-results-sub').html('Get ready to be the most well-liked person in your company!');
-                    $('#download-instructions-container').show();
                     // console.log("sent");
                     console.log(data);
                 } else {
-                    $('#contact-form').hide();
+                    $('#contact-form').show();
                     $('#contact-form-results').html('<span class="highlight"><br /><br /><br />Oh Noes!</span> Something went sideways and the mail didn\'t send.');
                     $('#contact-form-results-sub').html('But fear not, we use LogZilla and already know about it. <br />You can email us directly at sales@logzilla.net for some extra-special treatment :)');
                     // console.log("failed");
@@ -46,6 +45,7 @@ $(document).ready(function() {
                 }
             });
         }
+        $('#download-instructions-container').toggle( "puff" );
     });
 
     function validate() {
