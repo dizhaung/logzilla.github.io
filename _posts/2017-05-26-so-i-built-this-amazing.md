@@ -27,7 +27,7 @@ The original website we had was built around the  MVC-based structure just like 
 much code which was completely bloated because it had that "boil the ocean" approach in order to try and get as many
 users as they could,...claiming to be able to do everything for every customer. Hmm, what word rhymes with clunk?...
 
-# Claiming to to everything great means you do nothing useful.
+# Claiming to do everything great means you do nothing useful.
 Our competitors have fantastic sales teams and amazing marketing. But just like those old Certs(tm) commercials (now with [retsyn](http://hsionline.com/2005/03/24/what-the-heck-is-retsyn/)!), their marketing is 99% BS and 1% something an engineer told them.
 
 They claim to do everything you need, but they fail to mention that it's a framework and not a truly usable product.
