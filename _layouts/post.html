@@ -19,8 +19,10 @@ layout: blog
                     <h2 class="title">{{ post.title }}</h2>
                     <div class="meta">
                         <ul class="meta-list list-inline" style="line-height: 5">
+                    {% if page.previous.url %}
                             <li class="post-author"><a href="http://twitter.com/{{ author.twitter }}" target=_new>{{ author.name }}</a>,</li>
                             <li class="post-time">{{ page.date | date: "%d %B %Y" }}</li>
+                    {% endif %}
                         </ul><!--//meta-list-->    	
                     </div><!--meta-->
                 </div><!--//container-->
