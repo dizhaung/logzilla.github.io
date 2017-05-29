@@ -7,6 +7,8 @@ author: mwheat
 tags: [Malware, AlienVault, Security, OTX, Open Threat Exchange]
 summary: LogZilla's Malware Detection capability is so easy that it will make you wannacry...
 headline-bg: /assets/images/figures/ransomware.jpg
+redirect_from:
+ - /articles/wannacry-visibility-and-identification-easy
 
 ---
 
