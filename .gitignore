@@ -2,3 +2,4 @@
 .jekyll-metadata
 .DS_Store
 bower_components
+_site
