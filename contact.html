@@ -9,72 +9,56 @@ subtitle: Contact us at logzilla.net or call us at 936-4NetOps (463-8677) for yo
 
         <div class="headline-bg contact-headline-bg">
         </div><!--//headline-bg-->
-
         
         <!-- ******Contact Section****** --> 
         <section class="contact-section section section-on-bg">
             <div class="container">
-                <h2 class="title text-center">Contact Us</h2>
-                <p class="intro text-center">Stop <i>Monitoring</i>, Start <i>Managing</i></p>
-            <form id="contact-form" class="contact-form" action="">
-                <div class="row text-center">
-                    <div class="contact-form-inner col-md-offset-2 col-sm-offset-0 xs-offset-0 col-xs-12 col-md-8">
-                        <div class="row">
-
-                            <div class="form-group col-xs-12 col-sm-6">
-                                <label class="sr-only" for="name">Your name</label>
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Your name" minlength="2" required>
-                            </div>                    
-                            <div class="form-group col-xs-12 col-sm-6">
-                                <label class="sr-only" for="email">Email address</label>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Your email address" required>
-                            </div>
-                            <div class="form-group col-xs-12 col-sm-6">
-                                <label class="sr-only" for="company">Company Name</label>
-                                <input type="company" class="form-control" id="company" name="company" placeholder="Your Company Name" required>
-                            </div>
-                            <div class="form-group col-xs-12 col-sm-6">
-                                <label class="sr-only" for="phone">Phone</label>
-                                <input type="phone" class="form-control" id="phone" name="phone" placeholder="Your Phone Number" required>
-                            </div>
-                            <div class="form-group col-xs-12">
-                                <label class="sr-only" for="message">Your message</label>
-                                <textarea class="form-control" id="message" name="message" placeholder="Enter your message" rows="12" required></textarea>
-                            </div>
-                            <div class="form-group col-xs-12">
-                                <input type="hidden" id="subject" name="subject" value="LogZilla Evaluation Request">
-                                <button type="submit" name="submit" id="submit" class="btn btn-block btn-cta btn-cta-primary">Send Message</button>
-                            </div>
-                        </div><!--//row-->
-                    </div>
-                </div><!--//row-->
+                <!-- Start Contact Form -->
+                <h2 class="title text-center" id="gform-results">Contact Us</h2>
+                <p class="intro text-center" id="gform-results-sub">Stop <i>Monitoring</i>, Start <i>Managing</i></p>
+                <form id="gform" class="contact-form" name="gform" action="https://docs.google.com/forms/d/e/1FAIpQLSec7IeiY5POq48og3HL4XjjZPZEod9CkR9bof6ofUGIAbqr9Q/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+                    <div class="row text-center">
+                        <div class="contact-form-inner col-md-offset-2 col-sm-offset-0 xs-offset-0 col-xs-12 col-md-8">
+                            <div class="row">
+                                <div class="form-group col-xs-12 col-sm-6">
+                                    <label class="sr-only" for="name">Your name</label>
+                                    <input type="text" class="form-control" id="name" name="entry.1528667969" placeholder="Your name" minlength="2" required>
+                                </div>                    
+                                <div class="form-group col-xs-12 col-sm-6">
+                                    <label class="sr-only" for="email.201970855">Email address</label>
+                                    <input type="email" class="form-control" id="email.201970855" name="entry.201970855" placeholder="Your email address" required>
+                                </div>
+                                <div class="form-group col-xs-12 col-sm-6">
+                                    <label class="sr-only" for="company">Company Name</label>
+                                    <input type="company" class="form-control" id="company" name="entry.207813917" placeholder="Your Company Name" required>
+                                </div>
+                                <div class="form-group col-xs-12 col-sm-6">
+                                    <label class="sr-only" for="phone.1744073326">Phone</label>
+                                    <input type="phone" class="form-control" id="phone.1744073326" name="entry.1744073326" placeholder="Your Phone Number" required>
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    <label class="sr-only" for="message">Your message</label>
+                                    <textarea class="form-control" id="message" name="entry.1730028297" placeholder="Enter your message" rows="12" required></textarea>
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    <input type="hidden" id="subject" name="entry.261565872" value="Inquiry Request">
+                                    <button type="submit" name="submit" id="submit" class="btn btn-block btn-cta btn-cta-primary">Send Message</button>
+                                </div>
+                            </div><!--//row-->
+                        </div>
+                    </div><!--//row-->
                 </form><!--//contact-form-->
-                <!-- Start: Download Instructions -->
-                <div class="contact-form" id="download-instructions-container">
-                    <div class="contact-form-inner col-md-offset-2 col-sm-offset-0 xs-offset-0 col-xs-12 col-md-8">
-                        We'll contact you to help you get started, but in case you're the impatient type:<br />
-                        <pre>wget -qO- http://logzilla.sh | sudo bash</pre>
-                    </div>                    
-                    <div class="contact-form-inner col-md-offset-2 col-sm-offset-0 xs-offset-0 col-xs-12 col-md-8">
-                        <h3><span class="highlight">Lab/Test Server Requirements</span></h3>
-                        <ul class="list-normal text-left">
-                            <li>8GB Ram</li>
-                            <li>20GB Disk (more, if you plan to send a lot of data)</li>
-                            <li>Ubuntu 14 or 16 LTS x_64 Server)</li>
-                        </ul>
-                        <small>* Production requirements will vary, we're happy to help you with sizing.</small>
-                    </div>
-                </div>
-                <!-- End: Download Instructions -->
-        </div><!--//container-->
-    </section><!--//contact-section-->
+                <script type="text/javascript">var submitted=false;</script>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+                <!-- End: Contact Form -->
+            </div><!--//container-->
+        </section><!--//contact-section-->
 
-        
         <!-- ******Other Contact Section****** --> 
         <section class="contact-other-section section">
             <div class="container text-center">
-                <h2 class="title">Other ways to reach us</h2>
-                <p class="intro">You can also reach out to us through email, social media, and good ol' fashioned phone.</p>
+                <h2 id="contact-us-title" class="title">Other ways to reach us</h2>
+                <p id="contact-us-subheading" class="intro">You can also reach out to us through email, social media, and good ol' fashioned phone.</p>
                 <div class="row">
                     <ul class="other-info list-unstyled col-md-6 col-sm-10 col-xs-12 col-md-offset-3 col-sm-offset-1 xs-offset-0" >
                         <li><i class="fa fa-envelope-o"></i><a href="mailto:sales@nospam.net" class="emailtrans">sales@nospam.net</a></li>
@@ -85,31 +69,31 @@ subtitle: Contact us at logzilla.net or call us at 936-4NetOps (463-8677) for yo
                 </div><!--//row-->
             </div><!--//container-->
         </section><!--//contact-other-section-->
-        
-        
+
+
         <!-- ******CTA Section****** -->
         <section id="cta-section" class="section cta-section text-center contact-cta-section">
             <div class="container">
-               <h2 class="title">Ready to relax and let the network manage itself?</h2>
+                <h2 class="title">Ready to relax and let the network manage itself?</h2>
                 <p class="intro">More than <span class="counting">300</span> companies love LogZilla</p>
                 <p><a class="btn btn-cta btn-cta-primary" href="download.html">Get LogZilla Now</a></p>
             </div><!--//container-->
         </section><!--//cta-section-->
 
     </div><!--//wrapper-->
-    
+
     <!-- Start: Page Specific JS Loads -->
     <script>
-        // Make sure jQuery is loaded before loading the Vimeo JS
-        head.ready("jquery", function() {
-            head.load(
-                    { jqvalidate: "assets/plugins/jquery.validate.min.js"}, 
-                    { contact: "assets/js/contact.js"},
-                    function() {
-                        //console.log("Contact JS Loaded");
-                    });
-        });
+// Make sure jQuery is loaded before loading the Vimeo JS
+head.ready("jquery", function() {
+    head.load(
+            { jqvalidate: "assets/plugins/jquery.validate.min.js"}, 
+            { contact: "assets/js/contact.js"},
+            function() {
+                //console.log("Contact JS Loaded");
+            });
+});
     </script>
     <!-- END: Page Specific JS Loads -->
-      
+
 </body>
