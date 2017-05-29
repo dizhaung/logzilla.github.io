@@ -8,6 +8,8 @@ author: mwheat
 tags: [Opensource, TCO, Free]
 summary: We love open source and LogZilla actually...
 headline-bg: /assets/images/blog/post_images/current-opensource-logging/opensource-top-banner.jpg 
+redirect_from:
+ - /articles/what-is-the-true-cost-of-open-source-software
 
 ---
 
