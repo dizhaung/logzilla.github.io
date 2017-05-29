@@ -7,6 +7,8 @@ author: mwheat
 tags: [Cisco, Microsoft, Security, Dashboards]
 summary: LogZilla’s latest release includes dashboards for Cisco, Security, and Windows...
 headline-bg: /assets/images/figures/monitor-binary-blue.jpg
+redirect_from:
+ - /articles/logzilla-dashboards-netops-simplified
 
 ---
 

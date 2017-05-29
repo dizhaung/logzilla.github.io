@@ -8,6 +8,8 @@ author: mwheat
 tags: [NetOps, Automation]
 summary: He said they spend a lot of engineering time on network issues with problem identification and resolution and provided us with...
 headline-bg: /assets/images/background/robot-handshake.png
+redirect_from:
+ - /articles/network-event-remediation-in-real-time
 
 ---
 

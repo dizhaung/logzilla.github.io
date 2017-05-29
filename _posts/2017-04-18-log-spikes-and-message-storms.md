@@ -8,6 +8,8 @@ author: mwheat
 tags: [NetOps, Scalability]
 summary: Earlier this week one of our customers had a log storm due to a problem with a production server. They were...
 headline-bg: /assets/images/blog/post_images/message-storm/storm-banner.jpg
+redirect_from:
+ - /articles/why-scale-and-visibility-are-important-in-logging
 
 ---
 

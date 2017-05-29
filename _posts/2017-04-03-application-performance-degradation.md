@@ -7,6 +7,8 @@ subtitle: How to ensure your solution doesn't die along with the network
 author: mwheat
 tags: [NetOps, Scalability, Performance]
 headline-bg: /assets/images/blog/post_images/application-performance-degradation/sorry-no-internet-today.png
+redirect_from:
+ - /articles/application-performance-degradation-from-duplex-mismatch-solved
 
 ---
 
