@@ -4,30 +4,17 @@
         <title>{{ page.title }}</title>
         {% include meta.html %}
         {% include favicon.html %}
+        {% include fonts.html %}
         {% include css.html %}
         {% include fonts.html %}
-        {% include js.html %}
     </head>
-
     <body id="page-top">
-
         {% include nav.html %}
-
         {{ content }}
-
-        <!-- Start: Image expand -->
-        <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg" data-dismiss="modal">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                        <img src="" class="imagepreview img-responsive">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End: Image expand -->
-
+        {% include img-expand.html %}
         {% include footer.html %}
+        {% include js.html %}
+        {% include analytics.html %}
+        {% include hotjar.html %}
     </body>
 </html>
