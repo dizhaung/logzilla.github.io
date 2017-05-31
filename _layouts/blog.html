@@ -8,15 +8,15 @@ layout: default
 {% endif %}
 
 <!--Promo Area Start-->
-<section class="blog section section-on-bg">
-    <div class="container text-center">                
-        <h2 class="title text-center"><span class="highlight">{{ page.title }}</span></h2>
-        <p class="intro text-center">{{ page.intro }}</p>
+<section class="promo blog section section-on-bg">
+    <div class="container text-center">
+        <h2 class="title"><span class="highlight">{{ page.title }}</span></h2>
+        <p class="intro">{{ page.intro }}</p>
     </div><!--//container-->
 </section><!--//section-->
 
 {{ content }}
 
 {% if page.id %}
-</div><!--//blog-entry-wrapper-->  
+</div><!--//blog-entry-wrapper for {{ page.id }}-->
 {% endif %}

@@ -2,11 +2,11 @@
 published: true
 layout: post
 
-title: So I built this amazing NetOps Platform
-subtitle: ...website, and something occurred to me when I launched it.
+title: So I built this amazing...
+subtitle: NetOps Platform website, and something occurred to me when I launched it.
 author: cdukes
 tags: [NetOps, Platform, Security, Syslog, SNMP, NetFlow, Log Analyzer]
-summary: Goodby legacy, lazy, over-bloated, marketecture software. It's time for the next generation..
+summary: Goodby legacy, over-bloated software. It's time for the next generation..
 headline-bg: /assets/images/background/network-visibility-banner.jpg
 
 ---
