@@ -36,7 +36,7 @@ defaults:
     layout: "default"
 data_dir:     _data
 include:              [".htaccess", "_faqs"]
-exclude:              ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/", "_internalDocs"]
+exclude:              ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/", "_internalDocs", "_sass"]
 keep_files:           [".git"]
 encoding:             "utf-8"
 markdown_ext:         "markdown,mkdown,mkdn,mkd,md"
@@ -51,7 +51,6 @@ gems:
       - jekyll-paginate
       - jekyll-sitemap
       - jekyll-redirect-from
-
 paginate: 10
 
 kramdown:
@@ -65,3 +64,9 @@ kramdown:
 
 collections:
     - faqs
+sass:
+    load_paths:
+        - _sass
+        - bower_components/components-font-awesome/scss
+        - bower_components/bootstrap-sass/assets/stylesheets
+    style: compressed

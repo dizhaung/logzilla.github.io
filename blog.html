@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 <div class="wrapper">
-    <div class="container"> 
+    <div class="container-fluid"> 
         {% for post in site.posts %}
         {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
         {% if thecycle == 'odd' %}
@@ -19,12 +19,13 @@ redirect_from:
                 {% endif %}
                 <div class="photo" style='background: url("{{ post.headline-bg }}") center no-repeat'></div>
                 <ul class="details">
-                    <li class="author"><a href="http://twitter.com/{{ post.author }}" target=_new>{{ post.author-name }}</a></li>
-                    <li class="date">{{ post.date | date: "%d %B %Y" }}</li>
+                    {% assign author = site.data.authors[post.author] %}
+                    <li class="author">&nbsp;&nbsp;<a href="http://twitter.com/{{ author.twitter }}" target=_new>{{ author.name }}</a></li>
+                    <li class="date">&nbsp;&nbsp;{{ post.date | date: "%d %B %Y" }}</li>
                     <li class="tags">
                         <ul>
                             {% for tag in post.tags %}
-                            <li><a href="#">{{ tag }}</a></li>
+                            <li>&nbsp;&nbsp;<a href="#">{{ tag }}</a></li>
                             {% endfor %}
                         </ul>
                     </li>
