@@ -1,0 +1,3531 @@
+// Google Fonts
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100);
+
+//colors
+$color_outer_space_approx: #253340;
+$color_fiord_approx: #384d60;
+$color_burnt_sienna_approx: #ec6952;
+$white: #fff;
+$black_50: rgba(0, 0, 0, 0.5);
+$color_storm_dust_approx: #666;
+$color_mountain_mist_approx: #999;
+$mercury: #e5e5e5;
+$color_tundora_approx: #444;
+$color_pomegranate_approx: #e74124;
+$color_flame_pea_approx: #e9553b;
+$color_blue_bayoux_approx: #4a6781;
+$color_gallery_approx: #eee;
+$color_shady_lady_approx: #a6a6a6;
+$color_bon_jour_approx: #e1e1e1;
+$color_tabasco_approx: #952410;
+$color_horizon_approx: #5d80a1;
+$white_60: rgba(255, 255, 255, 0.6);
+$white_80: rgba(255, 255, 255, 0.8);
+$color_ebony_clay_approx: #212e3a;
+$color_pickled_bluewood_approx: #2e4050;
+$color_tuatara_approx: #373737;
+$color_silver_approx: #bfbfbf;
+$color_wild_sand_approx: #f5f5f5;
+$color_gray_nurse_approx: #e8e8e8;
+$gray: #808080;
+$color_nobel_approx: #b3b3b3;
+$black_30: rgba(0, 0, 0, 0.3);
+$black_60: rgba(0, 0, 0, 0.6);
+$color_celeste_approx: #ccc;
+$color_apricot_approx: #f19180;
+$color_salmon_approx: #ef7d69;
+$black_5: rgba(0, 0, 0, 0.05);
+$black_20: rgba(0, 0, 0, 0.2);
+$alabaster: #fafafa;
+$black_25: rgba(0, 0, 0, 0.25);
+$color_concrete_approx: #f3f3f3;
+$color_big_stone_80_approx: rgba(31, 51, 64, 0.8);
+$black_10: rgba(0, 0, 0, 0.1);
+$black_55: rgba(0, 0, 0, 0.55);
+$color_chicago_approx: #5e5e5e;
+$black_40: rgba(0, 0, 0, 0.4);
+$color_picton_blue_approx: #55acee;
+$color_curious_blue_approx: #2795e9;
+$color_azure_approx: #3b5998;
+$color_astronaut_approx: #2d4373;
+$color_valencia_approx: #dd4b39;
+$color_thunderbird_approx: #c23321;
+$color_baltic_sea_approx: #2b2b2b;
+$color_bermuda_gray_approx: #6d8dab;
+$color_nepal_approx: #8da6bd;
+$color_tuna_approx: #2b3b4a;
+$color_rangoon_green_approx: #1e1e1e;
+$color_cinderella_approx: #fbe1dc;
+$black_80: rgba(0, 0, 0, 0.8);
+$black: #000;
+$color_eastern_blue_approx: #28a5a8;
+$color_steel_blue_approx: #497cb1;
+$color_sea_buckthorn_approx: #f89d29;
+$color_puerto_rico_approx: #47c9af;
+$color_strikemaster_approx: #a06081;
+$color_sushi_approx: #96a94b;
+$color_carnation_approx: #f06060;
+$color_slate_gray_approx: #737f97;
+
+//fonts
+$font_0: 'arial';
+$font_1: 'sans-serif';
+$font_2: 'Roboto';
+$font_3: 'arial';
+$font_4: 'sans-serif';
+$font_5: 'Roboto Slab';
+$font_6: 'arial';
+$font_7: 'sans-serif';
+$font_8: 'FontAwesome';
+$font_9: 'arial';
+$font_10: 'sans-serif';
+$font_11: 'arial';
+$font_12: 'sans-serif';
+$font_13: 'arial';
+$font_14: 'sans-serif';
+$font_15: 'Roboto slab';
+$font_16: 'serif';
+$font_17: 'Roboto';
+$font_18: 'sans-serif';
+$font_19: 'Roboto';
+$font_20: 'arial';
+$font_21: 'sans-serif';
+$font_22: 'open sans';
+$font_23: 'arial';
+$font_24: 'sans-serif';
+$font_25: 'Roboto slab';
+$font_26: 'serif';
+$font_27: 'FontAwesome';
+$font_28: 'FontAwesome';
+$font_29: 'arial';
+$font_30: 'sans-serif';
+$font_31: 'arial';
+$font_32: 'sans-serif';
+
+//urls
+$url_0: url('/assets/images/background/bg-header-1.jpg');
+$url_1: url('/assets/images/background/bg-header-2.jpg');
+$url_2: url('/assets/images/background/bg-header-3.jpg');
+$url_3: url('/assets/images/background/bg-header-small-1.jpg');
+$url_4: url('/assets/images/background/bg-header-small-2.jpg');
+$url_5: url('/assets/images/background/bg-header-small-3.jpg');
+$url_6: url('/assets/images/background/bg-header-small-4.jpg');
+$url_7: url('/assets/images/ciscolive/cisco-live-us-wos-gradient-2048x932.jpg');
+$url_8: url('/assets/images/background/bg-footer-1.jpg');
+$url_9: url('/assets/images/background/bg-footer-2.jpg');
+$url_10: url('/assets/images/background/well-oiled-machine.png');
+$url_11: url('/assets/images/background/bg-footer-3.jpg');
+$url_12: url('/assets/images/background/bg-mobile-headline.jpg');
+$url_13: url('/assets/images/mobile/iphone.png');
+$url_14: url('');
+$url_15: url('/assets/images/flexslider/carousel-arrow-prev.png');
+$url_16: url('/assets/images/flexslider/carousel-arrow-next.png');
+$url_17: url('/assets/images/background/bg-screen-1.jpg');
+$url_18: url('/assets/images/background/bg-screen-2.jpg');
+
+//@extend-elements
+//original selectors
+//a.btn-cta-primary, .btn-cta-primary
+%extend_1 {
+	background: $color_burnt_sienna_approx;
+	color: $white;
+}
+
+//original selectors
+//a.btn-cta-primary:hover, .btn-cta-primary:hover
+%extend_2 {
+	background: $color_flame_pea_approx;
+	color: $white;
+}
+
+//original selectors
+//a.btn-cta-secondary, .btn-cta-secondary
+%extend_3 {
+	background: none;
+	color: $color_burnt_sienna_approx;
+}
+
+//original selectors
+//a.btn-cta-secondary:hover, .btn-cta-secondary:hover
+%extend_4 {
+	background: $color_burnt_sienna_approx;
+	color: $white;
+}
+
+//original selectors
+//a.btn-ghost, .btn-ghost
+%extend_5 {
+	background: none;
+	border: 1px solid $white;
+	color: $white !important;
+	padding: 8px 20px;
+	vertical-align: middle;
+}
+
+//original selectors
+//a.btn-ghost:hover, .btn-ghost:hover
+%extend_6 {
+	background: $color_blue_bayoux_approx;
+	border: 1px solid $color_blue_bayoux_approx;
+	color: $white;
+}
+
+//original selectors
+//.pricing .item .ribbon .text:before, .pricing .item .ribbon .text:after
+%extend_7 {
+	content: '';
+	position: absolute;
+	bottom: -5px;
+	border-top: 5px solid $color_pickled_bluewood_approx;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+}
+
+//original selectors
+//.pagination >li:first-child >a, .pagination >li:first-child >span, .pagination >li:last-child >a, .pagination >li:last-child >span
+%extend_8 {
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 4px;
+	//Instead of the line below you could use @include background-clip($clip)
+	background-clip: padding-box;
+	background: none;
+}
+
+//original selectors
+//.searchbox-icon, .searchbox-submit
+%extend_9 {
+	width: 38px;
+	height: 38px;
+	display: block;
+	position: absolute;
+	top: 0;
+	font-size: 16px;
+	right: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: 0;
+	line-height: 2.4;
+	text-align: center;
+	cursor: pointer;
+	color: $color_salmon_approx;
+	background: $white;
+}
+
+//original selectors
+//.searchbox-container .searchbox.searchbox-open .searchbox-icon, .searchbox-container .searchbox.searchbox-open .searchbox-submit
+%extend_10 {
+	background: $color_burnt_sienna_approx;
+	color: $white;
+	//Instead of the line below you could use @include border-top-right-radius($radius)
+	border-top-right-radius: 4px;
+	//Instead of the line below you could use @include border-bottom-right-radius($radius)
+	border-bottom-right-radius: 4px;
+	//Instead of the line below you could use @include border-bottom-left-radius($radius)
+	border-bottom-left-radius: 0;
+	//Instead of the line below you could use @include border-top-left-radius($radius)
+	border-top-left-radius: 0;
+	//Instead of the line below you could use @include background-clip($clip)
+	background-clip: padding-box;
+}
+
+//original selectors
+//.ie9 .pricing .item .ribbon, .ie8 .pricing .item .ribbon
+%extend_11 {
+	top: 0;
+	right: 0;
+	height: 60px;
+}
+
+//original selectors
+//.ie9 .pricing .item .ribbon .text, .ie8 .pricing .item .ribbon .text
+%extend_12 {
+	position: static;
+	font-size: 13px;
+	width: auto;
+	padding: 5px;
+}
+
+
+body {
+	font-family: $font_2, $font_3, $font_4;
+	color: $color_tundora_approx;
+	font-size: 16px;
+}
+p {
+	margin-bottom: 15px;
+	line-height: 1.5;
+}
+a {
+	color: $color_burnt_sienna_approx;
+	&:hover {
+		text-decoration: underline;
+		color: $color_pomegranate_approx;
+	}
+	&:focus {
+		text-decoration: none;
+	}
+	&.btn {
+		font-weight: bold;
+		.fa {
+			color: $white;
+			margin-right: 5px;
+		}
+	}
+	&.btn-cta {
+		padding: 8px 30px;
+	}
+	&.btn-cta-primary {
+		@extend %extend_1;
+		&:hover {
+			@extend %extend_2;
+		}
+	}
+	&.btn-cta-secondary {
+		@extend %extend_3;
+		&:hover {
+			@extend %extend_4;
+		}
+	}
+	&.btn-ghost {
+		@extend %extend_5;
+		&:hover {
+			@extend %extend_6;
+		}
+		.fa {
+			margin-right: 10px;
+			font-size: 22px;
+		}
+		.text {
+			position: relative;
+			top: -2px;
+		}
+	}
+}
+.btn {
+	font-weight: bold;
+	.fa {
+		color: $white;
+		margin-right: 5px;
+	}
+}
+.btn-cta {
+	padding: 8px 30px;
+}
+.btn-cta-primary {
+	@extend %extend_1;
+	&:hover {
+		@extend %extend_2;
+	}
+}
+.btn-cta-secondary {
+	@extend %extend_3;
+	&:hover {
+		@extend %extend_4;
+	}
+}
+.btn-ghost {
+	@extend %extend_5;
+	&:hover {
+		@extend %extend_6;
+	}
+	.fa {
+		margin-right: 10px;
+		font-size: 22px;
+	}
+	.text {
+		position: relative;
+		top: -2px;
+	}
+}
+.highlight {
+	color: $color_burnt_sienna_approx;
+}
+.form-control {
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: none;
+	height: 40px;
+	border-color: $color_gallery_approx;
+	&:-moz-placeholder {
+		color: $color_shady_lady_approx;
+	}
+	&:-ms-input-placeholder {
+		color: $color_shady_lady_approx;
+	}
+	&:focus {
+		border-color: $color_bon_jour_approx;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: none;
+	}
+}
+.form-control::-webkit-input-placeholder {
+	color: $color_shady_lady_approx;
+}
+.form-control::-moz-placeholder {
+	color: $color_shady_lady_approx;
+}
+.text-highlight {
+	color: $color_tabasco_approx;
+}
+input[type="text"] {
+	appearance: none;
+}
+input[type="email"] {
+	appearance: none;
+}
+input[type="password"] {
+	appearance: none;
+}
+input[type="submit"] {
+	appearance: none;
+}
+input[type="button"] {
+	appearance: none;
+}
+textarea {
+	appearance: none;
+}
+select {
+	appearance: none;
+}
+#topcontrol {
+	background: $color_horizon_approx;
+	color: $white;
+	text-align: center;
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	border: none;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 50%;
+	//Instead of the line below you could use @include background-clip($clip)
+	background-clip: padding-box;
+	z-index: 30;
+	&:hover {
+		background: $color_fiord_approx;
+	}
+	.fa {
+		position: relative;
+		top: 3px;
+		font-size: 25px;
+	}
+}
+.header {
+	color: $white;
+	width: 100%;
+	position: relative;
+	z-index: 40;
+	height: 80px;
+	&.scrolled {
+		height: 80px;
+		top: 0;
+		.main-nav .nav {
+			.nav-item {
+				a {
+					color: $color_storm_dust_approx;
+					opacity: 1;
+				}
+				&.nav-item-cta a.btn-cta-secondary {
+					background: $color_burnt_sienna_approx;
+					border-color: $color_burnt_sienna_approx;
+				}
+			}
+			.dropdown-menu a {
+				color: $white;
+			}
+		}
+	}
+	.main-nav {
+		margin-top: 15px;
+		.navbar-toggle {
+			margin-right: 0;
+			margin-top: 0;
+			background: none;
+			position: absolute;
+			right: 10px;
+			top: 10px;
+			&:focus {
+				outline: none;
+			}
+			.icon-bar {
+				background-color: $white_60;
+				height: 3px;
+			}
+			&:hover .icon-bar {
+				background-color: $white;
+			}
+		}
+		.nav {
+			.nav-item {
+				font-weight: normal;
+				text-transform: uppercase;
+				font-size: 13px;
+				margin-right: 15px;
+				&.active {
+					color: $color_burnt_sienna_approx;
+					a {
+						color: $color_burnt_sienna_approx;
+						background: none;
+						font-weight: bold;
+					}
+				}
+				a {
+					color: $white;
+					&:hover {
+						color: $color_burnt_sienna_approx;
+						background: none;
+					}
+					&:focus {
+						outline: none;
+						background: none;
+					}
+					&:active {
+						outline: none;
+						background: none;
+					}
+				}
+				&.last {
+					margin-right: 0;
+				}
+				&.nav-item-cta a.btn-cta-secondary {
+					border: 1px solid $white;
+					color: $white;
+					padding: 8px 10px;
+					margin-top: 5px;
+					font-size: 13px;
+					&:hover {
+						border: 1px solid $color_burnt_sienna_approx;
+						background: $color_burnt_sienna_approx;
+					}
+				}
+			}
+			&.active {
+				position: relative;
+				> a {
+					background: $color_pomegranate_approx;
+					color: $white_80;
+					&:before {
+						content: "\f0d8";
+						position: absolute;
+						bottom: -8px;
+						left: 0;
+						text-align: center;
+						font-family: $font_8;
+						display: block;
+						font-size: 12px;
+						width: 100%;
+					}
+					&.dropdown-toggle:before {
+						display: none;
+					}
+				}
+			}
+			.dropdown-menu {
+				//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+				border-radius: 4px;
+				//Instead of the line below you could use @include background-clip($clip)
+				background-clip: padding-box;
+				margin: 0;
+				border: none;
+				text-transform: none;
+				min-width: 180px;
+				background: $color_outer_space_approx;
+				&:before {
+					content: "";
+					display: block;
+					width: 0;
+					height: 0;
+					border-left: 10px solid transparent;
+					border-right: 10px solid transparent;
+					border-bottom: 10px solid $color_outer_space_approx;
+					position: absolute;
+					right: 30px;
+					top: -10px;
+				}
+				a {
+					border-bottom: 1px solid $color_ebony_clay_approx;
+					padding: 8px 20px;
+					color: $white;
+					opacity: 1;
+					&:hover {
+						background: $color_pickled_bluewood_approx;
+						color: $white;
+					}
+				}
+			}
+			&.open a {
+				background: none;
+			}
+		}
+	}
+	h1.logo {
+		font-family: $font_5, $font_6, $font_7;
+		margin-top: 0;
+		margin-bottom: 0;
+		font-weight: bold;
+		font-size: 15px;
+		float: left;
+		a {
+			color: $white;
+			padding: 15px 30px;
+			display: inline-block;
+			text-align: center;
+			line-height: 1.4;
+			max-width: 155px;
+			background: $color_burnt_sienna_approx;
+			//Instead of the line below you could use @include border-top-right-radius($radius)
+			border-top-right-radius: 0;
+			//Instead of the line below you could use @include border-bottom-right-radius($radius)
+			border-bottom-right-radius: 4px;
+			//Instead of the line below you could use @include border-bottom-left-radius($radius)
+			border-bottom-left-radius: 4px;
+			//Instead of the line below you could use @include border-top-left-radius($radius)
+			border-top-left-radius: 0;
+			//Instead of the line below you could use @include background-clip($clip)
+			background-clip: padding-box;
+			position: relative;
+			font-size: 20px;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		.logo-title {
+			vertical-align: middle;
+			line-height: 1.6;
+		}
+	}
+}
+.bg-slider-wrapper {
+	content: "";
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 780px;
+	background: $color_tuatara_approx;
+	.flexslider {
+		margin: 0;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: none;
+		border: none;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 0;
+		//Instead of the line below you could use @include background-clip($clip)
+		background-clip: padding-box;
+		.slide {
+			display: block;
+			height: 780px;
+			&.slide-1 {
+				background: $color_outer_space_approx $url_0 no-repeat 50% top;
+				background-size: cover;
+			}
+			&.slide-2 {
+				background: $color_outer_space_approx $url_1 no-repeat 50% top;
+				background-size: cover;
+			}
+			&.slide-3 {
+				background: $color_outer_space_approx $url_2 no-repeat 50% top;
+				background-size: cover;
+			}
+		}
+		.flex-control-nav {
+			z-index: 30;
+			bottom: 30px;
+			position: relative;
+			li a {
+				background: $color_mountain_mist_approx;
+				&.flex-active {
+					background: $color_silver_approx;
+				}
+			}
+		}
+	}
+}
+.headline-bg {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 500px;
+	background: $color_outer_space_approx $url_3 no-repeat 50% top;
+	background-size: cover;
+	&.pricing-headline-bg {
+		background-image: $url_4;
+	}
+	&.contact-headline-bg {
+		background-image: $url_5;
+	}
+	&.about-headline-bg {
+		background-image: $url_6;
+	}
+	&.ciscolive-headline-bg {
+		background-image: $url_7;
+	}
+}
+.clive {
+	padding-top: 120px;
+	position: relative;
+	color: $white;
+	margin-bottom: 80px;
+	height: 450px;
+	z-index: 10;
+	.title {
+		font-size: 46px;
+		margin-bottom: 20px;
+		margin-top: 0;
+		font-weight: 700;
+		//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		text-shadow: 0 1px 1px $black_50;
+	}
+	&.section .intro {
+		max-width: 600px;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+}
+.promo {
+	padding-top: 120px;
+	position: relative;
+	color: $white;
+	margin-bottom: 80px;
+	height: 620px;
+	z-index: 10;
+	.title {
+		font-size: 46px;
+		margin-bottom: 20px;
+		margin-top: 0;
+		font-weight: 700;
+		//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		text-shadow: 0 1px 1px $black_50;
+	}
+	.btn-cta {
+		font-size: 18px;
+	}
+	.btn-link {
+		color: $white;
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: 12px;
+		opacity: 0.7;
+		text-decoration: none;
+		&:hover {
+			opacity: 1;
+			text-decoration: none;
+		}
+		&:focus {
+			outline: none;
+		}
+		.fa {
+			margin-right: 5px;
+			font-size: 18px;
+			position: relative;
+			top: 2px;
+		}
+	}
+	&.section .intro {
+		max-width: 600px;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+}
+.sections-wrapper {
+	background: $white;
+	z-index: 20;
+	position: relative;
+}
+.section-on-bg {
+	.title {
+		color: $white;
+	}
+	.intro {
+		color: $white;
+		opacity: 0.8;
+	}
+}
+.why {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	.title {
+		font-size: 36px;
+		font-weight: 300;
+		margin-top: 0;
+	}
+	.intro {
+		color: $color_mountain_mist_approx;
+		margin-bottom: 30px;
+		font-size: 18px;
+	}
+	.item {
+		padding: 90px 0;
+		border-bottom: 1px solid $color_gallery_approx;
+		&.last-item {
+			border-bottom: none;
+		}
+		.title {
+			font-size: 26px;
+			color: $color_blue_bayoux_approx;
+			margin-top: 0;
+			margin-bottom: 15px;
+		}
+		.desc {
+			margin-bottom: 60px;
+			.fa {
+				margin-right: 5px;
+			}
+		}
+		.quote {
+			position: relative;
+			.quote-profile {
+				position: absolute;
+				left: 0;
+			}
+			.quote-content {
+				margin-left: 90px;
+				background: $color_wild_sand_approx;
+				border-left: 4px solid $color_gray_nurse_approx;
+				//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+				border-radius: 4px;
+				//Instead of the line below you could use @include background-clip($clip)
+				background-clip: padding-box;
+				font-size: 14px;
+				padding: 15px;
+				&:before {
+					content: "";
+					display: block;
+					width: 0;
+					height: 0;
+					border-top: 10px solid transparent;
+					border-bottom: 10px solid transparent;
+					border-right: 10px solid $color_gray_nurse_approx;
+					position: absolute;
+					left: 80px;
+					top: 25px;
+				}
+			}
+			blockquote {
+				border-left: none;
+				font-style: italic;
+				color: $color_storm_dust_approx;
+				font-size: 16px;
+				padding: 0;
+				margin-bottom: 10px;
+			}
+			.source {
+				color: $color_mountain_mist_approx;
+				font-size: 13px;
+				margin-bottom: 0;
+				a {
+					color: $color_mountain_mist_approx;
+					&:hover {
+						color: $gray;
+					}
+				}
+			}
+		}
+	}
+	.figure {
+		position: relative;
+		text-align: center;
+		.figure-caption {
+			color: $color_nobel_approx;
+			font-size: 13px;
+			margin-top: 10px;
+			text-align: center;
+			a {
+				color: $color_nobel_approx;
+				&:hover {
+					color: $color_burnt_sienna_approx;
+				}
+			}
+		}
+		img {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	.control {
+		position: absolute;
+		top: 120px;
+		left: 50%;
+		margin-left: -65px;
+		.play-trigger {
+			color: $white;
+			background: $black_30;
+			position: relative;
+			width: 60px;
+			height: 60px;
+			border: 4px solid $white;
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 50%;
+			//Instead of the line below you could use @include background-clip($clip)
+			background-clip: padding-box;
+			margin: 0 auto;
+			text-align: center;
+			opacity: 0.9;
+			&:active {
+				outline: none;
+			}
+			&:focus {
+				outline: none;
+			}
+			&:hover {
+				color: $white;
+				opacity: 1;
+				background: $black_60;
+				.fa {
+					cursor: pointer;
+				}
+			}
+			.fa {
+				font-size: 26px;
+				position: relative;
+				left: 2px;
+			}
+		}
+	}
+	.feature-lead .title {
+		font-weight: 300;
+		font-size: 16px;
+		margin-bottom: 15px;
+	}
+}
+.testimonials {
+	background: $color_wild_sand_approx;
+	padding-top: 60px;
+	padding-bottom: 120px;
+	.carousel-indicators {
+		bottom: -60px;
+		z-index: auto;
+		li {
+			background: $color_celeste_approx;
+			border: none;
+			margin: 1px;
+			&.active {
+				background: $color_apricot_approx;
+				border: none;
+				width: 10px;
+				height: 10px;
+				margin: 1px;
+			}
+		}
+	}
+	.title {
+		font-size: 36px;
+		font-weight: 300;
+		margin-top: 0;
+		margin-bottom: 60px;
+	}
+	.item {
+		.profile {
+			position: absolute;
+			left: 0;
+		}
+		.content {
+			padding-left: 210px;
+		}
+		blockquote {
+			font-size: 20px;
+			font-weight: 300;
+			border-left: 0;
+			padding: 0;
+			position: relative;
+			.fa {
+				position: absolute;
+				color: $color_salmon_approx;
+				font-size: 22px;
+				left: -45px;
+			}
+		}
+		.source {
+			color: $color_burnt_sienna_approx;
+			.title {
+				font-size: 16px;
+				color: $color_storm_dust_approx;
+			}
+		}
+	}
+}
+.press {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	.title {
+		font-size: 36px;
+		font-weight: 300;
+		margin-top: 0;
+		margin-bottom: 60px;
+	}
+	.press-list {
+		margin-bottom: 15px;
+		text-align: center;
+		&.last {
+			margin-bottom: 60px;
+		}
+		li {
+			display: block;
+			height: 80px;
+			img {
+				opacity: 0.6;
+			}
+			&:hover img {
+				opacity: 1;
+			}
+		}
+	}
+	.press-lead .title {
+		font-size: 18px;
+		margin-bottom: 15px;
+	}
+}
+.cta-section {
+	background: $color_outer_space_approx $url_8 no-repeat left top;
+	background-size: cover;
+	min-height: 420px;
+	color: $white;
+	padding-top: 80px;
+	border: none;
+	&.pricing-cta-section {
+		background-image: $url_9;
+	}
+	&.aboutus-cta-section {
+		background-image: $url_10;
+	}
+	&.contact-cta-section {
+		background-image: $url_11;
+	}
+	.title {
+		font-size: 36px;
+		font-weight: 300;
+		margin-top: 0;
+		margin-bottom: 60px;
+	}
+	.btn-cta {
+		font-size: 20px;
+	}
+	.intro {
+		margin-bottom: 15px;
+		color: $white;
+	}
+	.counting {
+		color: $color_burnt_sienna_approx;
+		font-weight: bold;
+		opacity: 1;
+	}
+}
+.features-video {
+	padding-top: 170px;
+	position: relative;
+	z-index: 10;
+	.title {
+		font-size: 36px;
+		margin-bottom: 60px;
+		margin-top: 0;
+		color: $white;
+		font-weight: 300;
+	}
+	.video-container {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+	iframe {
+		background: $white;
+		padding: 15px;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 4px;
+		//Instead of the line below you could use @include background-clip($clip)
+		background-clip: padding-box;
+		border: 1px solid $color_gallery_approx;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 4px 1px $black_5;
+	}
+}
+.features-tabbed {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	.title {
+		font-size: 36px;
+		font-weight: 300;
+		margin-top: 0;
+		margin-bottom: 60px;
+	}
+	.tab-content {
+		padding: 60px 30px;
+		.title {
+			font-size: 16px;
+			color: $color_apricot_approx;
+			font-weight: bold;
+			margin-bottom: 30px;
+		}
+		.desc {
+			margin-bottom: 30px;
+			color: $color_storm_dust_approx;
+			ul {
+				padding-left: 30px;
+				padding-top: 15px;
+				padding-bottom: 15px;
+				li {
+					margin-bottom: 10px;
+				}
+				.fa {
+					color: $color_burnt_sienna_approx;
+					margin-right: 5px;
+				}
+			}
+			blockquote {
+				font-style: italic;
+				color: $gray;
+			}
+			.table {
+				font-size: 14px;
+				padding: 15px 0;
+			}
+			.box {
+				background: $color_wild_sand_approx;
+				padding: 30px;
+				font-size: 14px;
+			}
+		}
+		.figure {
+			margin-bottom: 60px;
+			img {
+				//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+				box-shadow: 0 0 5px 0 $black_20;
+				margin: 0 auto;
+			}
+			.figure-caption {
+				color: $color_nobel_approx;
+				font-size: 13px;
+				margin-top: 10px;
+				text-align: center;
+				a {
+					color: $color_nobel_approx;
+					&:hover {
+						color: $color_burnt_sienna_approx;
+					}
+				}
+			}
+		}
+	}
+}
+.nav-tabs {
+	border: none;
+	margin: 0 auto;
+	display: flex;
+	text-align: center;
+	position: relative;
+	&:before {
+		content: "";
+		display: block;
+		border-bottom: 1px solid $color_gallery_approx;
+		position: absolute;
+		bottom: 0;
+	}
+	> li {
+		margin-bottom: -1px;
+		position: relative;
+		z-index: 1;
+		background: $white;
+		border: 1px solid $color_gallery_approx;
+		border-right: none;
+		width: 20%;
+		flex: 1;
+		> a {
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 0;
+			//Instead of the line below you could use @include background-clip($clip)
+			background-clip: padding-box;
+			margin-right: 0;
+			color: $color_mountain_mist_approx;
+			padding: 15px 30px;
+			font-size: 14px;
+			background: $alabaster;
+			border: none;
+			.fa {
+				font-size: 20px;
+			}
+			&:hover {
+				background: $color_wild_sand_approx;
+			}
+		}
+		&.active {
+			border-top-color: $color_burnt_sienna_approx;
+			border-bottom-color: $white;
+			> a {
+				color: $color_burnt_sienna_approx;
+				background: $white;
+				//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+				box-shadow: inset 0 3px 0 $color_burnt_sienna_approx;
+				border: none;
+				&:hover {
+					border: none;
+				}
+				&:focus {
+					border: none;
+				}
+			}
+			&:hover > a {
+				border-top: 0;
+				border: none;
+				color: $color_burnt_sienna_approx;
+			}
+		}
+		&.last {
+			border-right: 1px solid $color_gallery_approx;
+		}
+	}
+}
+.steps {
+	background: $color_wild_sand_approx;
+	padding-top: 80px;
+	padding-bottom: 120px;
+	.title {
+		font-size: 36px;
+		font-weight: 300;
+		margin-top: 0;
+		margin-bottom: 60px;
+	}
+	.step {
+		padding: 30px 60px;
+		color: $color_storm_dust_approx;
+		.title {
+			text-align: center;
+			font-size: 16px;
+			margin-bottom: 15px;
+			.number {
+				width: 90px;
+				height: 90px;
+				display: block;
+				//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+				border-radius: 50%;
+				//Instead of the line below you could use @include background-clip($clip)
+				background-clip: padding-box;
+				text-align: center;
+				background: $color_burnt_sienna_approx;
+				border: 5px solid $color_apricot_approx;
+				color: $white;
+				margin: 0 auto;
+				padding-top: 25px;
+				font-size: 26px;
+				font-weight: bold;
+				font-family: $font_9, $font_10;
+				margin-bottom: 30px;
+			}
+			.text {
+				color: $color_apricot_approx;
+				font-weight: bold;
+				font-size: 16px;
+			}
+		}
+	}
+	.btn-cta-primary {
+		margin: 0 auto;
+		margin-top: 60px;
+		font-size: 20px;
+	}
+}
+.pricing {
+	padding: 80px 0;
+	padding-top: 170px;
+	position: relative;
+	z-index: 10;
+	.title {
+		font-size: 36px;
+		font-weight: 300;
+		margin-top: 0;
+		margin-bottom: 30px;
+		color: $white;
+	}
+	.intro {
+		color: $white;
+		margin-bottom: 80px;
+	}
+	.item {
+		padding: 0;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 4px;
+		//Instead of the line below you could use @include background-clip($clip)
+		background-clip: padding-box;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 4px 1px $black_5;
+		margin-bottom: 30px;
+		&.best-buy {
+			top: -15px;
+			z-index: 11;
+			position: relative;
+			.item-inner {
+				//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+				box-shadow: 0 0 10px 0 $black_20;
+				&:hover {
+					//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+					box-shadow: 0 0 20px 0 $black_25;
+				}
+			}
+			.heading {
+				padding-top: 45px;
+			}
+			.content {
+				padding-bottom: 45px;
+			}
+		}
+		.item-inner {
+			background: $white;
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 4px;
+			//Instead of the line below you could use @include background-clip($clip)
+			background-clip: padding-box;
+			position: relative;
+			border: 1px solid $color_gallery_approx;
+			&:hover {
+				//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+				box-shadow: 0 0 10px 0 $black_20;
+			}
+		}
+		.heading {
+			margin-top: 0;
+			padding: 30px 15px;
+			//Instead of the line below you could use @include border-top-right-radius($radius)
+			border-top-right-radius: 4px;
+			//Instead of the line below you could use @include border-bottom-right-radius($radius)
+			border-bottom-right-radius: 0;
+			//Instead of the line below you could use @include border-bottom-left-radius($radius)
+			border-bottom-left-radius: 0;
+			//Instead of the line below you could use @include border-top-left-radius($radius)
+			border-top-left-radius: 4px;
+			//Instead of the line below you could use @include background-clip($clip)
+			background-clip: padding-box;
+			.title {
+				margin-bottom: 30px;
+				padding-bottom: 30px;
+				font-weight: 400;
+				font-size: 18px;
+				border-bottom: 1px dashed $color_gallery_approx;
+				color: $color_tundora_approx;
+			}
+		}
+		.content {
+			padding: 30px 15px;
+			padding-top: 0;
+			font-size: 14px;
+		}
+		.price-figure {
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 50%;
+			//Instead of the line below you could use @include background-clip($clip)
+			background-clip: padding-box;
+			margin: 0 auto;
+			.number {
+				font-size: 42px;
+				font-weight: bold;
+			}
+			.unit {
+				font-weight: 400;
+				color: $color_nobel_approx;
+			}
+			.currency {
+				top: -12px;
+				right: 2px;
+				position: relative;
+				font-family: $font_11, $font_12;
+				color: $color_storm_dust_approx;
+				font-size: 18px;
+			}
+		}
+		.ribbon {
+			position: absolute;
+			top: -6px;
+			right: -6px;
+			width: 110px;
+			height: 110px;
+			overflow: hidden;
+			.text {
+				position: relative;
+				left: -8px;
+				top: 18px;
+				width: 158px;
+				padding: 10px;
+				font-size: 15px;
+				font-weight: bold;
+				text-align: center;
+				text-transform: uppercase;
+				color: $white;
+				background-color: $color_horizon_approx;
+				&:before {
+					@extend %extend_7;
+					left: 0;
+				}
+				&:after {
+					@extend %extend_7;
+					right: 0;
+				}
+			}
+		}
+		.feature-list {
+			margin-bottom: 30px;
+			li {
+				border-bottom: 1px solid $color_concrete_approx;
+				padding: 10px;
+				.fa {
+					margin-right: 5px;
+					color: $color_blue_bayoux_approx;
+				}
+				&.disabled {
+					color: $color_mountain_mist_approx;
+					.fa {
+						color: $color_mountain_mist_approx;
+					}
+				}
+			}
+		}
+	}
+}
+.apps-section {
+	min-height: 900px;
+	padding-top: 160px;
+	.title {
+		font-size: 36px;
+		font-weight: 300;
+		margin-top: 0;
+		margin-bottom: 15px;
+		color: $white;
+	}
+	.intro {
+		text-align: left;
+		margin-bottom: 60px;
+	}
+	.phone-holder {
+		width: 324px;
+		height: 651px;
+		display: block;
+		background: $url_13 no-repeat left top;
+		position: relative;
+		.screenshot {
+			position: absolute;
+			left: 21px;
+			top: 75px;
+		}
+	}
+	.content-area {
+		.info {
+			margin-top: 60px;
+			margin-bottom: 60px;
+			background: $color_big_stone_80_approx;
+			padding: 30px;
+			color: $white;
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 4px;
+			//Instead of the line below you could use @include background-clip($clip)
+			background-clip: padding-box;
+			.title {
+				margin-top: 15px;
+				margin-bottom: 30px;
+				font-size: 24px;
+				font-weight: normal;
+			}
+		}
+		.download-list li {
+			margin-bottom: 15px;
+			.btn {
+				width: 220px;
+				text-align: left;
+			}
+		}
+	}
+}
+.faq {
+	background: $color_wild_sand_approx;
+	padding-top: 80px;
+	padding-bottom: 120px;
+	.title {
+		font-size: 36px;
+		font-weight: 300;
+		margin-top: 0;
+		margin-bottom: 60px;
+	}
+	.panel {
+		background: $white;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 4px 1px $black_5;
+		&:hover {
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 0 4px 1px $black_10;
+		}
+		.panel-heading {
+			padding: 15px 30px;
+		}
+		.panel-body {
+			padding: 30px;
+			padding-top: 0;
+			color: $color_storm_dust_approx;
+		}
+		.panel-title {
+			font-weight: normal;
+			color: $color_storm_dust_approx;
+			a {
+				text-decoration: none;
+			}
+			.active {
+				color: $color_burnt_sienna_approx;
+			}
+			.panel-toggle .fa {
+				margin-right: 10px;
+				color: $color_apricot_approx;
+			}
+			&:hover .fa {
+				color: $color_burnt_sienna_approx;
+			}
+		}
+	}
+	.contact-lead {
+		margin-top: 60px;
+		.title {
+			font-weight: 400;
+			font-size: 16px;
+			margin-bottom: 15px;
+			color: $color_mountain_mist_approx;
+		}
+	}
+}
+.contact-section {
+	padding: 80px 0;
+	padding-top: 90px;
+	position: relative;
+	z-index: 10;
+	.title {
+		font-size: 36px;
+		font-weight: 300;
+		margin-top: 0;
+		margin-bottom: 30px;
+	}
+	.intro {
+		margin-bottom: 60px;
+	}
+	.contact-form {
+		margin-left: 15px;
+		margin-right: 15px;
+		.contact-form-inner {
+			background: $white;
+			padding: 30px;
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 4px;
+			//Instead of the line below you could use @include background-clip($clip)
+			background-clip: padding-box;
+			border: 1px solid $color_gallery_approx;
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 0 4px 1px $black_5;
+		}
+		.error {
+			color: $color_burnt_sienna_approx;
+			font-family: $font_13, $font_14;
+			display: block;
+			font-size: 14px;
+			text-align: left;
+			padding-top: 5px;
+			padding-left: 5px;
+			font-weight: 300;
+		}
+	}
+}
+.contact-other-section {
+	.title {
+		font-size: 36px;
+		font-weight: 300;
+		margin-top: 0;
+		margin-bottom: 30px;
+	}
+	.other-info li {
+		margin-bottom: 15px;
+		padding: 15px;
+		position: relative;
+		color: $color_storm_dust_approx;
+		text-align: left;
+		padding-left: 90px;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 4px 1px $black_5;
+		border: 1px solid $color_gallery_approx;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 4px;
+		//Instead of the line below you could use @include background-clip($clip)
+		background-clip: padding-box;
+		a {
+			color: $color_storm_dust_approx;
+			&:hover {
+				color: $color_burnt_sienna_approx;
+			}
+		}
+		.fa {
+			position: absolute;
+			left: 0;
+			top: 0;
+			background: $color_burnt_sienna_approx;
+			color: $white;
+			width: 60px;
+			height: 100%;
+			font-size: 20px;
+			padding-top: 15px;
+			text-align: center;
+			//Instead of the line below you could use @include border-top-right-radius($radius)
+			border-top-right-radius: 0;
+			//Instead of the line below you could use @include border-bottom-right-radius($radius)
+			border-bottom-right-radius: 0;
+			//Instead of the line below you could use @include border-bottom-left-radius($radius)
+			border-bottom-left-radius: 4px;
+			//Instead of the line below you could use @include border-top-left-radius($radius)
+			border-top-left-radius: 4px;
+			//Instead of the line below you could use @include background-clip($clip)
+			background-clip: padding-box;
+			&.fa-twitter {
+				font-size: 22px;
+			}
+			&.fa-phone {
+				font-size: 22px;
+			}
+			&.fa-map-marker {
+				font-size: 22px;
+				padding-top: 45px;
+			}
+		}
+	}
+}
+.map-section {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	.title {
+		font-size: 36px;
+		font-weight: 300;
+		margin-top: 0;
+		margin-bottom: 30px;
+	}
+	.gmap-wrapper {
+		border: 1px solid $color_gallery_approx;
+		position: relative;
+		padding-bottom: 40%;
+		height: 0;
+		overflow: hidden;
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100% !important;
+			height: 100% !important;
+		}
+	}
+}
+.blog {
+	padding-top: 120px;
+	position: relative;
+	color: $white;
+	margin-bottom: 80px;
+	height: 450px;
+	z-index: 10;
+	.title {
+		font-size: 46px;
+		margin-bottom: 20px;
+		margin-top: 0;
+		font-weight: 700;
+		//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		text-shadow: 0 1px 1px $black_50;
+	}
+	&.section .intro {
+		max-width: 600px;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+}
+.blog-slider {
+	margin-bottom: 60px;
+	margin-top: 80px;
+	border: none;
+	height: 400px;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0;
+	//Instead of the line below you could use @include background-clip($clip)
+	background-clip: padding-box;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: none;
+	.slide {
+		display: block;
+		height: 400px;
+		background-color: $color_outer_space_approx;
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: $black_55;
+			z-index: 10;
+		}
+		&.slide-1 {
+			background: $color_outer_space_approx $url_14 no-repeat 50% top;
+			background-size: cover;
+		}
+		&.slide-2 {
+			background: $color_outer_space_approx $url_14 no-repeat 50% top;
+			background-size: cover;
+		}
+		&.slide-3 {
+			background: $color_outer_space_approx $url_14 no-repeat 50% top;
+			background-size: cover;
+		}
+		&.slide-4 {
+			background: $color_outer_space_approx $url_14 no-repeat 50% top;
+			background-size: cover;
+		}
+	}
+	.flex-control-nav {
+		bottom: 15px;
+		z-index: 10;
+		li a {
+			background: $color_chicago_approx;
+			opacity: 0.8;
+			&.flex-active {
+				background: $white;
+			}
+		}
+	}
+	&:hover {
+		.flex-prev {
+			left: 5%!important;
+		}
+		.flex-next {
+			right: 5%!important;
+		}
+	}
+	.flex-caption {
+		padding-top: 90px;
+		position: relative;
+		z-index: 20;
+		text-align: center;
+		color: $white;
+		a {
+			color: $white;
+			&.more-link {
+				color: $white;
+				&:hover {
+					color: $color_burnt_sienna_approx;
+				}
+			}
+		}
+		.title {
+			font-size: 42px;
+			text-align: center;
+			max-width: 800px;
+			margin: 0 auto;
+			margin-bottom: 15px;
+			margin-top: 0;
+			a:hover {
+				text-decoration: none;
+			}
+		}
+		.meta {
+			opacity: 0.6;
+			margin-bottom: 30px;
+		}
+	}
+	.flex-direction-nav a {
+		//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		text-shadow: none;
+		color: $white;
+		position: absolute;
+		width: 30px;
+		height: 50px;
+		display: block;
+		&.flex-prev {
+			left: 5%!important;
+			&:before {
+				content: "";
+				text-indent: -9999px;
+				background: $url_15 no-repeat left top;
+				display: block;
+				width: 30px;
+				height: 50px;
+			}
+		}
+		&.flex-next {
+			right: 5%!important;
+			&:before {
+				content: "";
+				text-indent: -9999px;
+				background: $url_16 no-repeat right top;
+				display: block;
+				width: 30px;
+				height: 50px;
+			}
+		}
+	}
+}
+.blog-entry-wrapper {
+	padding-bottom: 80px;
+	.blog-entry {
+		.blog-entry-heading {
+			margin-bottom: 60px;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 500px;
+			background-size: cover;
+			color: $white;
+			margin-top: 0;
+			background-image: linear-gradient(0deg, transparent 45%, $black_40 81%);
+			&:after {
+				content: "";
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background: $black_10;
+				z-index: 10;
+			}
+			.container {
+				position: relative;
+				z-index: 11;
+				max-width: 700px;
+				padding-left: 30px;
+				padding-right: 30px;
+				padding-top: 120px;
+			}
+			.title {
+				margin-bottom: 30px;
+				font-size: 42px;
+			}
+			.meta {
+				font-size: 18px;
+				opacity: 0.8;
+				a {
+					color: $white;
+					&:hover {
+						color: $white;
+					}
+				}
+				.fa {
+					margin-right: 5px;
+				}
+			}
+			.post-nav-top {
+				position: absolute;
+				z-index: 11;
+				width: 100%;
+				bottom: 0;
+				background: $black_50;
+				padding: 15px 30px;
+				margin-bottom: 0;
+				font-size: 14px;
+				a {
+					color: $white;
+					opacity: 0.6;
+					&:hover {
+						opacity: 1;
+					}
+				}
+			}
+		}
+		.blog-entry-content {
+			font-size: 18px;
+			line-height: 1.6;
+			color: $color_storm_dust_approx;
+			h1 {
+				color: $color_blue_bayoux_approx;
+				&.section-heading {
+					margin-top: 60px;
+					margin-bottom: 30px;
+				}
+			}
+			h2 {
+				color: $color_blue_bayoux_approx;
+				&.section-heading {
+					margin-top: 60px;
+					margin-bottom: 30px;
+				}
+			}
+			h3 {
+				color: $color_blue_bayoux_approx;
+				&.section-heading {
+					margin-top: 60px;
+					margin-bottom: 30px;
+				}
+			}
+			h4 {
+				color: $color_blue_bayoux_approx;
+				&.section-heading {
+					margin-top: 60px;
+					margin-bottom: 30px;
+				}
+			}
+			h5 {
+				color: $color_blue_bayoux_approx;
+				&.section-heading {
+					margin-top: 60px;
+					margin-bottom: 30px;
+				}
+			}
+			h6 {
+				color: $color_blue_bayoux_approx;
+				&.section-heading {
+					margin-top: 60px;
+					margin-bottom: 30px;
+				}
+			}
+			p {
+				margin-bottom: 30px;
+			}
+			ul {
+				margin-bottom: 30px;
+				li {
+					margin-bottom: 15px;
+				}
+			}
+			ol {
+				margin-bottom: 30px;
+				li {
+					margin-bottom: 15px;
+				}
+			}
+			.figure {
+				margin-bottom: 30px;
+				.figure-caption {
+					font-size: 16px;
+					color: $color_mountain_mist_approx;
+					margin-top: 10px;
+					a {
+						color: $color_mountain_mist_approx;
+						&:hover {
+							color: $color_burnt_sienna_approx;
+						}
+					}
+				}
+			}
+			.custom-list-style {
+				margin-bottom: 30px;
+				li {
+					list-style: none;
+					margin-bottom: 5px;
+					.fa {
+						margin-right: 10px;
+						color: $color_burnt_sienna_approx;
+					}
+				}
+			}
+		}
+		.post-nav {
+			margin-bottom: 60px;
+			margin-top: 60px;
+			.nav-next {
+				float: right;
+				.fa {
+					margin-left: 5px;
+				}
+			}
+			.nav-previous .fa {
+				margin-right: 5px;
+			}
+		}
+	}
+	.custom-quote {
+		border: none;
+		padding: 60px 30px;
+		font-family: $font_15, $font_16;
+		font-weight: 300;
+		font-style: italic;
+		font-size: 20px;
+		p {
+			color: $color_storm_dust_approx;
+			line-height: 1.6;
+		}
+		.fa {
+			color: $color_burnt_sienna_approx;
+			margin-right: 10px;
+		}
+		.source {
+			font-family: $font_17, $font_18;
+			font-style: normal;
+			font-weight: normal;
+			margin-bottom: 0 !important;
+			font-size: 16px;
+			text-align: right;
+			.fa {
+				margin-right: 5px;
+			}
+			.name {
+				color: $color_tundora_approx;
+			}
+			.title {
+				font-size: 16px;
+				color: $color_mountain_mist_approx;
+			}
+		}
+	}
+	.box {
+		padding: 30px;
+		background: $color_wild_sand_approx;
+	}
+}
+.blog-category {
+	margin-top: 160px;
+	.page-title {
+		margin-top: 0;
+		margin-bottom: 60px;
+		font-weight: 300;
+		font-size: 36px;
+		padding-top: 80px;
+		.fa {
+			color: $color_fiord_approx;
+			margin-right: 10px;
+			font-size: 30px;
+		}
+	}
+	.blog-list .post .content {
+		.post-title {
+			font-size: 24px;
+		}
+		.meta ul {
+			border-top: none;
+			border-bottom: 1px solid $color_gallery_approx;
+			padding-bottom: 15px;
+			padding-top: 5px;
+		}
+	}
+	.blog-category-list .post {
+		margin-bottom: 60px;
+	}
+}
+.blog-archive {
+	.post {
+		position: relative;
+		.date-label {
+			background: $color_wild_sand_approx;
+			display: inline-block;
+			width: 50px;
+			height: 60px;
+			text-align: center;
+			font-size: 13px;
+			position: absolute;
+			left: 15px;
+			top: 30px;
+			color: $white;
+			.month {
+				background: $color_outer_space_approx;
+				display: block;
+				font-size: 13px;
+				text-transform: uppercase;
+				padding: 2px 0;
+			}
+			.date-number {
+				clear: left;
+				display: block;
+				padding-top: 5px;
+				font-size: 18px;
+				font-family: $font_22, $font_23, $font_24;
+				font-weight: 500;
+				color: $color_outer_space_approx;
+			}
+		}
+	}
+	.blog-list .post .content {
+		padding-left: 80px;
+	}
+}
+.story-section {
+	padding-top: 90px;
+	position: relative;
+	z-index: 10;
+	.title {
+		font-size: 36px;
+		margin-bottom: 60px;
+		margin-top: 0;
+		color: $white;
+		font-weight: 300;
+	}
+	.story-container-inner {
+		max-width: 900px;
+		margin: 0 auto;
+		background: $white;
+		padding: 30px;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 4px;
+		//Instead of the line below you could use @include background-clip($clip)
+		background-clip: padding-box;
+		text-align: left;
+	}
+	.about {
+		padding: 30px;
+	}
+	.belife {
+		border-color: $color_apricot_approx;
+		padding: 15px 30px;
+		font-family: $font_25, $font_26;
+		font-weight: 300;
+		font-style: italic;
+		font-size: 20px;
+		margin: 60px 30px;
+		color: $color_storm_dust_approx;
+	}
+	.press-kit {
+		padding-top: 60px;
+		padding-bottom: 60px;
+		.title {
+			color: $color_tundora_approx;
+			font-size: 28px;
+		}
+		.btn {
+			margin: 30px 0;
+		}
+	}
+	.team {
+		max-width: 900px;
+		margin: 0 auto;
+		padding: 30px;
+		text-align: center;
+		.title {
+			color: $color_tundora_approx;
+			font-size: 28px;
+		}
+		.member {
+			margin-bottom: 30px;
+			.member-inner {
+				background: $color_outer_space_approx;
+				//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+				border-radius: 4px;
+				//Instead of the line below you could use @include background-clip($clip)
+				background-clip: padding-box;
+				position: relative;
+				text-align: center;
+				img {
+					margin: 0 auto;
+				}
+				&:hover {
+					img {
+						opacity: 0.8;
+					}
+					.social {
+						visibility: visible;
+					}
+				}
+			}
+			.profile {
+				background: $color_outer_space_approx;
+				color: $white;
+				text-align: center;
+				.info {
+					padding: 15px 0;
+				}
+				.name {
+					opacity: 0.6;
+					font-size: 18px;
+				}
+				.job-title {
+					color: $white;
+					font-size: 14px;
+				}
+			}
+			.social {
+				width: 100%;
+				top: 50%;
+				position: absolute;
+				visibility: hidden;
+			}
+			.social-list {
+				display: inline-block;
+				margin: 0 auto;
+				a {
+					color: $white;
+					background: $color_outer_space_approx;
+					display: inline-block;
+					width: 40px;
+					height: 40px;
+					//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+					border-radius: 50%;
+					//Instead of the line below you could use @include background-clip($clip)
+					background-clip: padding-box;
+					.fa {
+						padding-top: 10px;
+						font-size: 18px;
+					}
+					&:hover {
+						background: $color_burnt_sienna_approx;
+					}
+				}
+			}
+		}
+	}
+}
+.has-full-screen-bg {
+	.upper-wrapper {
+		background: $color_outer_space_approx $url_17 no-repeat 50% top;
+		background-size: cover;
+	}
+	&.signup-page .upper-wrapper {
+		background: $color_outer_space_approx $url_18 no-repeat 50% top;
+		background-size: cover;
+	}
+	.header h1.logo {
+		float: none;
+		text-align: center;
+		a {
+			margin: 0 auto;
+		}
+	}
+}
+.access-section {
+	padding-bottom: 200px;
+	padding-top: 90px;
+	padding-left: 10px;
+	padding-right: 10px;
+	.form-box {
+		.form-box-inner {
+			background: $white;
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 4px;
+			//Instead of the line below you could use @include background-clip($clip)
+			background-clip: padding-box;
+			padding: 40px;
+		}
+		.title {
+			font-weight: 300;
+			margin-bottom: 60px;
+			margin-top: 0;
+		}
+	}
+	&.signup-section {
+		.title {
+			margin-bottom: 15px;
+		}
+		.intro {
+			margin-bottom: 60px;
+		}
+	}
+	.form-group {
+		position: relative;
+		&.email:before {
+			content: "\f007";
+			font-family: $font_27;
+			font-style: normal;
+			font-weight: normal;
+			line-height: 1;
+			position: absolute;
+			left: 10px;
+			top: 12px;
+			color: $color_mountain_mist_approx;
+		}
+		&.password:before {
+			content: "\f023";
+			font-family: $font_28;
+			font-style: normal;
+			font-weight: normal;
+			line-height: 1;
+			position: absolute;
+			left: 10px;
+			top: 12px;
+			color: $color_mountain_mist_approx;
+		}
+	}
+	.form-control {
+		padding-left: 30px;
+		font-size: 14px;
+		&:-moz-placeholder {
+			color: $color_mountain_mist_approx;
+		}
+		&:-ms-input-placeholder {
+			color: $color_mountain_mist_approx;
+		}
+	}
+	.form-control::-webkit-input-placeholder {
+		color: $color_mountain_mist_approx;
+	}
+	.form-control::-moz-placeholder {
+		color: $color_mountain_mist_approx;
+	}
+	.social-btns {
+		min-height: 250px;
+		margin-bottom: 15px;
+		padding-left: 0;
+		text-align: center;
+		li {
+			margin-bottom: 10px;
+			.btn {
+				color: $white;
+				min-width: 220px;
+				text-align: left;
+				&:hover {
+					color: $white;
+				}
+				.fa {
+					font-size: 18px;
+					position: relative;
+					top: 2px;
+					margin-right: 10px;
+					border-right: 1px solid $black_5;
+					padding-right: 10px;
+					width: 30px;
+				}
+			}
+		}
+		.btn {
+			min-width: 100%;
+		}
+		.social-login {
+			display: inline-block;
+			margin: 0 auto;
+		}
+	}
+	.twitter-btn {
+		background: $color_picton_blue_approx;
+		&:hover {
+			background: $color_curious_blue_approx;
+		}
+	}
+	.facebook-btn {
+		background: $color_azure_approx;
+		&:hover {
+			background: $color_astronaut_approx;
+		}
+	}
+	.google-btn {
+		background: $color_valencia_approx;
+		&:hover {
+			background: $color_thunderbird_approx;
+		}
+	}
+	.github-btn {
+		background: $color_tundora_approx;
+		&:hover {
+			background: $color_baltic_sea_approx;
+		}
+	}
+	.forgot-password {
+		font-size: 13px;
+		margin-top: 10px;
+		a {
+			color: $color_mountain_mist_approx;
+			&:hover {
+				text-decoration: underline;
+				color: $color_burnt_sienna_approx;
+			}
+		}
+	}
+	.divider {
+		border-left: none;
+		margin-bottom: 30px;
+		position: static;
+		span {
+			background: $white;
+			display: inline-block;
+			padding: 0 10px;
+			position: relative;
+			top: inherit;
+			text-transform: uppercase;
+			color: $color_mountain_mist_approx;
+		}
+		&:before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 12px;
+			background: $mercury;
+			height: 1px;
+			width: 100%;
+		}
+	}
+	.note {
+		color: $color_mountain_mist_approx;
+		font-size: 13px;
+		margin-bottom: 15px;
+		margin-top: 15px;
+	}
+	.lead {
+		font-size: 14px;
+		color: $color_mountain_mist_approx;
+		margin-top: 30px;
+	}
+	.btn + .note {
+		margin: 15px 0;
+	}
+	.remember label {
+		font-size: 14px;
+		color: $color_storm_dust_approx;
+	}
+}
+.resetpass-section {
+	.intro {
+		font-size: 16px;
+		margin-bottom: 30px;
+	}
+	.form-box .title {
+		margin-bottom: 30px;
+	}
+}
+.footer {
+	background: $color_outer_space_approx;
+	color: $white;
+	padding-top: 40px;
+	font-size: 14px;
+	position: relative;
+	z-index: 20;
+	p {
+		opacity: 0.5;
+	}
+	.btn-cta {
+		padding: 9px 10px;
+	}
+	.footer-col {
+		&.links {
+			.fa {
+				margin-right: 5px;
+			}
+			li {
+				margin-bottom: 10px;
+			}
+		}
+		&.connect {
+			.social {
+				margin-bottom: 15px;
+				overflow: hidden;
+				li {
+					margin-right: 10px;
+					a {
+						.fa {
+							color: $color_nobel_approx;
+							font-size: 22px;
+						}
+						&:hover .fa {
+							color: $color_burnt_sienna_approx;
+						}
+					}
+				}
+			}
+			.btn-cta-primary {
+				background: $color_horizon_approx;
+				border-color: $color_horizon_approx;
+				&:hover {
+					background: $color_blue_bayoux_approx;
+					border-color: $color_blue_bayoux_approx;
+				}
+			}
+		}
+		.title {
+			color: $white;
+			font-weight: normal;
+			font-size: 18px;
+			margin-top: 0;
+			margin-bottom: 20px;
+			opacity: 0.9;
+		}
+		p {
+			color: $white;
+		}
+		a {
+			color: $color_bermuda_gray_approx;
+			&:hover {
+				color: $color_nepal_approx;
+			}
+		}
+		.navbar-form {
+			padding-left: 0;
+			padding-right: 0;
+			.form-control {
+				opacity: 0.9;
+				&:focus {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	.has-divider {
+		border-top: 1px solid $color_tuna_approx;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.contact {
+		p {
+			opacity: 0.5;
+			a {
+				opacity: 1;
+			}
+		}
+		.fa {
+			margin-right: 10px;
+			font-size: 20px;
+		}
+		.email .fa {
+			font-size: 16px;
+		}
+	}
+	.bottom-bar {
+		background: $color_rangoon_green_approx;
+		color: $color_nobel_approx;
+		font-size: 14px;
+		padding: 10px 0;
+		.copyright {
+			line-height: 1.6;
+		}
+	}
+	a.btn-cta {
+		padding: 9px 10px;
+	}
+	.download .download-list li {
+		margin-bottom: 15px;
+		.btn-ghost {
+			text-align: left;
+			opacity: 0.6;
+			width: 230px;
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+}
+.pagination {
+	margin-bottom: 60px;
+	font-size: 14px;
+	font-family: $font_29, $font_30;
+	margin-left: auto;
+	margin-right: auto;
+	> li {
+		> a {
+			&:hover {
+				background-color: $color_cinderella_approx;
+				border: none;
+			}
+			&:focus {
+				background-color: $color_cinderella_approx;
+				border: none;
+			}
+		}
+		> span {
+			&:hover {
+				background-color: $color_cinderella_approx;
+				border: none;
+			}
+			&:focus {
+				background-color: $color_cinderella_approx;
+				border: none;
+			}
+		}
+		&:first-child {
+			> a {
+				@extend %extend_8;
+			}
+			> span {
+				@extend %extend_8;
+			}
+		}
+		&:last-child {
+			> a {
+				@extend %extend_8;
+			}
+			> span {
+				@extend %extend_8;
+			}
+		}
+	}
+	li a {
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 4px;
+		//Instead of the line below you could use @include background-clip($clip)
+		background-clip: padding-box;
+		border: none;
+		margin-right: 5px;
+		color: $color_burnt_sienna_approx;
+		&:hover {
+			color: $color_thunderbird_approx;
+		}
+	}
+	> .active {
+		> a {
+			background-color: $color_burnt_sienna_approx;
+			border: none;
+			&:hover {
+				background-color: $color_burnt_sienna_approx;
+				border: none;
+			}
+			&:focus {
+				background-color: $color_burnt_sienna_approx;
+				border: none;
+			}
+		}
+		> span {
+			background-color: $color_burnt_sienna_approx;
+			border: none;
+			&:hover {
+				background-color: $color_burnt_sienna_approx;
+				border: none;
+			}
+			&:focus {
+				background-color: $color_burnt_sienna_approx;
+				border: none;
+			}
+		}
+	}
+}
+.searchbox-icon {
+	@extend %extend_9;
+	&:hover {
+		color: $color_flame_pea_approx;
+	}
+}
+.searchbox-submit {
+	@extend %extend_9;
+	font-size: 14px;
+	font-family: $font_31, $font_32;
+}
+.searchbox-container {
+	width: 100%;
+	.searchbox {
+		position: relative;
+		display: inline-block;
+		height: 38px;
+		float: right;
+		top: -50px;
+		right: 0;
+		min-width: 38px;
+		width: 0;
+		overflow: hidden;
+		&.searchbox-open {
+			width: 100%;
+			.searchbox-icon {
+				@extend %extend_10;
+			}
+			.searchbox-submit {
+				@extend %extend_10;
+			}
+		}
+		.searchbox-input {
+			position: absolute;
+			top: 0;
+			right: 0;
+			outline: none;
+			background: $color_wild_sand_approx;
+			border: 1px solid $color_gallery_approx;
+			width: 100%;
+			height: 38px;
+			margin: 0;
+			padding-left: 20px;
+			font-size: 13px;
+			&:-moz-placeholder {
+				color: $color_shady_lady_approx;
+			}
+			&:-ms-input-placeholder {
+				color: $color_shady_lady_approx;
+			}
+		}
+		.searchbox-input::-webkit-input-placeholder {
+			color: $color_shady_lady_approx;
+		}
+		.searchbox-input::-moz-placeholder {
+			color: $color_shady_lady_approx;
+		}
+	}
+}
+.config-wrapper {
+	position: absolute;
+	top: 100px;
+	right: 0;
+	z-index: 100;
+}
+.config-wrapper-inner {
+	position: relative;
+}
+.config-trigger {
+	display: block;
+	position: absolute;
+	left: -36px;
+	width: 36px;
+	height: 36px;
+	background: $color_wild_sand_approx;
+	color: $white;
+	text-align: center;
+	//Instead of the line below you could use @include border-top-right-radius($radius)
+	border-top-right-radius: 0;
+	//Instead of the line below you could use @include border-bottom-right-radius($radius)
+	border-bottom-right-radius: 0;
+	//Instead of the line below you could use @include border-bottom-left-radius($radius)
+	border-bottom-left-radius: 4px;
+	//Instead of the line below you could use @include border-top-left-radius($radius)
+	border-top-left-radius: 4px;
+	//Instead of the line below you could use @include background-clip($clip)
+	background-clip: padding-box;
+	&:hover {
+		text-decoration: none;
+		.fa {
+			color: $color_outer_space_approx;
+		}
+	}
+	.fa {
+		font-size: 22px;
+		padding-top: 8px;
+		display: block;
+		color: $color_baltic_sea_approx;
+	}
+}
+.config-panel {
+	width: 170px;
+	display: none;
+	background: $color_wild_sand_approx;
+	padding: 15px;
+	//Instead of the line below you could use @include border-top-right-radius($radius)
+	border-top-right-radius: 0;
+	//Instead of the line below you could use @include border-bottom-right-radius($radius)
+	border-bottom-right-radius: 0;
+	//Instead of the line below you could use @include border-bottom-left-radius($radius)
+	border-bottom-left-radius: 4px;
+	//Instead of the line below you could use @include border-top-left-radius($radius)
+	border-top-left-radius: 0;
+	//Instead of the line below you could use @include background-clip($clip)
+	background-clip: padding-box;
+	h5 {
+		margin-bottom: 15px;
+	}
+	#color-options {
+		margin-bottom: 10px;
+		li {
+			padding-right: 0;
+			a {
+				display: block;
+				width: 20px;
+				height: 20px;
+				border: 2px solid transparent;
+				&:hover {
+					opacity: 0.9;
+					border: 2px solid $black_80;
+				}
+			}
+			&.active a {
+				border: 2px solid $black;
+			}
+			&.theme-1 a {
+				background: $color_burnt_sienna_approx;
+			}
+			&.theme-2 a {
+				background-color: $color_eastern_blue_approx;
+			}
+			&.theme-3 a {
+				background-color: $color_steel_blue_approx;
+			}
+			&.theme-4 a {
+				background-color: $color_sea_buckthorn_approx;
+			}
+			&.theme-5 a {
+				background-color: $color_pickled_bluewood_approx;
+			}
+			&.theme-6 a {
+				background-color: $color_puerto_rico_approx;
+			}
+			&.theme-7 a {
+				background-color: $color_strikemaster_approx;
+			}
+			&.theme-8 a {
+				background-color: $color_sushi_approx;
+			}
+			&.theme-9 a {
+				background-color: $color_carnation_approx;
+			}
+			&.theme-10 a {
+				background-color: $color_slate_gray_approx;
+			}
+		}
+	}
+	.close {
+		position: absolute;
+		right: 5px;
+		top: 5px;
+		color: $white;
+		.fa {
+			color: $color_outer_space_approx;
+		}
+	}
+}
+@media(max-width: 767px) {
+	.config-wrapper {
+		display: none;
+	}
+	#topcontrol {
+		display: none !important;
+	}
+	.header {
+		&.header-fixed {
+			position: relative;
+		}
+		&.navbar-fixed-top {
+			position: relative;
+		}
+		h1.logo {
+			float: none;
+			margin: inherit;
+			text-align: center;
+			a {
+				margin: 0 auto;
+			}
+		}
+		.main-nav .nav .dropdown-menu:before {
+			display: none;
+		}
+	}
+	.navbar-collapse {
+		border-top: none;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: none;
+		width: 100%;
+		left: 0;
+		top: 90px;
+		position: absolute;
+		background: $color_outer_space_approx;
+		z-index: 45;
+		.nav {
+			margin: 0;
+		}
+	}
+	.access-section {
+		padding-top: 15px;
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 60px;
+	}
+	.pricing {
+		.intro {
+			margin-bottom: 45px;
+		}
+		.item.best-buy {
+			position: static;
+			z-index: inherit;
+		}
+	}
+	.features-tabbed {
+		padding-top: 160px;
+	}
+	.section {
+		.title {
+			font-size: 32px;
+		}
+		.intro {
+			font-size: 16px;
+		}
+	}
+	.promo {
+		height: 420px;
+	}
+	.why {
+		.item {
+			.content {
+				margin-bottom: 60px;
+			}
+			.title {
+				margin-bottom: 30px;
+				text-align: center;
+			}
+		}
+		.control {
+			top: 58px;
+			margin-left: -30px;
+		}
+	}
+	.searchbox-icon {
+		display: none;
+		background: $color_burnt_sienna_approx;
+		color: $white;
+		//Instead of the line below you could use @include border-top-right-radius($radius)
+		border-top-right-radius: 4px;
+		//Instead of the line below you could use @include border-bottom-right-radius($radius)
+		border-bottom-right-radius: 4px;
+		//Instead of the line below you could use @include border-bottom-left-radius($radius)
+		border-bottom-left-radius: 0;
+		//Instead of the line below you could use @include border-top-left-radius($radius)
+		border-top-left-radius: 0;
+		//Instead of the line below you could use @include background-clip($clip)
+		background-clip: padding-box;
+		&:hover {
+			color: $white;
+		}
+	}
+	.searchbox-submit {
+		background: $color_burnt_sienna_approx;
+		color: $white;
+		//Instead of the line below you could use @include border-top-right-radius($radius)
+		border-top-right-radius: 4px;
+		//Instead of the line below you could use @include border-bottom-right-radius($radius)
+		border-bottom-right-radius: 4px;
+		//Instead of the line below you could use @include border-bottom-left-radius($radius)
+		border-bottom-left-radius: 0;
+		//Instead of the line below you could use @include border-top-left-radius($radius)
+		border-top-left-radius: 0;
+		//Instead of the line below you could use @include background-clip($clip)
+		background-clip: padding-box;
+		&:hover {
+			color: $white;
+		}
+	}
+	.blog-page {
+		.header-blog {
+			position: relative;
+			.main-nav .nav .nav-item a {
+				color: $white;
+			}
+		}
+		.header {
+			h1.logo {
+				float: left;
+				margin: inherit;
+			}
+			.main-nav .navbar-toggle {
+				margin-bottom: 0;
+				top: 20px;
+				.icon-bar {
+					background-color: $color_fiord_approx;
+				}
+				&:hover .icon-bar {
+					background-color: $color_outer_space_approx;
+				}
+			}
+			&.navbar-fixed-top .main-nav .nav .nav-item a {
+				color: $white;
+			}
+		}
+		.flexslider {
+			margin-top: 0;
+		}
+		.navbar-collapse {
+			top: 80px;
+		}
+	}
+	.blog-category {
+		margin-top: 0;
+	}
+	.footer-col {
+		margin-bottom: 30px;
+		.form-control {
+			width: auto;
+		}
+	}
+	.story-section {
+		.about {
+			padding: 0;
+		}
+		.belife {
+			margin-left: 0;
+			margin-right: 0;
+		}
+		.team {
+			padding: 0;
+		}
+	}
+	.navbar-fixed-top .navbar-collapse {
+		max-height: inherit;
+	}
+	.navbar-fixed-bottom .navbar-collapse {
+		max-height: inherit;
+	}
+	.has-full-screen-bg.access-page .upper-wrapper {
+		background: $color_fiord_approx;
+	}
+	.headline-bg + .section {
+		padding-top: 45px;
+	}
+	.bg-slider-wrapper + .section {
+		padding-top: 45px;
+	}
+	.features-video iframe {
+		padding: 5px;
+	}
+	.signup-page .form-box .intro {
+		margin-bottom: 45px;
+	}
+	.login-page .form-box .title {
+		margin-bottom: 45px;
+	}
+	.testimonials .item {
+		.profile {
+			position: static;
+			margin: 0 auto;
+			text-align: center;
+			margin-bottom: 30px;
+		}
+		.content {
+			padding-left: 60px;
+		}
+		blockquote {
+			font-size: 18px;
+		}
+	}
+	.nav-tabs > li > a {
+		padding: 10px 5px;
+	}
+	.apps-section .phone-holder {
+		background-size: 280px auto;
+		.screenshot {
+			width: 242px;
+			top: 66px;
+		}
+	}
+	.searchbox-container .searchbox {
+		width: 100%;
+		top: inherit;
+		float: none;
+		margin-bottom: 30px;
+		.searchbox-input {
+			position: static;
+		}
+	}
+	.main-nav .navbar-collapse .navbar-nav {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.blog-slider .flex-caption .title {
+		font-size: 36px;
+	}
+	.footer .footer-col .navbar-form {
+		padding-left: 15px;
+		border: none;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: none;
+		.form-control {
+			display: inline-block;
+		}
+	}
+	.modal.modal-video .modal-dialog {
+		width: auto;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.download-page .headline-bg {
+		height: 1600px;
+	}
+}
+@media(min-width: 768px) {
+	.config-wrapper {
+		display: none;
+	}
+	.header {
+		height: inherit;
+		&.scrolled {
+			height: auto;
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: none;
+			.main-nav .nav {
+				.nav-item {
+					a {
+						color: $white;
+						opacity: 1;
+					}
+					&.nav-item-cta a.btn-cta-secondary {
+						background: inherit;
+						border-color: inherit;
+					}
+				}
+				.dropdown-menu a {
+					color: $white;
+				}
+			}
+		}
+		&.navbar-fixed-top {
+			position: relative;
+		}
+		h1.logo {
+			float: none;
+			text-align: center;
+			a {
+				margin: 0 auto;
+			}
+		}
+		.main-nav .nav .nav-item {
+			margin-right: 10px;
+		}
+	}
+	.blog-slider {
+		margin-top: 0;
+	}
+	.blog {
+		margin-top: 0;
+	}
+	.blog-page {
+		.header-blog {
+			position: relative;
+		}
+		.main-nav.navbar-right {
+			float: right !important;
+		}
+		.header h1.logo {
+			float: left;
+			margin: inherit;
+		}
+	}
+	.promo {
+		height: 420px;
+		padding-top: 80px;
+		.btn-link {
+			margin-top: 15px;
+		}
+		&.section .intro {
+			margin-bottom: 30px;
+		}
+	}
+	.why {
+		.item {
+			.content {
+				margin-bottom: 60px;
+			}
+			.title {
+				margin-bottom: 30px;
+				text-align: center;
+			}
+		}
+		.control {
+			top: 128px;
+			margin-left: -45px;
+		}
+	}
+	.apps-section {
+		padding-top: 80px;
+		.phone-holder {
+			background-size: 280px auto;
+			.screenshot {
+				width: 242px;
+				top: 66px;
+			}
+		}
+	}
+	.footer-col {
+		margin-bottom: 30px;
+	}
+	.features-video {
+		padding-top: 90px;
+	}
+	.pricing {
+		padding-top: 90px;
+	}
+	.story-section {
+		padding-top: 90px;
+	}
+	.contact-section {
+		padding-top: 45px;
+	}
+	.main-nav.navbar-right {
+		float: none !important;
+	}
+	.navbar-collapse.collapse {
+		text-align: center;
+		.navbar-nav {
+			float: none;
+			margin: 0 auto;
+			display: inline-block;
+		}
+	}
+	.modal.modal-video .modal-dialog {
+		width: auto;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.access-page .navbar-collapse.collapse .navbar-nav {
+		display: none;
+	}
+}
+@media(min-width: 992px) {
+	.config-wrapper {
+		display: block;
+	}
+	.header {
+		height: 80px;
+		&.navbar-fixed-top {
+			position: fixed;
+		}
+		&.scrolled {
+			background: $white;
+			z-index: 1000;
+			height: 80px;
+			top: 0;
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 0 0 4px $black_50;
+			h1.logo a {
+				//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+				border-radius: 0;
+				//Instead of the line below you could use @include background-clip($clip)
+				background-clip: padding-box;
+				color: $color_burnt_sienna_approx;
+				background: $white;
+				padding-left: 0;
+				padding-top: 25px;
+			}
+			.main-nav .nav {
+				.nav-item {
+					a {
+						color: $color_storm_dust_approx;
+						opacity: 1;
+					}
+					&.nav-item-cta a.btn-cta-secondary {
+						background: $color_burnt_sienna_approx;
+						border-color: $color_burnt_sienna_approx;
+					}
+				}
+				.dropdown-menu a {
+					color: $white;
+				}
+			}
+		}
+		h1.logo {
+			float: left;
+			margin: inherit;
+		}
+		.main-nav .nav .nav-item {
+			margin-right: 15px;
+		}
+	}
+	.main-nav {
+		float: right !important;
+		&.navbar-right {
+			float: right !important;
+		}
+	}
+	.promo {
+		height: 620px;
+		padding-top: 200px;
+		.btn-link {
+			margin-top: 15px;
+		}
+		&.section .intro {
+			margin-bottom: 45px;
+		}
+	}
+	.why {
+		.item {
+			.content {
+				margin-bottom: inherit;
+			}
+			.title {
+				margin-bottom: 15px;
+				text-align: left;
+			}
+		}
+		.control {
+			top: 128px;
+			margin-left: -28px;
+		}
+		.figure {
+			text-align: left;
+		}
+	}
+	.access-section {
+		.divider {
+			text-align: center;
+			margin-bottom: 30px;
+			color: $color_mountain_mist_approx;
+			text-transform: uppercase;
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			span {
+				background: $white;
+				display: inline-block;
+				padding: 10px 0;
+				position: relative;
+				top: 80px;
+				margin-left: -10px;
+			}
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				background: $mercury;
+				height: 100%;
+				width: 1px;
+			}
+		}
+		.social-btns {
+			padding-left: 65px;
+			.note {
+				text-align: left;
+			}
+		}
+	}
+	.blog-slider {
+		margin-top: 80px;
+	}
+	.blog-page {
+		.header-blog {
+			position: fixed;
+		}
+		.blog-category {
+			margin-top: 80px;
+		}
+		.blog-archive {
+			margin-top: 80px;
+		}
+	}
+	.blog-entry-wrapper {
+		margin-top: 80px;
+	}
+	.download-area {
+		overflow: hidden;
+		.download-list {
+			float: left;
+		}
+		.qrcode-holder {
+			float: left;
+			margin-left: 45px;
+			text-align: center;
+			.qrcode {
+				max-width: 140px;
+				margin: 0 auto;
+				.caption {
+					font-size: 12px;
+					background: $white;
+					padding: 0 15px;
+					padding-bottom: 15px;
+					color: $color_outer_space_approx;
+					font-family: $font_0, $font_1;
+				}
+			}
+		}
+	}
+	.features-video {
+		padding-top: 170px;
+	}
+	.pricing {
+		padding-top: 170px;
+	}
+	.apps-section {
+		padding-top: 160px;
+	}
+	.story-section {
+		padding-top: 170px;
+	}
+	.contact-section {
+		padding-top: 125px;
+	}
+	.bg-slider-wrapper {
+		position: fixed;
+	}
+	.navbar-form .form-control {
+		width: 280px;
+	}
+	.modal.modal-video .modal-dialog {
+		width: 760px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.access-page .navbar-collapse.collapse .navbar-nav {
+		display: none;
+	}
+	.navbar-fixed-top .navbar-collapse {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+.video-container iframe {
+	max-width: 100%;
+}
+.nav .open > a {
+	background: none;
+	&:hover {
+		background: none;
+	}
+	&:focus {
+		background: none;
+	}
+}
+.section .intro {
+	max-width: 700px;
+	margin: 0 auto;
+	margin-bottom: 60px;
+	text-align: center;
+	color: $color_mountain_mist_approx;
+	font-size: 18px;
+}
+.download-page .headline-bg {
+	height: 1200px;
+	background: $color_outer_space_approx $url_12 no-repeat 50% top;
+	background-size: cover;
+}
+.blog-list .post {
+	padding: 0 15px;
+	margin-bottom: 30px;
+	.post-inner {
+		padding: 0;
+		position: relative;
+		border: 1px solid $color_gallery_approx;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 4px;
+		//Instead of the line below you could use @include background-clip($clip)
+		background-clip: padding-box;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 4px 1px $black_5;
+	}
+	.post-thumb {
+		background: $color_outer_space_approx;
+		overflow: hidden;
+		//Instead of the line below you could use @include border-top-right-radius($radius)
+		border-top-right-radius: 4px;
+		//Instead of the line below you could use @include border-bottom-right-radius($radius)
+		border-bottom-right-radius: 0;
+		//Instead of the line below you could use @include border-bottom-left-radius($radius)
+		border-bottom-left-radius: 0;
+		//Instead of the line below you could use @include border-top-left-radius($radius)
+		border-top-left-radius: 4px;
+		//Instead of the line below you could use @include background-clip($clip)
+		background-clip: padding-box;
+		img {
+			opacity: 1;
+			//Instead of the line below you could use @include border-top-right-radius($radius)
+			border-top-right-radius: 4px;
+			//Instead of the line below you could use @include border-bottom-right-radius($radius)
+			border-bottom-right-radius: 0;
+			//Instead of the line below you could use @include border-bottom-left-radius($radius)
+			border-bottom-left-radius: 0;
+			//Instead of the line below you could use @include border-top-left-radius($radius)
+			border-top-left-radius: 4px;
+			//Instead of the line below you could use @include background-clip($clip)
+			background-clip: padding-box;
+			margin: 0 auto;
+			text-align: center;
+			&:hover {
+				opacity: 0.6;
+			}
+		}
+	}
+	.content {
+		padding: 30px;
+		padding-bottom: 15px;
+		color: $color_storm_dust_approx;
+		.post-title {
+			margin-top: 0;
+			font-size: 18px;
+			a {
+				color: $color_outer_space_approx;
+			}
+		}
+		.post-entry {
+			margin-bottom: 15px;
+		}
+		.meta {
+			font-size: 13px;
+			color: $color_mountain_mist_approx;
+			margin-bottom: 0;
+			ul {
+				margin-left: 0;
+				border-top: 1px solid $color_gallery_approx;
+				padding-top: 15px;
+			}
+			li {
+				&:first-child {
+					padding-left: 0;
+				}
+				.fa {
+					margin-right: 5px;
+				}
+				a {
+					color: $color_mountain_mist_approx;
+					&:hover {
+						color: $color_burnt_sienna_approx;
+					}
+				}
+			}
+		}
+	}
+}
+.blog-page .header-blog {
+	position: fixed;
+	top: 0;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 0 4px $black_50;
+	background: $white;
+	height: 80px;
+	.main-nav .nav {
+		.nav-item {
+			a {
+				color: $color_storm_dust_approx;
+				&:hover {
+					color: $color_burnt_sienna_approx;
+				}
+			}
+			&.last {
+				margin-right: 40px;
+				.fa {
+					font-size: 16px;
+					margin-right: 5px;
+				}
+			}
+		}
+		.dropdown-menu a {
+			color: $white;
+		}
+	}
+	h1.logo a {
+		max-width: inherit;
+		background: none;
+		color: $color_burnt_sienna_approx;
+		padding-left: 0;
+		padding-top: 25px;
+		.sub {
+			font-family: $font_19, $font_20, $font_21;
+			color: $color_outer_space_approx;
+			font-weight: 300;
+		}
+	}
+}
+.modal.modal-video {
+	.modal-dialog {
+		width: 760px;
+		margin-top: 90px;
+	}
+	.modal-body {
+		padding: 0;
+		padding-top: 0;
+	}
+	.modal-header {
+		border: none;
+		padding: 0;
+		position: relative;
+	}
+	.modal-content {
+		background: none;
+		border: none;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: none;
+	}
+	button.close {
+		font-size: 36px;
+		font-weight: 300;
+		//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		text-shadow: none;
+		color: $white;
+		opacity: 1;
+		background: none;
+		position: absolute;
+		right: 0;
+		bottom: 5px;
+		z-index: 10;
+		&:hover {
+			color: $color_burnt_sienna_approx;
+			opacity: 1;
+		}
+	}
+}
+.modal-backdrop.in {
+	opacity: 0.9;
+}
+.ie9 .pricing .item .ribbon {
+	@extend %extend_11;
+	.text {
+		@extend %extend_12;
+		&:before {
+			display: none;
+		}
+		&:after {
+			display: none;
+		}
+	}
+}
+.ie8 .pricing .item .ribbon {
+	@extend %extend_11;
+	.text {
+		@extend %extend_12;
+		&:before {
+			display: none;
+		}
+		&:after {
+			display: none;
+		}
+	}
+}

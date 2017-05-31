@@ -1,0 +1,217 @@
+//colors
+$white: #fff;
+$black_60: rgba(0, 0, 0, 0.6);
+$color_burnt_sienna_approx: #ec6952;
+$color_blue_bayoux_approx: #46616f;
+$color_star_dust_approx: #9b9b9b;
+
+//fonts
+$font_0: 'Open Sans';
+$font_1: 'FontAwesome';
+$font_2: 'Roboto';
+$font_3: 'Open Sans';
+$font_4: 'FontAwesome';
+
+//@extend-elements
+//original selectors
+//.blog-card .details li:before, .blog-card .details .tags ul:before
+%extend_1 {
+	font-family: $font_1;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+
+.blog-card {
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: height 0.3s ease;
+	background: $white;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 3px;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 3px 7px -3px rgba(0, 0, 0, 2.3);
+	margin: 0 auto 1.6%;
+	overflow: hidden;
+	position: relative;
+	font-size: 14px;
+	line-height: 1.45em;
+	&:hover {
+		.details {
+			left: 0;
+		}
+		&.alt .details {
+			right: 0;
+		}
+	}
+	.photo {
+		height: 200px;
+		position: relative;
+		background-size: cover;
+	}
+	.details {
+		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: all 0.3s ease;
+		background: $black_60;
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: border-box;
+		color: $white;
+		font-family: $font_0;
+		list-style: none;
+		margin: 0;
+		padding: 10px 15px;
+		height: 200px;
+		position: absolute;
+		top: 0;
+		left: -100%;
+		> li {
+			padding: 3px 0;
+		}
+		.tags {
+			ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				&:before {
+					@extend %extend_1;
+					content: "\f02b";
+				}
+			}
+			li {
+				display: inline-block;
+				margin-right: 3px;
+			}
+		}
+		a {
+			color: inherit;
+			border-bottom: 1px dotted;
+			&:hover {
+				color: $color_burnt_sienna_approx;
+			}
+		}
+		li:before {
+			@extend %extend_1;
+		}
+		.author:before {
+			content: "\f007";
+		}
+		.date:before {
+			content: "\f133";
+		}
+	}
+	.description {
+		padding: 10px;
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: border-box;
+		position: relative;
+		h1 {
+			font-family: $font_2;
+			line-height: 1em;
+			margin: 0 0 10px 0;
+			color: $color_blue_bayoux_approx;
+		}
+		h2 {
+			color: $color_star_dust_approx;
+			font-family: $font_3;
+			line-height: 1.2em;
+			text-transform: uppercase;
+			font-size: 1em;
+			font-weight: 400;
+			margin: 1.2% 0;
+		}
+		p {
+			position: relative;
+			margin: 0;
+			padding-top: 20px;
+			&:after {
+				content: "";
+				background: $color_burnt_sienna_approx;
+				height: 2px;
+				width: 100%;
+				position: absolute;
+				top: 6px;
+				left: 0;
+			}
+		}
+		a {
+			background: $white;
+			margin-bottom: 10px;
+			float: right;
+			&:after {
+				//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+				transition: all 0.3s ease;
+				content: "\f061";
+				font-family: $font_4;
+				margin-left: -10px;
+				opacity: 0;
+				vertical-align: middle;
+			}
+			&:hover:after {
+				margin-left: 5px;
+				opacity: 1;
+			}
+		}
+	}
+	&.alt .details {
+		right: -100%;
+		left: inherit;
+	}
+}
+@media screen and(min-width: 600px) {
+	.blog-card {
+		height: 200px;
+		&:hover {
+			.photo {
+				//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+				transform: rotate(5deg) scale(1.3);
+			}
+			&.alt .photo {
+				//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+				transform: rotate(-5deg) scale(1.3);
+			}
+		}
+		&.alt {
+			.details {
+				padding-left: 30px;
+			}
+			.description {
+				float: right;
+				&:before {
+					//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+					transform: skewX(5deg);
+					right: -15px;
+					left: inherit;
+				}
+			}
+			.photo {
+				float: right;
+			}
+		}
+		.photo {
+			//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+			transition: all 0.5s ease;
+			float: left;
+			height: 100%;
+			width: 40%;
+		}
+		.details {
+			width: 40%;
+		}
+		.description {
+			float: left;
+			width: 60%;
+			z-index: 0;
+			&:before {
+				//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+				transform: skewX(-5deg);
+				content: "";
+				background: $white;
+				width: 100%;
+				z-index: -1;
+				position: absolute;
+				left: -15px;
+				top: 0;
+				bottom: 0;
+			}
+		}
+	}
+}
