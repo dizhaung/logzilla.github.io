@@ -1,0 +1,35 @@
+#!/bin/bash
+script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+docdir="${script_dir}/../_lzdocs"
+( cd "${docdir}"
+rm -f template.html
+mkdir -p ../assets/images/docs
+while read d; do 
+    cid=$(echo "${d}" | cut -d '_' -f1 | sed 's/\///g' | sed 's/\.//g')
+    chapter=$(echo "${d}" | cut -d '_' -f2- | sed 's/\///g' | sed 's/\.//g' | sed 's/_/ /g')
+    while read f; do 
+        #echo "File: $f"
+        if [[ -f "${f}" ]]; then
+            did=$(basename "${f}" .md | cut -d '_' -f1)
+            title=$(basename "${f}" .md | cut -d '_' -f2- | sed 's/_/ /g')
+            #echo "Chapter ${cid} = ${chapter}"
+            #echo "Doc Number ${did} = title: ${title}"
+            perl -i -pe 's/^---/-----/g' "${f}"
+            perl -i -pe "s/.*<\!--.?@@@.*@@@.?-->/---\ncid: ${cid}\nchapter: ${chapter}\ndid: ${did}\ntitle: ${title}\n---\n/g" "${f}"
+            perl -i -pe "s|\@\@path|/assets/images/docs|g" "${f}"
+            perl -i -pe 's|\{\{(.*)\}\}|\{% raw %\}\{\{$1\}\}\{% endraw %\}|g' "${f}"
+            # echo "mv ${f} ."
+            mv "${f}" .
+            if [[ -d "${d}/images" ]] ; then
+                #echo "mv -f ${d}/images/*.* ../assets/images/docs/"
+                mv -f "${d}"/images/*.* ../assets/images/docs/
+                rmdir "${d}"/images
+            fi
+        fi
+    done < <(find "${d}" -name '*.md')
+        rmdir "${d}"
+done < <(find ./* -prune -type d)
+rename 's/\d+_//g' ./*.md
+rm index.md
+) || exit
+

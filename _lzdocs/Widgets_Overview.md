@@ -1,0 +1,25 @@
+---
+cid: 01
+chapter: Using The Dashboard
+did: 02
+title: Widgets Overview
+---
+
+
+### Basic Controls
+
+**Time Range** – This icon allows you to set the time range for each widget. Choices include several pre-set time ranges, custom selections, or matching the dashboard.
+
+![Time Range](/assets/images/docs/images/time-range.png)
+
+-----
+
+**Edit Widget** – This allows complete customization of widgets. See the section ["Creating your own widgets"](/help/using_the_log_zilla_dashboard/creating_your_own_widgets) for more details.
+
+![Edit Widget](/assets/images/docs/images/edit-widget.png)
+
+-----
+
+**Resizing and Moving** – All widgets can be resized and moved so that your layout is suited to your needs. You can move important information to the top of the dashboard, or make it larger for greater visibility.
+
+![Resize Widget](/assets/images/docs/images/resize-widget.png)

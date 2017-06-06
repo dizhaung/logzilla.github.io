@@ -1,0 +1,12 @@
+---
+layout: post
+title: Documentation
+intro: Empowering Smarter Network Operations
+headline-bg: /assets/images/background/bg-header-small-1.jpg
+subtitle: LogZilla - Documentation
+---
+
+{% for lzdoc in site.lzdocs %}
+<!-- File basename: {{ lzdoc.slug }} -->
+<p><a href="{{ lzdoc.url }}">{{ lzdoc.title }}</a></p>
+{% endfor %}
