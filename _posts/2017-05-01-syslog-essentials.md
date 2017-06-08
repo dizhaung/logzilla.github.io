@@ -9,6 +9,7 @@ summary: Most of us cannot remember a time before there was syslog.  I was intr
 headline-bg: /assets/images/blog/post_images/syslog-essentials/hieroglyphics.jpg
 redirect_from:
  - /articles/syslog-essentials
+ - /documentation/logzilla-v5s-syslog-ng-configuration
 
 ---
 
