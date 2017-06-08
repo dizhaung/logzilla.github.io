@@ -9,6 +9,7 @@ summary: LogZilla’s latest release includes dashboards for Cisco, Security, an
 headline-bg: /assets/images/figures/monitor-binary-blue.jpg
 redirect_from:
  - /articles/logzilla-dashboards-netops-simplified
+ - /documentation/using-the-logzilla-dashboard
 
 ---
 

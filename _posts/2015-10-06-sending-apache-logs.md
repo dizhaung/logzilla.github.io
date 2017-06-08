@@ -8,6 +8,8 @@ author: tomd
 tags: [Apache, Syslog, LogZilla, syslog-ng]
 summary: This method is not limited to Apache...
 headline-bg: /assets/images/blog/post_images/sending-apache-logs-to-logzilla/apache-chopper.jpg
+redirect_from:
+ - /documentation/sending-your-apache-logs-to-logzilla
 
 ---
 
