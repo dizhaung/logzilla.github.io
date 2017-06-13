@@ -7,58 +7,16 @@ subtitle: Over 300 companies get actionable insight from LogZilla, shouldn't you
 tags: [Download, LogZilla]
 ---
 <body class="pricing-page">  
-
     <div class="headline-bg pricing-headline-bg">
     </div><!--//headline-bg-->
-
     <!-- ******Download Section****** -->
     <section class="download-section section section-on-bg">
         <div class="container">
             <!-- Start Download Form -->
             <h2 class="title text-center" id="gform-results">Get Started Now!</h2>
-            <p class="intro text-center" id="gform-results-sub">We'll send you a link to your email. Simple, easy, free.</p>
-            <form id="gform" class="contact-form" name="gform" action="https://docs.google.com/forms/d/e/1FAIpQLSec7IeiY5POq48og3HL4XjjZPZEod9CkR9bof6ofUGIAbqr9Q/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-                <div class="row text-center">
-                    <div class="contact-form-inner col-md-offset-2 col-sm-offset-0 xs-offset-0 col-xs-12 col-md-8">
-                        <div class="row">
-
-                            <div class="form-group col-xs-12 col-sm-6">
-                                <label class="sr-only" for="name">Your name</label>
-                                <input type="text" class="form-control" id="name" name="entry.1528667969" placeholder="Your name" minlength="2" required>
-                            </div>                    
-                            <div class="form-group col-xs-12 col-sm-6">
-                                <label class="sr-only" for="email.201970855">Email address</label>
-                                <input type="email" class="form-control" id="email.201970855" name="entry.201970855" placeholder="Your email address" required>
-                            </div>
-                            <div class="form-group col-xs-12 col-sm-6">
-                                <label class="sr-only" for="company">Company Name</label>
-                                <input type="company" class="form-control" id="company" name="entry.207813917" placeholder="Your Company Name">
-                            </div>
-                            <div class="form-group col-xs-12 col-sm-6">
-                                <label class="sr-only" for="phone.1744073326">Phone</label>
-                                <input type="phone" class="form-control" id="phone.1744073326" name="entry.1744073326" placeholder="Your Phone Number">
-                            </div>
-                            <div class="form-group col-xs-12">
-                                <label class="sr-only" for="message">Anything You'd Like To Tell Us?</label>
-                                <textarea class="form-control" id="message" name="entry.1730028297" placeholder="Enter your message" rows="5"></textarea>
-                            </div>
-                            <div class="form-group col-xs-12">
-                                <input type="hidden" id="subject" name="entry.261565872" value="LogZilla Evaluation Request">
-                                <button type="submit" name="submit" id="submit" class="btn btn-block btn-cta btn-cta-primary">Continue</button>
-                            </div>
-                        </div><!--//row-->
-                    </div>
-                </div><!--//row-->
-                </form><!--//contact-form-->
-                <script type="text/javascript">var submitted=false;</script>
-                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-                <!-- End: Download Form -->
+            <p class="intro text-center" id="gform-results-sub">From Download To Dashboards, In Minutes!</p>
                 <!-- Start: Download Instructions -->
                 <div class="contact-form" id="gform-installGuide">
-                    <div class="contact-form-inner col-md-offset-2 col-sm-offset-0 xs-offset-0 col-xs-12 col-md-8">
-                        We'll contact you to help you get started, but in case you're the impatient type:<br />
-                        <pre>wget -qO- http://logzilla.sh | sudo bash</pre>
-                    </div>                    
                     <div class="contact-form-inner col-md-offset-2 col-sm-offset-0 xs-offset-0 col-xs-12 col-md-8">
                         <h3><span class="highlight">Lab/Test Server Requirements</span></h3>
                         <ul class="list-normal text-left">
@@ -68,6 +26,14 @@ tags: [Download, LogZilla]
                         </ul>
                         <small>* Production requirements will vary, we're happy to help you with sizing.</small>
                     </div>
+                    <div class="contact-form-inner col-md-offset-2 col-sm-offset-0 xs-offset-0 col-xs-12 col-md-8">
+                        <p>Once you've installed Ubuntu Server v 14/16 LTS, simply paste the following command.</p>
+                        <p>Pretty easy, right?</p>
+                        <pre>wget -qO- http://logzilla.sh | sudo bash</pre>
+                    </div>                    
+                    <div class="contact-form-inner col-md-offset-2 col-sm-offset-0 xs-offset-0 col-xs-12 col-md-8">
+                        <p>Not Easy Enough? <a href="http://www.mediafire.com/download/qshaa7rldep9g2o/LZ5.ova">How about a ready2run VM?</a></p>
+                    </div>                    
                 </div>
                 <!-- End: Download Instructions -->
         </div><!--//container-->
@@ -98,13 +64,13 @@ tags: [Download, LogZilla]
                     </div><!--//panel-->
                     {% endfor %}
                     <!-- end: new -->
-                    </div>
-                </div><!--//row-->
-                <div class="contact-lead text-center">
-                    <h4 class="title">Have more questions?</h4>
-                    <a class="btn btn-cta btn-cta-secondary" href="/contact.html">Get in touch</a>
                 </div>
-            </div><!--//container-->        
+            </div><!--//row-->
+            <div class="contact-lead text-center">
+                <h4 class="title">Have more questions?</h4>
+                <a class="btn btn-cta btn-cta-secondary" href="/contact.html">Get in touch</a>
+            </div>
+        </div><!--//container-->        
     </section><!--//faq-->
 
     <!-- ******CTA Section****** -->
