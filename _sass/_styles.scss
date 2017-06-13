@@ -1481,6 +1481,46 @@ select {
 		}
 	}
 }
+.download-section {
+	padding: 10px 0;
+	padding-top: 90px;
+	position: relative;
+	z-index: 10;
+	.title {
+		font-size: 36px;
+		font-weight: 300;
+		margin-top: 0;
+		margin-bottom: 30px;
+	}
+	.intro {
+		margin-bottom: 60px;
+	}
+	.contact-form {
+		margin-left: 15px;
+		margin-right: 15px;
+		.contact-form-inner {
+			background: $white;
+			padding: 30px;
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 4px;
+			//Instead of the line below you could use @include background-clip($clip)
+			background-clip: padding-box;
+			border: 1px solid $color_gallery_approx;
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 0 4px 1px $black_5;
+		}
+		.error {
+			color: $color_burnt_sienna_approx;
+			font-family: $font_13, $font_14;
+			display: block;
+			font-size: 14px;
+			text-align: left;
+			padding-top: 5px;
+			padding-left: 5px;
+			font-weight: 300;
+		}
+	}
+}
 .contact-section {
 	padding: 80px 0;
 	padding-top: 90px;
