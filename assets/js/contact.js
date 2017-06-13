@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#gform-installGuide').hide();
+    // $('#gform-installGuide').hide();
     var pathname = window.location.pathname;
     var submitted=false;
     $('#gform').on('submit', function(e) {
