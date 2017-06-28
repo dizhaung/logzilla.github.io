@@ -7,7 +7,7 @@ subtitle: when adults act like children...
 author: mwheat
 tags: [NetOps, Platform, Technology, Cisco, CiscoLive, CLUS]
 summary: Toys are what technologist are drawn to at trade shows...
-headline-bg: /assets/images/ciscolive/LZ-booth1.jpg
+headline-bg: /assets/images/ciscolive/LZ-booth2.jpg
 
 ---
 
