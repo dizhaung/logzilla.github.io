@@ -15,11 +15,11 @@ headline-bg: /assets/images/ciscolive/logzilla-hug.jpg
 
 Day 3 at CiscoLive! started out with a *LogZillian* gearing up in a T-Rex costume and giving free spinner cards out to the guests waiting to get inside the show. If you've never put on an 8 foot tall costume and wandered among the crowd, I highly recommend it.  
 
-![LZ-Dino-Suite](/assets/images/ciscolive/getting-ready.jpg){: .img-responsive .img-fullscreen }
+![LZ-Dino-Suit](/assets/images/ciscolive/getting-ready.jpg){: .img-responsive .img-fullscreen }
 
-![LZ-Dino-Suite](/assets/images/ciscolive/girl-lz.jpg){: .img-responsive .img-fullscreen }
+![LZ-Dino-Suit](/assets/images/ciscolive/girl-lz.jpg){: .img-responsive .img-fullscreen }
 
-![LZ-Dino-Suite](/assets/images/ciscolive/handout.jpg){: .img-responsive .img-fullscreen }
+![LZ-Dino-Suit](/assets/images/ciscolive/handout.jpg){: .img-responsive .img-fullscreen }
 
 You know, a funny thing happens when people realize that you're not there to destroy their city and smash their cars...they want to get a picture with you! 
 
@@ -45,7 +45,7 @@ CiscoLive! booked Bruno Mars for a private concert as a show of appreciation to 
 
 One take away I have about CiscoLive! is; what an amazing job Cisco has done managing all of this. Kudos and THANK YOU!
 
-If you're at CiscoLive! this week, stop by the Solutions Showcase Booth T14 (next to the Brew House) and ask to speak to the guy that was wearing the dinosaur suite. I'll give you a free spinner and show you a NetOps platform that will blow your mind.
+If you're at CiscoLive! this week, stop by the Solutions Showcase Booth T14 (next to the Brew House) and ask to speak to the guy that was wearing the dinosaur suit. I'll give you a free spinner and show you a NetOps platform that will blow your mind.
 
 Rawr! ;)
 
