@@ -22,7 +22,9 @@ redirect_from:
 
  How about immediate remediation when an event indicates there is a problem? All of this is available today and the new dashboards make it easier than ever to empower teams, automate, and move from reactive to proactive.  
 
-You can use these out of the box dashboards, customize them, or even build your own in minutes.  All of the dashboards are powerful, and if you work in any type of engineering or operations capacity, you will not find a easier to use platform to solve your NetOps problems and provide the broad, real-time visibility of LogZilla.
+You can use these out of the box dashboards, customize them, or even build your own in minutes.  All of the dashboards are powerful, and if you work in any type of engineering or operations capacity, you will not find a easier to use platform to solve your NetOps problems and provide the broad, real-time visibility of LogZilla. 
+
+Click [here](/https://youtu.be/jcSGTSNUYs0) to see a screencast of how to build a Cisco Networking dashboard in 10 minutes.
 
 **These New Dashboards Include**:
 
@@ -119,4 +121,5 @@ You can use these out of the box dashboards, customize them, or even build your 
 
  Having a LogZilla NetOps management platform will provide you with incredible visibility and insight, in real-time, to what is happening in your environment. 
 
- We would love to help you be the hero in your company. To find out more, feel free to [contact me](http://twitter.com/{{ site.data.authors[page.author].twitter }})
+ We would love to help you be the hero in your company. To find out more, feel free to [contact me](mailto:mwheat@logzilla.net)
+ 
