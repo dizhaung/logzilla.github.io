@@ -14,17 +14,20 @@ redirect_from:
 ---
 
 
- Within minutes after installing and pointing your network and server events to the LogZilla server, you will have visibility into what is really going on in your environment. 
+ Within minutes after installing and pointing your network and server events to the LogZilla server, you'll get visibility into what is really going on in your environment. 
 
- Have you ever considered what your job would be like if you could look at one interface to see the data from your entire infrastructure? **In real-time**? 
+Have you ever considered what your job would be like if you could look at one interface to see the data from your entire infrastructure? **In real-time**? 
 
- What about querying across all that data...in seconds? 
+What about querying across all that data...in seconds? 
 
- How about immediate remediation when an event indicates there is a problem? All of this is available today and the new dashboards make it easier than ever to empower teams, automate, and move from reactive to proactive.  
+How about immediate remediation when an event indicates there is a problem? All of this is available today and the new dashboards make it easier than ever to empower teams, automate, and move from reactive to proactive.  
 
 You can use these out of the box dashboards, customize them, or even build your own in minutes.  All of the dashboards are powerful, and if you work in any type of engineering or operations capacity, you will not find a easier to use platform to solve your NetOps problems and provide the broad, real-time visibility of LogZilla. 
 
-Click [here](/https://youtu.be/jcSGTSNUYs0) to see a screencast of how to build a Cisco Networking dashboard in 10 minutes.
+
+**Screencast: How to build a Cisco Networking Dashboard in 10 minutes:**
+
+[![Screencast](/assets/images/blog/post_images/downloads-to-dashboards/youtube-download-to-dashboards.png)](https://www.youtube.com/watch?v=jcSGTSNUYs0){:target="_blank"}
 
 **These New Dashboards Include**:
 
@@ -117,9 +120,9 @@ Click [here](/https://youtu.be/jcSGTSNUYs0) to see a screencast of how to build 
 
 **Get started** [right here](/download.html)
 
- If you already have LogZilla installed and want the new dashboards (and who wouldn’t?), just update to the latest version and download the dashboards and instructions from [our Github page](http://bit.ly/2qxFwS8)
+If you already have LogZilla installed and want the new dashboards (and who wouldn’t?), just update to the latest version and download the dashboards and instructions from [our Github page](http://bit.ly/2qxFwS8)
 
- Having a LogZilla NetOps management platform will provide you with incredible visibility and insight, in real-time, to what is happening in your environment. 
+Having a LogZilla NetOps management platform will provide you with incredible visibility and insight, in real-time, to what is happening in your environment. 
 
- We would love to help you be the hero in your company. To find out more, feel free to [contact me](mailto:mwheat@logzilla.net)
+We would love to help you be the hero in your company. To find out more, feel free to [contact me](mailto:mwheat@logzilla.net)
  
