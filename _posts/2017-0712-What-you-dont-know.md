@@ -2,12 +2,12 @@
 published: false
 layout: post
 
-title: Network rationalization, how to fix your stuff
+title: Network rationalization, harden and repair your network.
 subtitle: Your methodology and tools are causing more work...
 author: mwheat
 tags: [NetOps, Platform, Technology, Cisco, DevOps, Analytics]
 summary: Are you still using the same paradigm for hardening your network that you used 5 years ago?
-headline-bg: /assets/images/ciscolive/LZ-booth2.jpg
+headline-bg: /assets/images/background/rationalization.jpg
 
 ---
 
