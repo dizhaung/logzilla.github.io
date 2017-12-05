@@ -4,7 +4,7 @@ layout: post
 
 title: A T-Rex, CiscoLive, and Bruno Mars
 subtitle: this one time, at CiscoLive!...
-author: mwheat
+author: cdukes
 tags: [NetOps, Platform, Technology, Cisco, CiscoLive, CLUS]
 summary: Ever seen a T-Rex run?
 headline-bg: /assets/images/ciscolive/logzilla-hug.jpg

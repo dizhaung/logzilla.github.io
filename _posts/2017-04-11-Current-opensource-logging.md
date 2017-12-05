@@ -4,7 +4,7 @@ layout: post
 
 title: Want To Save Money By Using Open Source?
 subtitle: Bad news...Open source is not Free.
-author: mwheat
+author: cdukes
 tags: [Opensource, TCO, Free]
 summary: We love open source and LogZilla actually...
 headline-bg: /assets/images/blog/post_images/current-opensource-logging/opensource-top-banner.jpg 

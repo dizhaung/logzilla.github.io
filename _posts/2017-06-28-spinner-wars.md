@@ -4,7 +4,7 @@ layout: post
 
 title: Spinner Wars at CiscoLive!
 subtitle: when adults act like children...
-author: mwheat
+author: cdukes
 tags: [NetOps, Platform, Technology, Cisco, CiscoLive, CLUS]
 summary: Trade show toys are always a hit...
 headline-bg: /assets/images/ciscolive/LZ-booth2.jpg
