@@ -4,7 +4,7 @@ layout: post
 
 title: Network Event Remediation in real-time
 subtitle: How to save 60 hours of skilled network engineering time
-author: mwheat
+author: cdukes
 tags: [NetOps, Automation]
 summary: He said they spend a lot of engineering time on network issues with problem identification and resolution and provided us with...
 headline-bg: /assets/images/background/robot-handshake.png

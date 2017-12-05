@@ -3,7 +3,7 @@ published: true
 layout: post
 title: Real-time Network Telemetry Streaming
 subtitle: Filter across your entire infrastructure, drill down in seconds
-author: mwheat
+author: cdukes
 tags: [NetOps, Real-time, Log Analyzer]
 summary: In the past two weeks I have had multiple conversations where I asked, "what do you like about LogZilla?" Instead of "it's fast or "it scales and saves us money", they have responded with...
 headline-bg: /assets/images/background/data-stream-blue-planet-dark.png

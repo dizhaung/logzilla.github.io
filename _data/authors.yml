@@ -7,14 +7,14 @@ logzilla:
 cdukes:
   name: "Clayton Dukes"
   picture: /assets/images/team/cdukes.png
-  twitter: claytondukes
+  twitter: logzilla
   linkedin: lzcdukes
 
 mwheat:
   name: "Mark Wheat"
   picture: /assets/images/team/mwheat-casual.jpg
-  twitter: markwheat1
-  linkedin: mark-wheat-701872
+  twitter: logzilla
+  linkedin: company/logzilla
 
 tomd:
   name: "Tom Damon"

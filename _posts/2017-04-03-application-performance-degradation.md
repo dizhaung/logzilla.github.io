@@ -4,7 +4,7 @@ layout: post
 
 title: Application Performance Degradation?
 subtitle: How to ensure your solution doesn't die along with the network
-author: mwheat
+author: cdukes
 tags: [NetOps, Scalability, Performance]
 headline-bg: /assets/images/blog/post_images/application-performance-degradation/sorry-no-internet-today.png
 redirect_from:

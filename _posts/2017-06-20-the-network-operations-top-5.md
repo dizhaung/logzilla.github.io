@@ -4,7 +4,7 @@ layout: post
 
 title: The Network Operations Top 5
 subtitle: ...and why they matter.
-author: mwheat
+author: cdukes
 tags: [NetOps, Platform, Technology]
 summary: NetOps provides increased availability and efficiencies for...
 headline-bg: /assets/images/background/netops-ping.jpg

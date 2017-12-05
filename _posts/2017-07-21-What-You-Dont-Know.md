@@ -4,7 +4,7 @@ layout: post
 
 title: Did you hear the one about the definition of insanity?
 subtitle: When good networks go bad....
-author: mwheat
+author: cdukes
 tags: [NetOps, Security]
 summary: Are you still using the same process for managing your network that you did 5 years ago?
 headline-bg: /assets/images/background/rationalization.jpg
@@ -91,7 +91,7 @@ Easily creating views to display the data **you need** in order to make decision
 
 *How To Build a Cisco Dashboard In Ten Minutes:*
 
-[![Cisco Dashboard Build](/assets/images/blog/post_images/What-you-dont-know/mwheat-youtube.png)](https://www.youtube.com/watch?v=jcSGTSNUYs0){:target="_blank"}
+[![Cisco Dashboard Build](/assets/images/blog/post_images/What-you-dont-know/mwheat-youtube.png)](https://youtu.be/fxBb9N3HdO0){:target="_blank"}
 
 ### If I had a nickel for every time I had to type the same thing...
 
@@ -107,7 +107,7 @@ LogZilla also provides a full REST API which can be used to interface with other
 Pulling all of this together; Building dashboards, Actionable Events, Triggers, and Automations provides an extraordinary amount of efficiency within your organization. Not only are you being proactive, you're doing more with less and making your life a whole lot easier.
 All you need to do now is spend a few minutes a day reviewing results instead of the entire day running around putting out fires.
 
-Seeing things that you never knew were happening and automatically resolving problems are what you can expect from the LogZilla NetOps Platform. If any of this resonated with you, reach out to me at [mwheat@logzilla.net](mailto:mwheat@logzilla.net?subject=LogZilla%20info%20requested) for more information. I hope to hear from you soon!
+Seeing things that you never knew were happening and automatically resolving problems are what you can expect from the LogZilla NetOps Platform. If any of this resonated with you, reach out to me at [sales.net](mailto:sales.net?subject=LogZilla%20info%20requested) for more information. I hope to hear from you soon!
 
 LogZilla is built By NetOps, For NetOps. 
 

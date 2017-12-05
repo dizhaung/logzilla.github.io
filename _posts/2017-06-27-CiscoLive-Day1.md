@@ -4,7 +4,7 @@ layout: post
 
 title: Fidget Spinners and Street Marketing at CiscoLive!
 subtitle: How to get noticed...in the bathroom?
-author: mwheat
+author: cdukes
 tags: [NetOps, Platform, Technology, Cisco, CiscoLive, CLUS]
 summary: So we stumbled across a new way to drive customers to our booth...
 headline-bg: /assets/images/ciscolive/LZ-booth1.jpg
